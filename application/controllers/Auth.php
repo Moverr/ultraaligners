@@ -20,6 +20,11 @@ class Auth extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('auth/login');
+		if(isset($_POST)){
+			$this->load->view('welcome_message');
+		}else{
+			$this->load->view('auth/login');
+		}
+	
 	}
 }

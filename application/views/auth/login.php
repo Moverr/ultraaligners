@@ -102,7 +102,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	</div>
 		<div class="col-md-4  loginformwrapper ">
 		<h1>LOGIN</h1>
-			<form role="form">
+			<form role="form" method="POST" action="auth" >
 				<div class="form-group">
 					 
 					<label for="exampleInputEmail1">
