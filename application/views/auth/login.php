@@ -35,11 +35,21 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	h1 {
 		color: #444;
 		background-color: transparent;
-		border-bottom: 1px solid #D0D0D0;
-		font-size: 19px;
-		font-weight: normal;
+	 
+	 font-size: xx-large;
+		font-weight: 400;
 		margin: 0 0 14px 0;
-		padding: 14px 15px 10px 15px;
+		 
+	}
+
+	.headline {
+		color: #444;
+		background-color: transparent;
+	 	font-size: 180px;
+	 
+		font-weight: 400;
+		margin: 0 0 14px 0;
+	 
 	}
 
 	code {
@@ -71,22 +81,32 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		border: 1px solid #D0D0D0;
 		box-shadow: 0 0 8px #D0D0D0;
 	}
+	.submitbutton{
+		width: 200px;
+		height: 70px;
+		border-radius: 10px; font-size: 30px; text-transform: uppercase;
+	}
+	.loginformwrapper{
+		background-color: #f9f9f9; height: 400px; border: #444 1px solid;
+		border-radius: 10px; margin-left: 2px;
+		padding-top: 20px;
+	}
 	</style>
 </head>
 <body>
 
 <div class="container-fluid">
 	<div class="row">
-	<div class="col-md-8">
-	<h1>ULTRA LIGNERS </h1>
+	<div class="col-md-7">
+	<h1 class="headline">ULTRA LIGNERS </h1>
 	</div>
-		<div class="col-md-4">
+		<div class="col-md-4  loginformwrapper ">
 		<h1>LOGIN</h1>
 			<form role="form">
 				<div class="form-group">
 					 
 					<label for="exampleInputEmail1">
-						Email address
+						Username
 					</label>
 					<input type="email" class="form-control" id="exampleInputEmail1" />
 				</div>
@@ -97,23 +117,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					</label>
 					<input type="password" class="form-control" id="exampleInputPassword1" />
 				</div>
-				<div class="form-group">
-					 
-					<label for="exampleInputFile">
-						File input
-					</label>
-					<input type="file" class="form-control-file" id="exampleInputFile" />
-					<p class="help-block">
-						Example block-level help text here.
-					</p>
-				</div>
-				<div class="checkbox">
-					 
-					<label>
-						<input type="checkbox" /> Check me out
-					</label>
-				</div> 
-				<button type="submit" class="btn btn-primary">
+				 
+			 
+				<button type="submit" class="btn btn-primary submitbutton ">
 					Submit
 				</button>
 			</form>
@@ -121,5 +127,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	</div>
 </div>
 
+<footer style="
+  position: fixed;
+    bottom: 0;
+	width: 100%;
+	">
+	<div style="margin: auto; width:150px; margin-bottom:20px; ">&copy; 2020 Ultra Ligners </div>
+</footer>
 </body>
 </html>
