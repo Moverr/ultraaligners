@@ -1,7 +1,8 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
-class Auth extends CI_Controller {
+class Auth extends CI_Controller
+{
 
 	/**
 	 * Index Page for this controller.
@@ -20,12 +21,11 @@ class Auth extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('auth/login');  
-	}
-	public function save(){
-		$data = filter_forwarded_data($this);
-		var_dump(($_POST));
-		//redirect(base_url().'dashboard');
-
+		if (isset($_POST['username'])) {
+			$data = filter_forwarded_data($this);
+			var_dump(($this->input->post('username')));
+		} else {
+			$this->load->view('auth/login');
+		}
 	}
 }
