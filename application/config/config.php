@@ -23,7 +23,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'http://localhost/ultraaligners/';
+$config['base_url'] = 'http://localhost:8084/ultraaligners/';
 
 /*
 |--------------------------------------------------------------------------
@@ -187,7 +187,7 @@ $config['enable_query_strings'] = FALSE;
 $config['controller_trigger'] = 'c';
 $config['function_trigger'] = 'm';
 $config['directory_trigger'] = 'd';
-
+ 
 /*
 |--------------------------------------------------------------------------
 | Allow $_GET array
