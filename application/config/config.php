@@ -187,7 +187,7 @@ $config['enable_query_strings'] = FALSE;
 $config['controller_trigger'] = 'c';
 $config['function_trigger'] = 'm';
 $config['directory_trigger'] = 'd';
- 
+$config['RETRIEVE_URL_DATA_IGNORE'] = 3;
 /*
 |--------------------------------------------------------------------------
 | Allow $_GET array

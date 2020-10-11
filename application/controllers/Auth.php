@@ -23,6 +23,7 @@ class Auth extends CI_Controller {
 		$this->load->view('auth/login');  
 	}
 	public function save(){
+		$data = filter_forwarded_data($this);
 		var_dump(($_POST));
 		//redirect(base_url().'dashboard');
 
