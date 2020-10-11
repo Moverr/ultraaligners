@@ -20,14 +20,9 @@ class Auth extends CI_Controller {
 	 */
 	public function index()
 	{
-	 
-		if(isset($_POST)){
-			redirect(base_url().'dashboard');
-		}else{
-			$this->load->view('auth/login');
-		}
-	 
-
-		 
+		$this->load->view('auth/login');  
+	}
+	public function save(){
+		var_dump(($_POST));
 	}
 }
