@@ -21,7 +21,7 @@ class Auth extends CI_Controller {
 	public function index()
 	{
 		if(isset($_POST)){
-			$this->load->view('welcome_message');
+			redirect(base_url().'account/login');
 		}else{
 			$this->load->view('auth/login');
 		}
