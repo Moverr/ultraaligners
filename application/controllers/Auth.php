@@ -68,6 +68,8 @@ class Auth extends CI_Controller
 					if(isset($resp_err->error->message)){
 						$data['error'] =  $resp_err->error->message;
 						$this->load->view('auth/login',$data);
+					}else{
+						$this->load->view('auth/login');
 					}
 					
 					
