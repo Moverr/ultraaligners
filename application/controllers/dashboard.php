@@ -1,7 +1,8 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
-class Dashboard extends CI_Controller {
+class Dashboard extends CI_Controller
+{
 
 	/**
 	 * Index Page for this controller.
@@ -22,12 +23,44 @@ class Dashboard extends CI_Controller {
 	{
 		$data = array();
 		$data['section'] = "default";
-		$this->load->view('dashboard/dashboard',$data);
+		$this->load->view('dashboard/dashboard', $data);
 	}
 
-	public function patients(){
-		$data = array();
-		$data['section'] = "patients";
-		$this->load->view('dashboard/dashboard',$data);
-	}	
+	public function patients()
+	{
+		//todo: get Patients in the system :: 
+
+
+
+		$curl = curl_init();
+
+		curl_setopt_array($curl, array(
+			CURLOPT_URL => "https://ultraaligners.com/public/ultraaligners/users?meta=total_count%2Cresult_count%2Cfilter_count&limit=200&offset=0&fields=role.*%2Cfirst_name.*%2Clast_name.*%2Cid&filter%5Brole%5D%5Bcontains%5D=patients",
+			CURLOPT_RETURNTRANSFER => true,
+			CURLOPT_ENCODING => "",
+			CURLOPT_MAXREDIRS => 10,
+			CURLOPT_TIMEOUT => 30,
+			CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+			CURLOPT_CUSTOMREQUEST => "GET",
+			CURLOPT_HTTPHEADER => array(
+				"cache-control: no-cache",
+				"content-type: application/json",
+				"postman-token: 36e711c8-9380-d2fa-4277-364f70d8824c"
+			),
+		));
+
+		$response = curl_exec($curl);
+		$err = curl_error($curl);
+
+		curl_close($curl);
+
+		if ($err) {
+			echo "cURL Error #:" . $err;
+		} else {
+			echo $response;
+			$data = array();
+			$data['section'] = "patients";
+			$this->load->view('dashboard/dashboard', $data);
+		}
+	}
 }
