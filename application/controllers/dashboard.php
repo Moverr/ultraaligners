@@ -20,6 +20,12 @@ class Dashboard extends CI_Controller {
 	 */
 	public function index()
 	{
+		$data = array();
 		$this->load->view('dashboard/dashboard');
 	}
+
+	public function patients(){
+		$data = array();
+		$this->load->view('dashboard/dashboard',$data);
+	}	
 }
