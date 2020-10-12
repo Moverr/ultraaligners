@@ -4,6 +4,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 class Auth extends CI_Controller
 {
 
+
 	/**
 	 * Index Page for this controller.
 	 *
@@ -21,6 +22,8 @@ class Auth extends CI_Controller
 	 */
 	public function index()
 	{
+		$this->load->library('session');
+
 		if (isset($_POST['username'])) {
 			$data = filter_forwarded_data($this);
 			var_dump(($this->input->post('username')));
@@ -31,6 +34,13 @@ class Auth extends CI_Controller
 			if ($username != "" && $password != "") {
 				//todo: send email to backend
 
+				$newdata = array( 
+					'email'  => $username, 
+					'password'     => $password, 
+					'mode' => 'token'
+				 );  
+
+				 
 
 				$curl = curl_init();
 
@@ -42,7 +52,7 @@ class Auth extends CI_Controller
 					CURLOPT_TIMEOUT => 30,
 					CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
 					CURLOPT_CUSTOMREQUEST => "POST",
-					CURLOPT_POSTFIELDS => "{\"email\":\"moverr@gmail.com\",\"password\":\"P@ssword?123\",\"mode\":\"token\"}",
+					CURLOPT_POSTFIELDS => $newdata,
 					CURLOPT_HTTPHEADER => array(
 						"cache-control: no-cache",
 						"content-type: application/json"
