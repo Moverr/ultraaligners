@@ -26,22 +26,14 @@ class Auth extends CI_Controller
 
 		if (isset($_POST['username'])) {
 			$data = filter_forwarded_data($this);
-			var_dump(($this->input->post('username')));
+			//var_dump(($this->input->post('username')));
 
 			$username = $this->input->post('username');
 			$password = $this->input->post('password');
 
 			if ($username != "" && $password != "") {
 				//todo: send email to backend
-
-				$newdata = array( 
-					'email'  => $username, 
-					'password'     => $password, 
-					'mode' => 'token'
-				 );  
-
-				 
-
+ 
 				$curl = curl_init();
 
 				curl_setopt_array($curl, array(
@@ -52,7 +44,7 @@ class Auth extends CI_Controller
 					CURLOPT_TIMEOUT => 30,
 					CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
 					CURLOPT_CUSTOMREQUEST => "POST",
-					CURLOPT_POSTFIELDS => $newdata,
+					CURLOPT_POSTFIELDS => "{\"email\":\"".$username."\",\"password\":\"".$password."\",\"mode\":\"token\"}",
 					CURLOPT_HTTPHEADER => array(
 						"cache-control: no-cache",
 						"content-type: application/json"
@@ -67,12 +59,22 @@ class Auth extends CI_Controller
 
 				if ($err) {
 					echo "cURL Error #:" . $err;
+					$this->load->view('auth/login',$err);
+					 
 				} else {
-					echo $response;
+					$resp_err = json_decode($response);
+					
+				
+					if(isset($resp_err->error->message)){
+						$data['error'] =  $resp_err->error->message;
+						$this->load->view('auth/login',$data);
+					}
+					
+					
 				}
 			}
 
-			$this->load->view('auth/login');
+		
 		} else {
 			$this->load->view('auth/login');
 		}
