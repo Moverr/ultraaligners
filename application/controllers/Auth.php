@@ -26,8 +26,7 @@ class Auth extends CI_Controller
 
 		if (isset($_POST['username'])) {
 			$data = filter_forwarded_data($this);
-			//var_dump(($this->input->post('username')));
-
+		
 			$username = $this->input->post('username');
 			$password = $this->input->post('password');
 
@@ -69,6 +68,24 @@ class Auth extends CI_Controller
 						$data['error'] =  $resp_err->error->message;
 						$this->load->view('auth/login',$data);
 					}else{
+						//todo: set sessions  ::
+
+						var_dump($response);
+
+
+						$newdata = array( 
+							'username'  => 'johndoe', 
+							'first_name'  => 'johndoe', 
+							'last_name'  => 'johndoe', 
+							'email'  => 'johndoe', 
+							'token'     => 'johndoe@some-site.com', 
+							'logged_in' => TRUE
+						 );  
+						 
+						 $this->session->set_userdata($newdata);
+
+
+
 						$this->load->view('auth/login');
 					}
 					
