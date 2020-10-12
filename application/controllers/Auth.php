@@ -24,6 +24,16 @@ class Auth extends CI_Controller
 		if (isset($_POST['username'])) {
 			$data = filter_forwarded_data($this);
 			var_dump(($this->input->post('username')));
+
+			$username = $this->input->post('username');
+			$password = $this->input->post('password');
+
+			if ($username != "" && $password != "") {
+				//todo: send email to backend
+
+			}
+
+			$this->load->view('auth/login');
 		} else {
 			$this->load->view('auth/login');
 		}
