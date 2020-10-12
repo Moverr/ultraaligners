@@ -74,7 +74,7 @@ class Auth extends CI_Controller
 							'first_name'  => $data_res->data->user->first_name,
 							'last_name'  => $data_res->data->user->last_name,
 							'email'  => $data_res->data->user->email,
-							'role'  => $data_res->data->user->role,
+							'role'  => 'bearer '.$data_res->data->user->role,
 							'token'     => $data_res->data->token,
 							'logged_in' => TRUE
 						);
@@ -93,11 +93,11 @@ class Auth extends CI_Controller
 			$email = $this->session->userdata('email');
 			$logged_in = $this->session->userdata('logged_in');
 			 if(isset($token) && isset($email) && isset($logged_in) && $logged_in == TRUE ){
-				redirect(base_url() . "dashboard");
+				//redirect(base_url() . "dashboard");
 			 }else{
-				$this->load->view('auth/login');
+				
 			 }
-
+			 $this->load->view('auth/login');
 			
 		}
 	}

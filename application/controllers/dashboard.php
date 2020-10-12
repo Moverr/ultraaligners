@@ -30,7 +30,10 @@ class Dashboard extends CI_Controller
 	{
 		//todo: get Patients in the system :: 
 
-
+		$this->load->library('session');
+		$token = $this->session->userdata('token');
+		$email = $this->session->userdata('email');
+		$logged_in = $this->session->userdata('logged_in');
 
 		$curl = curl_init();
 
@@ -43,9 +46,9 @@ class Dashboard extends CI_Controller
 			CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
 			CURLOPT_CUSTOMREQUEST => "GET",
 			CURLOPT_HTTPHEADER => array(
+				"authorization: ".$token, 
 				"cache-control: no-cache",
-				"content-type: application/json",
-				"postman-token: 36e711c8-9380-d2fa-4277-364f70d8824c"
+				"content-type: application/json" 
 			),
 		));
 
