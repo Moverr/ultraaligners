@@ -69,16 +69,13 @@ class Auth extends CI_Controller
 						$this->load->view('auth/login',$data);
 					}else{
 						//todo: set sessions  ::
-
-						var_dump($response);
-
-
-						$newdata = array( 
-							'username'  => 'johndoe', 
-							'first_name'  => 'johndoe', 
-							'last_name'  => 'johndoe', 
-							'email'  => 'johndoe', 
-							'token'     => 'johndoe@some-site.com', 
+						$data_res = json_decode($response);
+					  
+						$newdata = array( 							 
+							'first_name'  => $data_res->data->user->first_name, 
+							'last_name'  => $data_res->data->user->last_name, 
+							'email'  => $data_res->data->user->email, 
+							'token'     => $data_res->data->token, 
 							'logged_in' => TRUE
 						 );  
 						 
