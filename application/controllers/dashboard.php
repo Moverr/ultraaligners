@@ -61,7 +61,8 @@ class Dashboard extends CI_Controller
 		if ($err) {
 			echo "cURL Error #:" . $err;
 		} else {
-			echo $response;
+			$responsedata =  json_decode($response);
+			var_dump($responsedata);
 			$data = array();
 			$data['section'] = "patients";
 			$this->load->view('dashboard/dashboard', $data);
