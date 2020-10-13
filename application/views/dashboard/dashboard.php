@@ -131,8 +131,8 @@ defined('BASEPATH') or exit('No direct script access allowed');
 				</div>
 
 					<!-- Enquiries  -->
-					<div class="list-item">	<a href="#" class="list-group-item list-group-item-action   google-drive-opener">Appointments <span class="badge badge-light badge-pill">14</span></a> 
-				</div>
+					<div class="list-item">	<a href="<?=base_url()?>dashboard/appointments"  class="list-group-item list-group-item-action   google-drive-opener">Appointments <span class="badge badge-light badge-pill">14</span></a> 
+		</div>
 
 
 			</div>
@@ -147,6 +147,12 @@ defined('BASEPATH') or exit('No direct script access allowed');
 					 	$this->load->view("enquiries/enquiries");
 				 
 					break;
+					case "appointments":
+						$this->load->view("appointments/appointments");
+				
+				   break;
+
+					
 					default:
 					$this->load->view("addons/public_footer");
 				break;
