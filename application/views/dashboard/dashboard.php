@@ -113,51 +113,51 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 	<div class="container-fluid">
 
-		<div class="row">  
-			<div class="col-md-12"  style="margin-bottom:20px;">
+		<div class="row">
+			<div class="col-md-12" style="margin-bottom:20px;">
 				<ul class="nav nav-pills">
 					<li role="presentation" class="active"><a href="#">Home</a></li>
 					<li role="presentation"><a href="#">Profile</a></li>
 					<li role="presentation"><a href="#">Messages</a></li>
 				</ul>
 			</div>
- 
+
 			<div class="col-md-2">
 				<!-- Patients  -->
-				<div class="list-item">	<a href="<?=base_url()?>dashboard/patients" class="list-group-item list-group-item-action   google-drive-opener">Paients <span class="badge badge-light badge-pill"><?=$meta->result_count; ?></span></a> 
+				<div class="list-item"> <a href="<?= base_url() ?>dashboard/patients" class="list-group-item list-group-item-action   google-drive-opener">Paients <span class="badge badge-light badge-pill"><?= $meta->result_count; ?></span></a>
 				</div>
 				<!-- Enquiries  -->
-				<div class="list-item">	<a href="<?=base_url()?>dashboard/enquiries"  class="list-group-item list-group-item-action   google-drive-opener">Enquiries <span class="badge badge-light badge-pill">14</span></a> 
+				<div class="list-item"> <a href="<?= base_url() ?>dashboard/enquiries" class="list-group-item list-group-item-action   google-drive-opener">Enquiries <span class="badge badge-light badge-pill">14</span></a>
 				</div>
 
-					<!-- Enquiries  -->
-					<div class="list-item">	<a href="<?=base_url()?>dashboard/appointments"  class="list-group-item list-group-item-action   google-drive-opener">Appointments <span class="badge badge-light badge-pill">14</span></a> 
-		</div>
+				<!-- Enquiries  -->
+				<div class="list-item"> <a href="<?= base_url() ?>dashboard/appointments" class="list-group-item list-group-item-action   google-drive-opener">Appointments <span class="badge badge-light badge-pill">14</span></a>
+				</div>
 
 
 			</div>
 			<div class="col-md-9">
 				<h5>Dashboard </h5>
 				<?php
-				switch($section){
+				switch ($section) {
 					case "patients":
 						$this->load->view("patients/patients");
-					break;
+						break;
 					case "enquiries":
-					 	$this->load->view("enquiries/enquiries");
-				 
-					break;
+						$this->load->view("enquiries/enquiries");
+
+						break;
 					case "appointments":
 						$this->load->view("appointments/appointments");
-				
-				   break;
 
-					
+						break;
+
+
 					default:
-					$this->load->view("addons/public_footer");
-				break;
+						$this->load->view("addons/public_footer");
+						break;
 				}
-				
+
 				?>
 			</div>
 

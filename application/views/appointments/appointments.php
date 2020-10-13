@@ -1,4 +1,4 @@
-<h1> Manage Enquiries </h1>
+<h1> Manage Appointments </h1>
 <div class="container-fluid">
 	<div class="row">
 		<div class="col-md-12">
