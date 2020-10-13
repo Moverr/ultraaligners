@@ -1,7 +1,8 @@
-<h1> Manage Appointments </h1>
+<h1> Manage Enquiries </h1>
 <div class="container-fluid">
 	<div class="row">
 		<div class="col-md-12">
+			<button class="btn btn-primary">Add</button>
 			<table class="table">
 				<thead>
 					<tr>
@@ -9,89 +10,79 @@
 							#
 						</th>
 						<th>
-							Product
+							Patient
 						</th>
 						<th>
-							Payment Taken
+							Email
+						</th>
+						<th>
+							Title
+						</th>
+						<th>
+							Details
 						</th>
 						<th>
 							Status
 						</th>
 					</tr>
 				</thead>
+
 				<tbody>
-					<tr>
-						<td>
-							1
-						</td>
-						<td>
-							TB - Monthly
-						</td>
-						<td>
-							01/04/2012
-						</td>
-						<td>
-							Default
-						</td>
-					</tr>
-					<tr class="table-active">
-						<td>
-							1
-						</td>
-						<td>
-							TB - Monthly
-						</td>
-						<td>
-							01/04/2012
-						</td>
-						<td>
-							Approved
-						</td>
-					</tr>
-					<tr class="table-success">
-						<td>
-							2
-						</td>
-						<td>
-							TB - Monthly
-						</td>
-						<td>
-							02/04/2012
-						</td>
-						<td>
-							Declined
-						</td>
-					</tr>
-					<tr class="table-warning">
-						<td>
-							3
-						</td>
-						<td>
-							TB - Monthly
-						</td>
-						<td>
-							03/04/2012
-						</td>
-						<td>
-							Pending
-						</td>
-					</tr>
-					<tr class="table-danger">
-						<td>
-							4
-						</td>
-						<td>
-							TB - Monthly
-						</td>
-						<td>
-							04/04/2012
-						</td>
-						<td>
-							Call in to confirm
-						</td>
-					</tr>
+
+					<?php
+					foreach ($data as $record) {
+					?>
+						<tr>
+							<td>
+								1
+							</td>
+							<td>
+								<?=@$record->patient->first_name; ?> <?=@$record->patient->last_name; ?>
+							</td>
+							<td>
+								<?=@$record->patient->email; ?>  
+							</td>
+							<td>
+								<?=@$record->title; ?>
+							</td>
+							<td>
+							<?=@$record->details; ?>
+							</td>
+							<td>
+							ACTIVE
+							</td>
+						</tr>
+					<?php
+
+					}
+
+					?>
+ 
+				 
 				</tbody>
 			</table>
+
+			<nav>
+				<ul class="pagination">
+					<li>
+						<a href="#" aria-label="Previous">
+							<span aria-hidden="true">&laquo;</span>
+						</a>
+					</li>
+					<li><a href="#">1</a></li>
+					<li><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">4</a></li>
+					<li><a href="#">5</a></li>
+					<li>
+						<a href="#" aria-label="Next">
+							<span aria-hidden="true">&raquo;</span>
+						</a>
+					</li>
+				</ul>
+			</nav>
+
+
 		</div>
 	</div>
 </div>
