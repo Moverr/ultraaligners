@@ -143,6 +143,10 @@ defined('BASEPATH') or exit('No direct script access allowed');
 					case "patients":
 						$this->load->view("patients/patients");
 					break;
+					case "enquiries":
+					 	$this->load->view("enquiries/enquiries");
+				 
+					break;
 					default:
 					$this->load->view("addons/public_footer");
 				break;

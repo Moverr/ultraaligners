@@ -115,7 +115,7 @@ class Dashboard extends CI_Controller
 
 
 			$data = array();
-			$data['section'] = "patients";
+			$data['section'] = "enquiries";
 			$data['meta'] = $responsedata->meta;
 			$data['data'] = $responsedata->data;
 
