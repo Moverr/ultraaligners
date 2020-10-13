@@ -10,17 +10,22 @@
 							#
 						</th>
 						<th>
-							Product
+							First Name
 						</th>
 						<th>
-							Payment Taken
+							 Last Name
 						</th>
 						<th>
-							Status
+							Email Address 
 						</th>
 					</tr>
 				</thead>
+
 				<tbody>
+
+				<?php 
+
+				?>
 					<tr>
 						<td>
 							1

@@ -63,8 +63,13 @@ class Dashboard extends CI_Controller
 		} else {
 			$responsedata =  json_decode($response);
 			var_dump($responsedata);
+
+
 			$data = array();
 			$data['section'] = "patients";
+			$data['meta'] = $responsedata->meta;
+			$data['data'] = $responsedata->data;
+
 			$this->load->view('dashboard/dashboard', $data);
 		}
 	}
