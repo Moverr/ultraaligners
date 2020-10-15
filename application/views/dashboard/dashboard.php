@@ -148,6 +148,11 @@ defined('BASEPATH') or exit('No direct script access allowed');
 					case "patients":
 						$this->load->view("patients/patients");
 						break;
+
+					case "patient_form":
+						$this->load->view("patients/addpatient");
+
+						break;
 					case "enquiries":
 						$this->load->view("enquiries/enquiries");
 
@@ -156,16 +161,20 @@ defined('BASEPATH') or exit('No direct script access allowed');
 						$this->load->view("appointments/appointments");
 
 						break;
-						case "progress":
-							$this->load->view("progress/progress");
-	
-							break;
+					case "progress":
+						$this->load->view("progress/progress");
 
-						
+						break;
+
+
+
+
+
+
 					default:
-						 ?>
-						 <p> Welcome to Dashboard </p>
-						 <?php
+				?>
+						<p> Welcome to Dashboard </p>
+				<?php
 						break;
 				}
 
