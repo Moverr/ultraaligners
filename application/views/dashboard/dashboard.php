@@ -124,7 +124,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 			<div class="col-md-2">
 				<!-- Patients  -->
-				<div class="list-item"> <a href="<?= base_url() ?>dashboard/patients" class="list-group-item list-group-item-action   google-drive-opener">Paients <span class="badge badge-light badge-pill"><?= $meta->result_count; ?></span></a>
+				<div class="list-item"> <a href="<?= base_url() ?>dashboard/patients" class="list-group-item list-group-item-action   google-drive-opener">Paients <span class="badge badge-light badge-pill"> 14</span></a>
 				</div>
 				<!-- Enquiries  -->
 				<div class="list-item"> <a href="<?= base_url() ?>dashboard/enquiries" class="list-group-item list-group-item-action   google-drive-opener">Enquiries <span class="badge badge-light badge-pill">14</span></a>
@@ -133,6 +133,11 @@ defined('BASEPATH') or exit('No direct script access allowed');
 				<!-- Enquiries  -->
 				<div class="list-item"> <a href="<?= base_url() ?>dashboard/appointments" class="list-group-item list-group-item-action   google-drive-opener">Appointments <span class="badge badge-light badge-pill">14</span></a>
 				</div>
+
+				<!-- Patient Progress  -->
+				<div class="list-item"> <a href="<?= base_url() ?>dashboard/progress" class="list-group-item list-group-item-action   google-drive-opener">Patient Progress <span class="badge badge-light badge-pill">14</span></a>
+				</div>
+
 
 
 			</div>
@@ -151,10 +156,16 @@ defined('BASEPATH') or exit('No direct script access allowed');
 						$this->load->view("appointments/appointments");
 
 						break;
+						case "progress":
+							$this->load->view("progress/progress");
+	
+							break;
 
-
+						
 					default:
-						$this->load->view("addons/public_footer");
+						 ?>
+						 <p> Welcome to Dashboard </p>
+						 <?php
 						break;
 				}
 
