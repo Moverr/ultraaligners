@@ -2,7 +2,7 @@
 <div class="container-fluid">
 	<div class="row">
 		<div class="col-md-12">
-			<a href="<?=base_url();?>patient" class="btn btn-primary">Add</a>
+			<a href="<?= base_url(); ?>patient" class="btn btn-primary">Add</a>
 			<table class="table">
 				<thead>
 					<tr>
@@ -24,29 +24,33 @@
 				<tbody>
 
 					<?php
-					foreach ($data as $record) {
+					if (isset($data)) {
+
+
+						foreach ($data as $record) {
 					?>
-						<tr>
-							<td>
-								1
-							</td>
-							<td>
-								<?=@$record->first_name; ?>
-							</td>
-							<td>
-							<?=@$record->last_name; ?>
-							</td>
-							<td>
-							<?=@$record->email; ?>
-							</td>
-						</tr>
+							<tr>
+								<td>
+									1
+								</td>
+								<td>
+									<?= @$record->first_name; ?>
+								</td>
+								<td>
+									<?= @$record->last_name; ?>
+								</td>
+								<td>
+									<?= @$record->email; ?>
+								</td>
+							</tr>
 					<?php
 
+						}
 					}
 
 					?>
- 
-				 
+
+
 				</tbody>
 			</table>
 
