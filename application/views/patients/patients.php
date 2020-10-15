@@ -2,7 +2,7 @@
 <div class="container-fluid">
 	<div class="row">
 		<div class="col-md-12">
-			<button class="btn btn-primary">Add</button>
+			<a href="<?=base_url();?>patient" class="btn btn-primary">Add</a>
 			<table class="table">
 				<thead>
 					<tr>
