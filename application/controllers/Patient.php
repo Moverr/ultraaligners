@@ -27,6 +27,5 @@ class Patient extends CI_Controller
 	}
 
 	 
-
 	
 }
