@@ -21,9 +21,14 @@ class Patient extends CI_Controller
 	 */
 	public function index()
 	{
-		$data = array();
-		$data['section'] = "patient_form";
-		$this->load->view('dashboard/dashboard', $data);
+		if(isset($_POST['firstname'])){
+
+		}else{
+			$data = array();
+			$data['section'] = "patient_form";
+			$this->load->view('dashboard/dashboard', $data);
+		}
+	
 	}
 
 	 

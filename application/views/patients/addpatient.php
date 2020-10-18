@@ -2,7 +2,7 @@
 <div class="container-fluid">
 	<div class="row">
 		<div class="col-md-12">
-			<form role="form">
+			<form role="form" method="POST">
 
 
 				<div class="form-group">
@@ -39,6 +39,8 @@
 					<label for="password">
 						Password
 					</label>
+					<br/>
+					<note>Make sure u copy this password to the patient</note>
 					<input type="text" class="form-control" id="password" name="password" />
 				</div>
 
