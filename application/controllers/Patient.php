@@ -21,16 +21,26 @@ class Patient extends CI_Controller
 	 */
 	public function index()
 	{
-		if(isset($_POST['firstname'])){
+		if (isset($_POST['firstname'])) {
+			//todo:
+			$data = filter_forwarded_data($this);
 
-		}else{
+			$username = $this->input->post('email');
+			$password = $this->input->post('password');
+
+			$first_name = $this->input->post('firstname');
+			$last_name = $this->input->post('lastname');
+			$email = $this->input->post('email');
+			$role = "5";
+			$password = $this->input->post('password');
+
+
+
+			
+		} else {
 			$data = array();
 			$data['section'] = "patient_form";
 			$this->load->view('dashboard/dashboard', $data);
 		}
-	
 	}
-
-	 
-	
 }
