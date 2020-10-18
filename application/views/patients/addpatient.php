@@ -6,18 +6,18 @@
 
 
 				<div class="form-group">
-					<label for="exampleInputEmail1">
+					<label for="firstname">
 						Firstname
 					</label>
-					<input type="text" class="form-control" id="firstname" />
+					<input type="text" class="form-control" id="firstname" name="firstname" />
 				</div>
 
 
 				<div class="form-group">
-					<label for="exampleInputEmail1">
+					<label for="lastname">
 						Lastname
 					</label>
-					<input type="text" class="form-control" id="lastname" />
+					<input type="text" class="form-control" id="lastname" name="lastname" />
 				</div>
 
 
@@ -25,10 +25,10 @@
 
 				<div class="form-group">
 
-					<label for="exampleInputEmail1">
+					<label for="email">
 						Email address
 					</label>
-					<input type="email" class="form-control" id="exampleInputEmail1" />
+					<input type="email" class="form-control" id="email" name="email" />
 				</div>
 
 
@@ -36,27 +36,12 @@
 
 				<div class="form-group">
 
-					<label for="exampleInputPassword1">
+					<label for="password">
 						Password
 					</label>
-					<input type="password" class="form-control" id="exampleInputPassword1" />
+					<input type="text" class="form-control" id="password" name="password" />
 				</div>
-				<div class="form-group">
 
-					<label for="exampleInputFile">
-						File input
-					</label>
-					<input type="file" class="form-control-file" id="exampleInputFile" />
-					<p class="help-block">
-						Example block-level help text here.
-					</p>
-				</div>
-				<div class="checkbox">
-
-					<label>
-						<input type="checkbox" /> Check me out
-					</label>
-				</div>
 				<button type="submit" class="btn btn-primary">
 					Submit
 				</button>
