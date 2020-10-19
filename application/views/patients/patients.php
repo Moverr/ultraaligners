@@ -18,6 +18,7 @@
 						<th>
 							Email Address
 						</th>
+						<th> Action </th>
 					</tr>
 				</thead>
 
@@ -28,10 +29,11 @@
 
 
 						foreach ($data as $record) {
+						 
 					?>
 							<tr>
 								<td>
-									1
+								<?= @$record->id; ?>
 								</td>
 								<td>
 									<?= @$record->first_name; ?>
@@ -41,6 +43,10 @@
 								</td>
 								<td>
 									<?= @$record->email; ?>
+								</td>
+								<td>
+									<a href="#" class="btn btn-success">EDIT</a> &nbsp;
+									<a href="#" class="btn btn-danger">DEL</a>
 								</td>
 							</tr>
 					<?php

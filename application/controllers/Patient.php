@@ -40,7 +40,9 @@ class Patient extends CI_Controller
 			  $random_string = chr(rand(65,90)) . chr(rand(65,90)) . chr(rand(65,90)) . chr(rand(65,90)) . chr(rand(65,90));
 			 
 
-			if( $username == "" || $password = "" || $first_name = "" ||  $last_name ="" ){
+			 
+
+			if( $_POST['firstname'] == "" ||  $_POST['lastname'] == ""  ){
 				//todo: make it succesful
 				$data = array();
 				$data['section'] = "patient_form";
@@ -58,7 +60,10 @@ class Patient extends CI_Controller
 					CURLOPT_TIMEOUT => 30,
 					CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
 					CURLOPT_CUSTOMREQUEST => "POST",
-					CURLOPT_POSTFIELDS => "{\"status\":\"active\",\"first_name\":\"".$first_name."\",\"last_name\":\"".$last_name."\",\"email\":\"".$username."\",\"role\":\"".$role."\",\"password\":\"".$password."\",\"token\":\"".$random_string."\"}",
+				//	CURLOPT_POSTFIELDS => "{\"status\":\"active\",\"first_name\":\"".$first_name."\",\"last_name\":\"".$last_name."\",\"email\":\"".$username."\",\"role\":\"".$role."\",\"password\":\"".$password."\",\"token\":\"".$random_string."\"}",
+					CURLOPT_POSTFIELDS => "{\"status\":\"active\",\"first_name\":\"".$_POST['firstname']."\",\"last_name\":\"".$_POST['lastname']."\",\"email\":\"".$username."\",\"role\":\"".$role."\",\"password\":\"".$password."\",\n\"token\":\"".$random_string."\"\n\t\n\t\n}",
+
+				
 					CURLOPT_HTTPHEADER => array(
 						"authorization:bearer ".$token,
 						"cache-control: no-cache",
