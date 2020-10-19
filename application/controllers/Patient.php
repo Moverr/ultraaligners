@@ -37,6 +37,7 @@ class Patient extends CI_Controller
 			$first_name = $this->input->post('firstname');
 			$last_name = $this->input->post('lastname');		 
 			$role = "5";
+			  $random_string = chr(rand(65,90)) . chr(rand(65,90)) . chr(rand(65,90)) . chr(rand(65,90)) . chr(rand(65,90));
 			 
 
 			if( $username == "" || $password = "" || $first_name = "" ||  $last_name ="" ){
@@ -57,9 +58,9 @@ class Patient extends CI_Controller
 					CURLOPT_TIMEOUT => 30,
 					CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
 					CURLOPT_CUSTOMREQUEST => "POST",
-					CURLOPT_POSTFIELDS => "{\"status\":\"active\",\"first_name\":\"".$first_name."\",\"last_name\":\"".$last_name."\",\"email\":\"".$username."\",\"role\":\"5\",\"password\":\"".$password."\"}",
+					CURLOPT_POSTFIELDS => "{\"status\":\"active\",\"first_name\":\"".$first_name."\",\"last_name\":\"".$last_name."\",\"email\":\"".$username."\",\"role\":\"".$role."\",\"password\":\"".$password."\",\"token\":\"".$random_string."\"}",
 					CURLOPT_HTTPHEADER => array(
-						"authorization: bearer",
+						"authorization:bearer ".$token,
 						"cache-control: no-cache",
 						"content-type: application/json"
 
@@ -68,12 +69,20 @@ class Patient extends CI_Controller
 
 				$response = curl_exec($curl);
 				$err = curl_error($curl);
-
-				curl_close($curl);
-
+				if($err){
+					var_dump($err);
+				}
+				else{
+				 
+					var_dump($response);
+	
+					curl_close($curl);
+	
+				}
+				
 			}
 
-
+			//redirect(base_url() . "dashboard/patients");
 
 
 		} else {
