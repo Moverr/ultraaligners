@@ -21,6 +21,12 @@ class Patient extends CI_Controller
 	 */
 	public function index()
 	{
+		$this->load->library('session');
+		$token = $this->session->userdata('token');
+		if(!isset($token)){
+			redirect(base_url() . "auth");
+		}
+
 		if (isset($_POST['firstname'])) {
 			//todo:
 			$data = filter_forwarded_data($this);
@@ -40,6 +46,30 @@ class Patient extends CI_Controller
 				$data['error'] = "Fill in the mandatory fields ";
 				$this->load->view('dashboard/dashboard', $data);
 			}else{
+
+				$curl = curl_init();
+
+				curl_setopt_array($curl, array(
+					CURLOPT_URL => "https://ultraaligners.com/public/ultraaligners/users",
+					CURLOPT_RETURNTRANSFER => true,
+					CURLOPT_ENCODING => "",
+					CURLOPT_MAXREDIRS => 10,
+					CURLOPT_TIMEOUT => 30,
+					CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+					CURLOPT_CUSTOMREQUEST => "POST",
+					CURLOPT_POSTFIELDS => "{\"status\":\"active\",\"first_name\":\"".$first_name."\",\"last_name\":\"".$last_name."\",\"email\":\"".$username."\",\"role\":\"5\",\"password\":\"".$password."\"}",
+					CURLOPT_HTTPHEADER => array(
+						"authorization: bearer",
+						"cache-control: no-cache",
+						"content-type: application/json"
+
+					),
+				));
+
+				$response = curl_exec($curl);
+				$err = curl_error($curl);
+
+				curl_close($curl);
 
 			}
 

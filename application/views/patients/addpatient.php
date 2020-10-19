@@ -2,6 +2,15 @@
 <div class="container-fluid">
 	<div class="row">
 		<div class="col-md-12">
+		<?php
+				if (isset($error)) {
+				?>
+					<div class="alert alert-danger" role="alert"><?= $error; ?></div>
+				<?php
+				}
+				?>
+
+
 			<form role="form" method="POST">
 
 
