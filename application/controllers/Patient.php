@@ -29,14 +29,23 @@ class Patient extends CI_Controller
 			$password = $this->input->post('password');
 
 			$first_name = $this->input->post('firstname');
-			$last_name = $this->input->post('lastname');
-			$email = $this->input->post('email');
+			$last_name = $this->input->post('lastname');		 
 			$role = "5";
-			$password = $this->input->post('password');
+			 
+
+			if( $username == "" || $password = "" || $first_name = "" ||  $last_name ="" ){
+				//todo: make it succesful
+				$data = array();
+				$data['section'] = "patient_form";
+				$data['error'] = "Fill in the mandatory fields ";
+				$this->load->view('dashboard/dashboard', $data);
+			}else{
+
+			}
 
 
 
-			
+
 		} else {
 			$data = array();
 			$data['section'] = "patient_form";
