@@ -70,20 +70,25 @@ class Patient extends CI_Controller
 				$response = curl_exec($curl);
 				$err = curl_error($curl);
 				if($err){
+					echo "..............................";
 					var_dump($err);
 				}
 				else{
-				 
-					var_dump($response);
-	
-					curl_close($curl);
-	
+				
+					$resp_err = json_decode($response);
+					if (isset($resp_err->error->message)) {
+						$data['error'] =  $resp_err->error->message;
+						$data['section'] = "patient_form";
+						$this->load->view('dashboard/dashboard', $data);
+					} else{
+						redirect(base_url() . "dashboard/patients");
+					}
+						
 				}
 				
 			}
 
-			//redirect(base_url() . "dashboard/patients");
-
+			 
 
 		} else {
 			$data = array();
