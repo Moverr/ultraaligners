@@ -4,17 +4,14 @@
 		<div class="col-md-12">
 
 			<form class="form-inline">
-				<a href="<?= base_url(); ?>patient" class="btn btn-primary">Add</a>
+				<a href="<?= base_url(); ?>patient" class="btn btn-default">Add</a>
+				&nbsp;&nbsp;
 
 				<div class="form-group">
-					<label for="exampleInputName2">Name</label>
-					<input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
-				</div>
-				<div class="form-group">
-					<label for="exampleInputEmail2">Email</label>
+					<label for="exampleInputEmail2">Search : </label>
 					<input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com">
 				</div>
-				<button type="submit" class="btn btn-default">Send invitation</button>
+				<button type="submit" class="btn btn-default">Search</button>
 			</form>
 
 
@@ -60,8 +57,8 @@
 									<?= @$record->email; ?>
 								</td>
 								<td>
-									<a href="#" class="btn btn-success">EDIT</a> &nbsp;
-									<a href="#" class="btn btn-danger">DEL</a>
+									<a href="#" class="btn btn-default">EDIT</a> &nbsp;
+									<a href="#" class="btn btn-default">DEL</a>
 								</td>
 							</tr>
 					<?php
