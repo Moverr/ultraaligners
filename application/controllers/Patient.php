@@ -24,6 +24,11 @@ class Patient extends CI_Controller
 			$data['section'] = "patient_form";
 			$this->load->view('dashboard/dashboard', $data);
 	}
+
+	public function del($id){
+		redirect(base_url() . "dashboard/patients");
+	}
+
 	public function index()
 	{
 		$this->load->library('session');
