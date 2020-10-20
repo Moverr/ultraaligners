@@ -19,6 +19,11 @@ class Patient extends CI_Controller
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
+	public function edit($id){
+		$data = array();
+			$data['section'] = "patient_form";
+			$this->load->view('dashboard/dashboard', $data);
+	}
 	public function index()
 	{
 		$this->load->library('session');

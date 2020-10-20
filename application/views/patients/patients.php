@@ -57,7 +57,7 @@
 									<?= @$record->email; ?>
 								</td>
 								<td>
-									<a href="#" class="btn btn-default">EDIT</a> &nbsp;
+									<a href="<?=base_url();?>patient/edit/<?=@$record->id?>" class="btn btn-default">EDIT</a> &nbsp;
 									<a href="#" class="btn btn-default">DEL</a>
 								</td>
 							</tr>
