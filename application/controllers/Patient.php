@@ -29,6 +29,11 @@ class Patient extends CI_Controller
 		redirect(base_url() . "dashboard/patients");
 	}
 
+	public function search($searchquery){
+		redirect(base_url() . "dashboard/patients");
+	}
+
+
 	public function index()
 	{
 		$this->load->library('session');

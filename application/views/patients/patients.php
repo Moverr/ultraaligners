@@ -3,13 +3,13 @@
 	<div class="row">
 		<div class="col-md-12">
 
-			<form class="form-inline">
+			<form class="form-inline" method="POST" action="<?=base_url()?>patient/search">
 				<a href="<?= base_url(); ?>patient" class="btn btn-default">Add</a>
 				&nbsp;&nbsp;
 
 				<div class="form-group">
 					<label for="exampleInputEmail2">Search : </label>
-					<input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com">
+					<input type="search" class="form-control" id="search" name="search" placeholder="Search">
 				</div>
 				<button type="submit" class="btn btn-default">Search</button>
 			</form>
