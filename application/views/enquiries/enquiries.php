@@ -32,7 +32,11 @@
 							Details
 						</th>
 						<th>
-							Status
+							Closed
+						</th>
+
+						<th>
+							Action
 						</th>
 					</tr>
 				</thead>
@@ -57,8 +61,20 @@
 							<?=@$record->details; ?>
 							</td>
 							<td>
-							ACTIVE
+							<?php
+							if(isset($record->closed) && $record->closed == 1){
+								echo "true";
+							}else{
+								echo "false";
+							}
+							
+							 ?>
 							</td>
+							<td>
+									<a href="<?=base_url();?>patient/edit/<?=@$record->id?>" class="btn btn-default">CLOSE</a> &nbsp;
+									<a href="<?=base_url();?>patient/del/<?=@$record->id?>" class="btn btn-default">RESPONSES</a>
+								</td>
+
 						</tr>
 					<?php
 
