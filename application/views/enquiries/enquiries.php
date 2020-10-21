@@ -23,6 +23,9 @@
 							#
 						</th>
 						<th>
+							Email
+						</th>
+						<th>
 							Title
 						</th>
 						<th>
@@ -41,8 +44,12 @@
 					?>
 						<tr>
 							<td>
-								1
+							<?=@$record->id; ?>
 							</td>
+							<td>
+								<?=@$record->email; ?>
+							</td>
+
 							<td>
 								<?=@$record->title; ?>
 							</td>
