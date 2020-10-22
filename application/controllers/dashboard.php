@@ -142,7 +142,7 @@ class Dashboard extends CI_Controller
 
 		$this->load->library('session');
 		$token = $this->session->userdata('token');
-	//	echo $token;
+	
 		$email = $this->session->userdata('email');
 		$logged_in = $this->session->userdata('logged_in');
 
@@ -192,7 +192,7 @@ class Dashboard extends CI_Controller
 
 		$this->load->library('session');
 		$token = $this->session->userdata('token');
-		//echo $token;
+	
 		$email = $this->session->userdata('email');
 		$logged_in = $this->session->userdata('logged_in');
 

@@ -2,7 +2,20 @@
 <div class="container-fluid">
 	<div class="row">
 		<div class="col-md-12">
-			<button class="btn btn-primary">Add</button>
+
+		<form class="form-inline" method="GET" action="<?=base_url()?>enquiry/search">
+				<!-- <a href="<?= base_url(); ?>enquiry" class="btn btn-default">Add</a> -->
+				&nbsp;&nbsp;
+
+				<div class="form-group">
+					<label for="exampleInputEmail2">Search : </label>
+					<input type="search" class="form-control" id="search" name="search" placeholder="Search">
+				</div>
+				<button type="submit" class="btn btn-default">Search</button>
+			</form>
+
+
+			 
 			<table class="table">
 				<thead>
 					<tr>
@@ -15,14 +28,15 @@
 						<th>
 							Email
 						</th>
-						<th>
-							Title
-						</th>
+						 
 						<th>
 							Details
 						</th>
 						<th>
 							Status
+						</th>
+						<th>
+							Action
 						</th>
 					</tr>
 				</thead>
@@ -42,14 +56,15 @@
 							<td>
 								<?=@$record->patient->email; ?>  
 							</td>
-							<td>
-								<?=@$record->title; ?>
-							</td>
+							 
 							<td>
 							<?=@$record->details; ?>
 							</td>
 							<td>
 							ACTIVE
+							</td>
+							<td><a href="<?=base_url();?>patient/edit/<?=@$record->id?>" class="btn btn-default">CLOSE</a> &nbsp;
+									<a href="<?=base_url();?>patient/del/<?=@$record->id?>" class="btn btn-default">RESPONSES</a>
 							</td>
 						</tr>
 					<?php
