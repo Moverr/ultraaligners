@@ -3,7 +3,7 @@
 	<div class="row">
 		<div class="col-md-12">
 
-		<form class="form-inline" method="GET" action="<?=base_url()?>enquiry/search">
+			<form class="form-inline" method="GET" action="<?= base_url() ?>enquiry/search">
 				<!-- <a href="<?= base_url(); ?>enquiry" class="btn btn-default">Add</a> -->
 				&nbsp;&nbsp;
 
@@ -15,7 +15,7 @@
 			</form>
 
 
-			 
+
 			<table class="table">
 				<thead>
 					<tr>
@@ -28,7 +28,7 @@
 						<th>
 							Email
 						</th>
-						 
+
 						<th>
 							Details
 						</th>
@@ -51,20 +51,21 @@
 								1
 							</td>
 							<td>
-								<?=@$record->patient->first_name; ?> <?=@$record->patient->last_name; ?>
+								<?= @$record->patient->first_name; ?> <?= @$record->patient->last_name; ?>
 							</td>
 							<td>
-								<?=@$record->patient->email; ?>  
+								<?= @$record->patient->email; ?>
 							</td>
-							 
+
 							<td>
-							<?=@$record->details; ?>
+								<?= @$record->details; ?>
 							</td>
 							<td>
-							ACTIVE
+								ACTIVE
 							</td>
-							<td><a href="<?=base_url();?>patient/edit/<?=@$record->id?>" class="btn btn-default">CLOSE</a> &nbsp;
-									<a href="<?=base_url();?>patient/del/<?=@$record->id?>" class="btn btn-default">RESPONSES</a>
+							<td>
+								<a href="<?= base_url(); ?>patient/edit/<?= @$record->id ?>" class="btn btn-default">EDIT</a> &nbsp;
+								<a href="<?= base_url(); ?>patient/del/<?= @$record->id ?>" class="btn btn-default">DEL</a>
 							</td>
 						</tr>
 					<?php
@@ -72,8 +73,8 @@
 					}
 
 					?>
- 
-				 
+
+
 				</tbody>
 			</table>
 
