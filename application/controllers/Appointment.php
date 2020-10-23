@@ -146,7 +146,7 @@ class Appointment extends CI_Controller
 					$resp_err = json_decode($response);
 					if (isset($resp_err->error->message)) {
 						$data['error'] =  $resp_err->error->message;
-						$data['section'] = "patient_form";
+						$data['section'] = "appointment_form";
 						$this->load->view('dashboard/dashboard', $data);
 					} else{
 						redirect(base_url() . "dashboard/patients");
