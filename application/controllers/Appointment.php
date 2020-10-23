@@ -160,7 +160,7 @@ class Appointment extends CI_Controller
 
 		} else {
 			$data = array();
-			$data['section'] = "patient_form";
+			$data['section'] = "appointment_form";
 			$this->load->view('dashboard/dashboard', $data);
 		}
 	}
