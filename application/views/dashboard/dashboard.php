@@ -160,7 +160,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 						$this->load->view("patients/addpatient");
 						break;
 					case "appointment_form":
-						$this->load->view("patients/addpatient");
+						$this->load->view("appointments/addappointment");
 						break;
 					case "enquiries":
 						$this->load->view("enquiries/enquiries");
