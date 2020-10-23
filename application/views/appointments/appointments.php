@@ -42,6 +42,11 @@
 						<th>
 							Status
 						</th>
+
+						<th>
+							Action
+						</th>
+
 					</tr>
 				</thead>
 
@@ -74,8 +79,14 @@
 
 							 
 							<td>
-							ACTIVE
+							<?=@$record->status; ?>
 							</td>
+
+							<td>
+									<a href="<?=base_url();?>patient/edit/<?=@$record->id?>" class="btn btn-default">EDIT</a> &nbsp;
+									<a href="<?=base_url();?>patient/del/<?=@$record->id?>" class="btn btn-default">CANCEL</a>
+								</td>
+
 						</tr>
 					<?php
 
