@@ -2,11 +2,14 @@
 <div class="container-fluid">
 	<div class="row">
 		<div class="col-md-12">
-		<form class="form-inline" method="GET" action="<?=base_url()?>enquiry/search">
+			<form class="form-inline" method="GET" action="<?= base_url() ?>enquiry/search">
 				<!-- <a href="<?= base_url(); ?>enquiry" class="btn btn-default">Add</a> -->
 				&nbsp;&nbsp;
 
 				<div class="form-group">
+					<a href="<?= base_url(); ?>patient" class="btn btn-default">Add</a>
+					&nbsp;&nbsp;
+
 					<label for="exampleInputEmail2">Search : </label>
 					<input type="search" class="form-control" id="search" name="search" placeholder="Search">
 				</div>
@@ -23,7 +26,7 @@
 						</th>
 						<th>
 							Patient
-						</th>					 
+						</th>
 						<th>
 							Title
 						</th>
@@ -60,32 +63,32 @@
 								1
 							</td>
 							<td>
-								<?=@$record->patient->first_name; ?> <?=@$record->patient->last_name; ?>
-							</td>
-						 
-							<td>
-								<?=@$record->title; ?>
-							</td>
-							<td>
-							<?=@$record->details; ?>
+								<?= @$record->patient->first_name; ?> <?= @$record->patient->last_name; ?>
 							</td>
 
 							<td>
-							<?=@$record->start_date; ?>
+								<?= @$record->title; ?>
 							</td>
 							<td>
-							<?=@$record->duration; ?>
-							</td>
-
-							 
-							<td>
-							<?=@$record->status; ?>
+								<?= @$record->details; ?>
 							</td>
 
 							<td>
-									<a href="<?=base_url();?>patient/edit/<?=@$record->id?>" class="btn btn-default">EDIT</a> &nbsp;
-									<a href="<?=base_url();?>patient/del/<?=@$record->id?>" class="btn btn-default">CANCEL</a>
-								</td>
+								<?= @$record->start_date; ?>
+							</td>
+							<td>
+								<?= @$record->duration; ?>
+							</td>
+
+
+							<td>
+								<?= @$record->status; ?>
+							</td>
+
+							<td>
+								<a href="<?= base_url(); ?>patient/edit/<?= @$record->id ?>" class="btn btn-default">EDIT</a> &nbsp;
+								<a href="<?= base_url(); ?>patient/del/<?= @$record->id ?>" class="btn btn-default">CANCEL</a>
+							</td>
 
 						</tr>
 					<?php
@@ -93,8 +96,8 @@
 					}
 
 					?>
- 
-				 
+
+
 				</tbody>
 			</table>
 
