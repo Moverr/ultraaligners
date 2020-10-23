@@ -11,16 +11,22 @@
 						</th>
 						<th>
 							Patient
-						</th>
-						<th>
-							Email
-						</th>
+						</th>					 
 						<th>
 							Title
 						</th>
 						<th>
 							Details
 						</th>
+
+						<th>
+							Event Data
+						</th>
+
+						<th>
+							Duration [Hrs]
+						</th>
+
 						<th>
 							Status
 						</th>
@@ -39,15 +45,22 @@
 							<td>
 								<?=@$record->patient->first_name; ?> <?=@$record->patient->last_name; ?>
 							</td>
-							<td>
-								<?=@$record->patient->email; ?>  
-							</td>
+						 
 							<td>
 								<?=@$record->title; ?>
 							</td>
 							<td>
 							<?=@$record->details; ?>
 							</td>
+
+							<td>
+							<?=@$record->start_date; ?>
+							</td>
+							<td>
+							<?=@$record->duration; ?>
+							</td>
+
+							 
 							<td>
 							ACTIVE
 							</td>
