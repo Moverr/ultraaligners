@@ -15,10 +15,12 @@
 
 
 				<div class="form-group">
-					<label for="firstname">
-						Firstname
+					<label for="patient">
+					Patient
 					</label>
-					<input type="text" class="form-control" id="firstname" name="firstname" />
+				 <select  class="form-control" id="patient" name="patient"  >
+						<option default="">PATIENT</option>
+				 </select>
 				</div>
 
 

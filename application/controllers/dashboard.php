@@ -180,7 +180,12 @@ class Dashboard extends CI_Controller
 			$data['meta'] = $responsedata->meta;
 			$data['data'] = $responsedata->data;
 
-			$this->load->view('dashboard/dashboard', $data);
+			if(!isset($data['data'])){
+				redirect(base_url() . "auth");
+			}else{
+				$this->load->view('dashboard/dashboard', $data);
+			}
+
 		}
 	}
 
@@ -230,7 +235,14 @@ class Dashboard extends CI_Controller
 			$data['meta'] = $responsedata->meta;
 			$data['data'] = $responsedata->data;
 
-			$this->load->view('dashboard/dashboard', $data);
+			if(!isset($data['data'])){
+				redirect(base_url() . "auth");
+			}else{
+				$this->load->view('dashboard/dashboard', $data);
+			}
+
+
+			 
 		}
 	}
 
