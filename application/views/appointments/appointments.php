@@ -3,7 +3,7 @@
 	<div class="row">
 		<div class="col-md-12">
 			<form class="form-inline" method="GET" action="<?= base_url() ?>appointment/search">
-				<!-- <a href="<?= base_url(); ?>enquiry" class="btn btn-default">Add</a> -->
+				 <a href="<?= base_url(); ?>appointment" class="btn btn-default">Add</a> 
 				&nbsp;&nbsp;
 
 				<div class="form-group">
