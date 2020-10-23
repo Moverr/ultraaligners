@@ -130,13 +130,20 @@ defined('BASEPATH') or exit('No direct script access allowed');
 				<div class="list-item"> <a href="<?= base_url() ?>dashboard/enquiries" class="list-group-item list-group-item-action   google-drive-opener">Enquiries <span class="badge badge-light badge-pill">14</span></a>
 				</div>
 
-				<!-- Enquiries  -->
-				<div class="list-item"> <a href="<?= base_url() ?>dashboard/appointments" class="list-group-item list-group-item-action   google-drive-opener">Product Tracker <span class="badge badge-light badge-pill">14</span></a>
+				<!-- Appointments  -->
+				<div class="list-item"> <a href="<?= base_url() ?>dashboard/appointments" class="list-group-item list-group-item-action   google-drive-opener">Appointments <span class="badge badge-light badge-pill">14</span></a>
 				</div>
+
 
 				<!-- Patient Progress  -->
 				<div class="list-item"> <a href="<?= base_url() ?>dashboard/progress" class="list-group-item list-group-item-action   google-drive-opener">Patient Progress <span class="badge badge-light badge-pill">14</span></a>
 				</div>
+
+
+				<!-- Product Tracking  -->
+				<div class="list-item"> <a href="<?= base_url() ?>dashboard/appointments" class="list-group-item list-group-item-action   google-drive-opener">Product Tracking <span class="badge badge-light badge-pill">14</span></a>
+				</div>
+
 
 
 
