@@ -44,7 +44,7 @@ class Appointment extends CI_Controller
 		$curl = curl_init();
 
 		curl_setopt_array($curl, array(
-			CURLOPT_URL => "https://ultraaligners.com/public/ultraaligners/users?meta=total_count,result_count,filter_count&limit=200&offset=0&fields=*.*,role.*,first_name.*,last_name.*,email.*,id&filter[role][contains]=patients&q=" . $quesry . "",
+			CURLOPT_URL => "https://ultraaligners.com/public/ultraaligners/items/appointments?meta=total_count,result_count,filter_count&limit=200&offset=0&fields=*.*&q=" . $quesry . "",
 			CURLOPT_RETURNTRANSFER => true,
 			CURLOPT_ENCODING => "",
 			CURLOPT_MAXREDIRS => 10,
@@ -71,7 +71,7 @@ class Appointment extends CI_Controller
 
 
 			$data = array();
-			$data['section'] = "patients";
+			$data['section'] = "appointments";
 			$data['meta'] = $responsedata->meta;
 			$data['data'] = $responsedata->data;
 			if (!isset($data['data'])) {
