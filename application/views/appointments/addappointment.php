@@ -1,4 +1,4 @@
-<h1> Add Enquiry </h1>
+<h1> Add Appointment </h1>
 <div class="container-fluid">
 	<div class="row">
 		<div class="col-md-12">
@@ -19,7 +19,17 @@
 					Patient
 					</label>
 				 <select  class="form-control" id="patient" name="patient"  >
-						<option default="">PATIENT</option>
+				 <?php
+					foreach ($data as $record) {
+						if($record->first_name != ""){
+
+						 
+					?>
+						<option default="">	<?= @$record->first_name." ".$record->last_name; ?></option>
+						<?php 
+					}
+				}
+					?>
 				 </select>
 				</div>
 
