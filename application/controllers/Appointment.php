@@ -90,10 +90,16 @@ class Appointment extends CI_Controller
 		if (!isset($token)) {
 			redirect(base_url() . "auth");
 		}
+	 
+	 
+		if(isset($_POST)){
+			$data = $_POST;
+		}
+
 
 		if (isset($_POST['firstname'])) {
 			//todo:
-			$data = filter_forwarded_data($this);
+		 
 
 			$username = $this->input->post('email');
 			$password = $this->input->post('password');
@@ -108,7 +114,7 @@ class Appointment extends CI_Controller
 
 			if ($_POST['firstname'] == "" ||  $_POST['lastname'] == "") {
 				//todo: make it succesful
-				$data = array();
+			 
 				$data['section'] = "patient_form";
 				$data['error'] = "Fill in the mandatory fields ";
 				$this->load->view('dashboard/dashboard', $data);
@@ -153,9 +159,13 @@ class Appointment extends CI_Controller
 					}
 				}
 			}
-		} else {
-			$data = array();
 
+			
+		} else {
+		
+
+			var_dump($data);
+			
 			$curl = curl_init();
 
 			curl_setopt_array($curl, array(
@@ -181,10 +191,7 @@ class Appointment extends CI_Controller
 				echo "cURL Error #:" . $err;
 			} else {
 				$responsedata =  json_decode($response);
-				//	var_dump($responsedata);
-
-
-				$data = array();
+				//	var_dump($responsedata); 
 			 
 				$data['meta'] = $responsedata->meta;
 				$data['data'] = $responsedata->data;

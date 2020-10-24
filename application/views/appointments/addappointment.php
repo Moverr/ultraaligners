@@ -1,6 +1,10 @@
 <h1> Add Appointment </h1>
 <div class="container-fluid">
 	<div class="row">
+		<?php
+
+//	echo $patient;
+?>
 		<div class="col-md-12">
 			<?php
 			if (isset($error)) {
@@ -18,14 +22,14 @@
 					<label for="patient">
 						Patient
 					</label>
-					<select class="form-control" id="patient" name="patient">
+					<select  required="true" class="form-control" id="patient" name="patient">
 						<?php
 						foreach ($data as $record) {
 							if ($record->first_name != "") {
 
 
 						?>
-								<option value="<?= @$record->id; ?>"> <?= @$record->first_name . " " . $record->last_name; ?></option>
+								<option <?php if(isset($patient)    ){ if($patient == $record->id) {echo  "selected=true"; } } ?>    value="<?= @$record->id; ?>"> <?= @$record->first_name . " " . $record->last_name; ?></option>
 						<?php
 							}
 						}
@@ -38,7 +42,7 @@
 					<label for="title">
 						Title
 					</label>
-					<input type="text" class="form-control" id="title" name="title" />
+					<input value="<?=@$title; ?>"  required="true" type="text" class="form-control" id="title" name="title" />
 				</div>
 
 
@@ -46,7 +50,7 @@
 					<label for="details">
 						Details
 					</label>
-					<textarea type="text" class="form-control" id="details" name="details"></textarea>
+					<textarea type="text" class="form-control" id="details" name="details"><?=@$details;?></textarea>
 				</div>
 
 
@@ -57,21 +61,21 @@
 					<label for="start_date">
 						Start Date
 					</label>
-					<input type="datetime-local" class="form-control" id="start_date" name="start_date" />
+					<input  value="<?=@date('mm/dd/yyyy',$start_date);; ?>"   required="true" type="datetime-local" class="form-control" id="start_date" name="start_date" />
 				</div>
 
 
 
 				<div class="form-group">
 					<label for="duration">
-						Duration
+						Duration <note>[Hrs]</note>
 					</label>
-					<input type="number" min="0" max="5" class="form-control" id="duration" name="duration" />
+					<input value="<?=@intval($duration); ?>" type="number" required="true" min="0" max="5" class="form-control" id="duration" name="duration" />
 				</div>
 
 
 
-
+		 
 
 
 
