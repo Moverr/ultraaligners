@@ -35,36 +35,26 @@
 
 
 				<div class="form-group">
-					<label for="lastname">
-						Lastname
+					<label for="title">
+						Title
 					</label>
-					<input type="text" class="form-control" id="lastname" name="lastname" />
+					<input type="text" class="form-control" id="title" name="title" />
 				</div>
 
-
-
-
+				
 				<div class="form-group">
-
-					<label for="email">
-						Email address
+					<label for="details">
+						Details
 					</label>
-					<input type="email" class="form-control" id="email" name="email" />
+					<textarea type="text" class="form-control" id="details" name="details" ></textarea>
 				</div>
 
 
 
 
-				<div class="form-group">
+ 
 
-					<label for="password">
-						Password
-					</label>
-					<br/>
-					<note>Make sure u copy this password to the patient</note>
-					<input type="text" class="form-control" id="password" name="password" />
-				</div>
-
+ 
 				<button type="submit" class="btn btn-primary">
 					Submit
 				</button>
