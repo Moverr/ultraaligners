@@ -141,7 +141,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 
 				<!-- Product Tracking  -->
-				<div class="list-item"> <a href="<?= base_url() ?>dashboard/appointments" class="list-group-item list-group-item-action   google-drive-opener">Product Tracking <span class="badge badge-light badge-pill">14</span></a>
+				<div class="list-item"> <a href="<?= base_url() ?>dashboard/tracking" class="list-group-item list-group-item-action   google-drive-opener">Product Tracking <span class="badge badge-light badge-pill">14</span></a>
 				</div>
 
 
@@ -179,6 +179,12 @@ defined('BASEPATH') or exit('No direct script access allowed');
 						$this->load->view("progress/progress");
 
 						break;
+
+						case "tracking":
+							$this->load->view("progress/tracking");
+	
+							break;
+
 
 
 
