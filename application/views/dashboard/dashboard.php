@@ -162,6 +162,11 @@ defined('BASEPATH') or exit('No direct script access allowed');
 					case "appointment_form":
 						$this->load->view("appointments/addappointment");
 						break;
+
+					case "progress_form":
+						$this->load->view("progress/addprogress");
+						break;
+
 					case "enquiries":
 						$this->load->view("enquiries/enquiries");
 

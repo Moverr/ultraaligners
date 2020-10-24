@@ -22,7 +22,7 @@ class Progress extends CI_Controller
 	public function edit($id)
 	{
 		$data = array();
-		$data['section'] = "appointment_form";
+		$data['section'] = "progress_form";
 		$this->load->view('dashboard/dashboard', $data);
 	}
 
@@ -113,7 +113,7 @@ class Progress extends CI_Controller
 
 			if ($patient == "" ||  $title == "") {
 				//todo: make it succesful			 
-				$data['section'] = "patient_form";
+				$data['section'] = "progress_form";
 				$data['error'] = "Fill in the mandatory fields ";
 				$this->load->view('dashboard/dashboard', $data);
 			} else {
@@ -150,7 +150,7 @@ class Progress extends CI_Controller
 					$resp_err = json_decode($response);
 					if (isset($resp_err->error->message)) {
 						$data['error'] =  $resp_err->error->message;
-						$data['section'] = "appointment_form";
+						$data['section'] = "progress_form";
 						$this->load->view('dashboard/dashboard', $data);
 					} else {
 						redirect(base_url() . "dashboard/appointments");
@@ -198,7 +198,7 @@ class Progress extends CI_Controller
 			}
 
 
-			$data['section'] = "appointment_form";
+			$data['section'] = "progress_form";
 			$this->load->view('dashboard/dashboard', $data);
 		}
 	}
