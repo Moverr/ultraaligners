@@ -83,8 +83,8 @@
 							</td>
 
 							<td>
-								<a href="<?= base_url(); ?>patient/edit/<?= @$record->id ?>" class="btn btn-default">EDIT</a> &nbsp;
-								<a href="<?= base_url(); ?>patient/del/<?= @$record->id ?>" class="btn btn-default">CANCEL</a>
+								<a href="<?= base_url(); ?>appointment/edit/<?= @$record->id ?>" class="btn btn-default">EDIT</a> &nbsp;
+								<a href="<?= base_url(); ?>appointment/del/<?= @$record->id ?>" class="btn btn-default">CANCEL</a>
 							</td>
 
 						</tr>
