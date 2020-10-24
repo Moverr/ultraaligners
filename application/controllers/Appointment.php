@@ -97,24 +97,18 @@ class Appointment extends CI_Controller
 		}
 
 
-		if (isset($_POST['firstname'])) {
+		if (isset($_POST['patient'])) {
 			//todo:
 		 
 
-			$username = $this->input->post('email');
-			$password = $this->input->post('password');
+			$patient = $_POST['patient'];
+			$title = $_POST('title');
+			$start_date = $_POST('start_date');
+			$duration = $_POST('duration');
+		 
 
-			$first_name = $this->input->post('firstname');
-			$last_name = $this->input->post('lastname');
-			$role = "5";
-			$random_string = chr(rand(65, 90)) . chr(rand(65, 90)) . chr(rand(65, 90)) . chr(rand(65, 90)) . chr(rand(65, 90));
-
-
-
-
-			if ($_POST['firstname'] == "" ||  $_POST['lastname'] == "") {
-				//todo: make it succesful
-			 
+			if ($patient == "" ||  $title == "") {
+				//todo: make it succesful			 
 				$data['section'] = "patient_form";
 				$data['error'] = "Fill in the mandatory fields ";
 				$this->load->view('dashboard/dashboard', $data);
