@@ -38,13 +38,7 @@
 				</div>
 
 
-				<div class="form-group">
-					<label for="title">
-						Title
-					</label>
-					<input value="<?=@$title; ?>"  required="true" type="text" class="form-control" id="title" name="title" />
-				</div>
-
+			 
 
 				<div class="form-group">
 					<label for="details">
@@ -55,29 +49,7 @@
 
 
 
-
-
-				<div class="form-group">
-					<label for="start_date">
-						Start Date
-					</label>
-					<input  value="<?=@date('mm/dd/yyyy',$start_date);; ?>"   required="true" type="datetime-local" class="form-control" id="start_date" name="start_date" />
-				</div>
-
-
-
-				<div class="form-group">
-					<label for="duration">
-						Duration <note>[Hrs]</note>
-					</label>
-					<input value="<?=@intval($duration); ?>" type="number" required="true" min="0" max="5" class="form-control" id="duration" name="duration" />
-				</div>
-
-
-
-		 
-
-
+ 
 
 
 				<button type="submit" class="btn btn-primary">
