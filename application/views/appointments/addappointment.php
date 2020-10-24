@@ -53,6 +53,27 @@
 
 
 
+				<div class="form-group">
+					<label for="start_date">
+						Start Date
+					</label>
+					<input type="datetime-local" class="form-control" id="start_date" name="start_date" />
+				</div>
+
+
+
+				<div class="form-group">
+					<label for="duration">
+						Duration
+					</label>
+					<input type="number" min="0" max="5" class="form-control" id="duration" name="duration" />
+				</div>
+
+
+
+
+
+
 
 
 				<button type="submit" class="btn btn-primary">
