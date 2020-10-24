@@ -102,10 +102,13 @@ class Appointment extends CI_Controller
 
 
 			$patient = $_POST['patient'];
-			$title = $_POST('title');
-			$details = $_POST('details');
-			$start_date = $_POST('start_date');
-			$duration = $_POST('duration');
+			$title = $_POST['title'];
+			$details = $_POST['details'];
+			$start_date = $_POST['start_date'];
+
+			$datetime =  new DateTime($start_date);
+			$start_date =  $datetime->format('Y-m-d H:i:s');
+			$duration = $_POST['duration'];
 
 
 			if ($patient == "" ||  $title == "") {
