@@ -101,17 +101,14 @@ class Progress extends CI_Controller
 			//todo:
 
 
-			$patient = $_POST['patient'];
-			$title = $_POST['title'];
+			$patient = $_POST['patient'];			 
 			$details = $_POST['details'];
-			$start_date = $_POST['start_date'];
+		 
 
-			$datetime =  new DateTime($start_date);
-			$start_date =  $datetime->format('Y-m-d H:i:s');
-			$duration = $_POST['duration'];
+			 
 
 
-			if ($patient == "" ||  $title == "") {
+			if ($patient == "" ||  $details == "") {
 				//todo: make it succesful			 
 				$data['section'] = "progress_form";
 				$data['error'] = "Fill in the mandatory fields ";
@@ -121,17 +118,16 @@ class Progress extends CI_Controller
 				$curl = curl_init();
 
 				curl_setopt_array($curl, array(
-					CURLOPT_URL => "https://ultraaligners.com/public/ultraaligners/items/appointments",
+					CURLOPT_URL => "https://ultraaligners.com/public/ultraaligners/items/patient_progresses",
 					CURLOPT_RETURNTRANSFER => true,
 					CURLOPT_ENCODING => "",
 					CURLOPT_MAXREDIRS => 10,
 					CURLOPT_TIMEOUT => 30,
 					CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
 					CURLOPT_CUSTOMREQUEST => "POST", 
-					CURLOPT_POSTFIELDS => "{\"status\":\"published\",\"patient\":\"" . $patient . "\",\"title\":\"" . $title . "\",\"details\":\"" . $details . "\",\"duration\":\"" . $duration . "\",\"start_date\":\"" . $start_date . "\"\n\t\n\t\n}",
+					CURLOPT_POSTFIELDS => "{\"status\":\"published\",\"patient\":\"" . $patient . "\",\"details\":\"" . $details . "\"\n\t\n\t\n}",
 
-					//		{"status":"published","patient":"4","title":"ertytuiu","details":"<p>rtyuikkk</p>","duration":"2","start_date":"2020-10-24 03:34:00"}
-
+				 
 					CURLOPT_HTTPHEADER => array(
 						"authorization:bearer " . $token,
 						"cache-control: no-cache",
@@ -153,7 +149,7 @@ class Progress extends CI_Controller
 						$data['section'] = "progress_form";
 						$this->load->view('dashboard/dashboard', $data);
 					} else {
-						redirect(base_url() . "dashboard/appointments");
+						redirect(base_url() . "dashboard/progress");
 					}
 				}
 			}
