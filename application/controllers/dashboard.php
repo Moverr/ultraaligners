@@ -246,5 +246,63 @@ class Dashboard extends CI_Controller
 		}
 	}
 
+
+
+	public function tracking()
+	{
+		//todo: get Patients in the system :: 
+
+		$this->load->library('session');
+		$token = $this->session->userdata('token');
+	
+		$email = $this->session->userdata('email');
+		$logged_in = $this->session->userdata('logged_in');
+
+		$curl = curl_init();
+
+		curl_setopt_array($curl, array(
+			CURLOPT_URL => "https://ultraaligners.com/public/ultraaligners/items/patient_progresses?meta=total_count,result_count,filter_count&limit=200&offset=0&fields=*.*",
+			CURLOPT_RETURNTRANSFER => true,
+			CURLOPT_ENCODING => "",
+			CURLOPT_MAXREDIRS => 10,
+			CURLOPT_TIMEOUT => 30,
+			CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+			CURLOPT_CUSTOMREQUEST => "GET",
+			CURLOPT_HTTPHEADER => array(
+				"authorization:bearer ".$token, 
+				"cache-control: no-cache",
+				"content-type: application/json" 
+			),
+		));
+
+		$response = curl_exec($curl);
+		$err = curl_error($curl);
+
+		curl_close($curl);
+
+		if ($err) {
+			echo "cURL Error #:" . $err;
+		} else {
+			$responsedata =  json_decode($response);
+			//var_dump($responsedata);
+
+
+			$data = array();
+			$data['section'] = "progress";
+			$data['meta'] = $responsedata->meta;
+			$data['data'] = $responsedata->data;
+
+			if(!isset($data['data'])){
+				redirect(base_url() . "auth");
+			}else{
+				$this->load->view('dashboard/dashboard', $data);
+			}
+
+
+			 
+		}
+	}
+
+
 	
 }
