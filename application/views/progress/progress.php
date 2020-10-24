@@ -3,8 +3,8 @@
 	<div class="row">
 		<div class="col-md-12">
 
-			<form class="form-inline" method="GET" action="<?= base_url() ?>enquiry/search">
-				<!-- <a href="<?= base_url(); ?>enquiry" class="btn btn-default">Add</a> -->
+		<form class="form-inline" method="GET" action="<?= base_url() ?>progress/search">
+				 <a href="<?= base_url(); ?>progress" class="btn btn-default">Add</a> 
 				&nbsp;&nbsp;
 
 				<div class="form-group">
@@ -13,6 +13,7 @@
 				</div>
 				<button type="submit" class="btn btn-default">Search</button>
 			</form>
+
 
 
 
