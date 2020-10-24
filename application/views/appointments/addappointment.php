@@ -25,7 +25,7 @@
 
 
 						?>
-								<option default=""> <?= @$record->first_name . " " . $record->last_name; ?></option>
+								<option value="<?= @$record->id; ?>"> <?= @$record->first_name . " " . $record->last_name; ?></option>
 						<?php
 							}
 						}
