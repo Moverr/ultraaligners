@@ -156,7 +156,7 @@ class Progress extends CI_Controller
 		} else {
 
 
-			var_dump($data);
+			//var_dump($data);
 
 			$curl = curl_init();
 
