@@ -153,7 +153,7 @@ class Appointment extends CI_Controller
 						$data['section'] = "appointment_form";
 						$this->load->view('dashboard/dashboard', $data);
 					} else {
-						redirect(base_url() . "dashboard/patients");
+						redirect(base_url() . "dashboard/appointments");
 					}
 				}
 			}
