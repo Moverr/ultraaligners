@@ -167,6 +167,11 @@ defined('BASEPATH') or exit('No direct script access allowed');
 						$this->load->view("progress/addprogress");
 						break;
 
+						case "tracking_form":
+							$this->load->view("tracking/addtracking");
+							break;
+
+
 					case "enquiries":
 						$this->load->view("enquiries/enquiries");
 
@@ -181,7 +186,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 						break;
 
 						case "tracking":
-							$this->load->view("progress/tracking");
+							$this->load->view("tracking/tracking");
 	
 							break;
 
