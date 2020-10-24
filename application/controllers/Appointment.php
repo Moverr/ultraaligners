@@ -90,22 +90,23 @@ class Appointment extends CI_Controller
 		if (!isset($token)) {
 			redirect(base_url() . "auth");
 		}
-	 
-	 
-		if(isset($_POST)){
+
+
+		if (isset($_POST)) {
 			$data = $_POST;
 		}
 
 
 		if (isset($_POST['patient'])) {
 			//todo:
-		 
+
 
 			$patient = $_POST['patient'];
 			$title = $_POST('title');
+			$details = $_POST('details');
 			$start_date = $_POST('start_date');
 			$duration = $_POST('duration');
-		 
+
 
 			if ($patient == "" ||  $title == "") {
 				//todo: make it succesful			 
@@ -117,16 +118,16 @@ class Appointment extends CI_Controller
 				$curl = curl_init();
 
 				curl_setopt_array($curl, array(
-					CURLOPT_URL => "https://ultraaligners.com/public/ultraaligners/users",
+					CURLOPT_URL => "https://ultraaligners.com/public/ultraaligners/items/appointments",
 					CURLOPT_RETURNTRANSFER => true,
 					CURLOPT_ENCODING => "",
 					CURLOPT_MAXREDIRS => 10,
 					CURLOPT_TIMEOUT => 30,
 					CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-					CURLOPT_CUSTOMREQUEST => "POST",
-					//	CURLOPT_POSTFIELDS => "{\"status\":\"active\",\"first_name\":\"".$first_name."\",\"last_name\":\"".$last_name."\",\"email\":\"".$username."\",\"role\":\"".$role."\",\"password\":\"".$password."\",\"token\":\"".$random_string."\"}",
-					CURLOPT_POSTFIELDS => "{\"status\":\"active\",\"first_name\":\"" . $_POST['firstname'] . "\",\"last_name\":\"" . $_POST['lastname'] . "\",\"email\":\"" . $username . "\",\"role\":\"" . $role . "\",\"password\":\"" . $password . "\",\n\"token\":\"" . $random_string . "\"\n\t\n\t\n}",
+					CURLOPT_CUSTOMREQUEST => "POST", 
+					CURLOPT_POSTFIELDS => "{\"status\":\"published\",\"patient\":\"" . $patient . "\",\"title\":\"" . $title . "\",\"details\":\"" . $details . "\",\"duration\":\"" . $duration . "\",\"start_date\":\"" . $start_date . "\"\n\t\n\t\n}",
 
+					//		{"status":"published","patient":"4","title":"ertytuiu","details":"<p>rtyuikkk</p>","duration":"2","start_date":"2020-10-24 03:34:00"}
 
 					CURLOPT_HTTPHEADER => array(
 						"authorization:bearer " . $token,
@@ -153,18 +154,16 @@ class Appointment extends CI_Controller
 					}
 				}
 			}
-
-			
 		} else {
-		
+
 
 			var_dump($data);
-			
+
 			$curl = curl_init();
 
 			curl_setopt_array($curl, array(
 				CURLOPT_URL => "https://ultraaligners.com/public/ultraaligners/users?meta=total_count,result_count,filter_count&limit=1000&offset=0&fields=*.*,role.*,first_name.*,last_name.*,email.*,id&filter[role][contains]=patients",
-			CURLOPT_RETURNTRANSFER => true,
+				CURLOPT_RETURNTRANSFER => true,
 				CURLOPT_ENCODING => "",
 				CURLOPT_MAXREDIRS => 10,
 				CURLOPT_TIMEOUT => 30,
@@ -186,7 +185,7 @@ class Appointment extends CI_Controller
 			} else {
 				$responsedata =  json_decode($response);
 				//	var_dump($responsedata); 
-			 
+
 				$data['meta'] = $responsedata->meta;
 				$data['data'] = $responsedata->data;
 
