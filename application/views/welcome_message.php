@@ -10,7 +10,7 @@
   <meta name="description" content="">
   
   
-  <title>Home</title>
+  <title>Ultra Ligners</title>
   <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.css">
   <link rel="stylesheet" href="assets/simple-line-icons/simple-line-icons.css">
   <link rel="stylesheet" href="assets/icons-mind/style.css">
@@ -99,7 +99,7 @@
                             <div class="navigation-top">
                                 <div class="wrap">
                                     <ul class="navbar-nav nav-dropdown js-float-line align-items-center" data-app-modern-menu="true"><li class="nav-item">
-                                            <a class="nav-link link display-4" href="index.html"><span class="socicon socicon-homeadvisor mbr-iconfont mbr-iconfont-btn"></span>
+                                            <a class="nav-link link display-4" href="<?=base_url();?>"><span class="socicon socicon-homeadvisor mbr-iconfont mbr-iconfont-btn"></span>
                                                 Home
                                             </a>
                                         </li>
