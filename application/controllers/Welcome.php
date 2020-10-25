@@ -7,11 +7,12 @@ class Welcome extends CI_Controller
 
 	public function index()
 	{
-		$this->load->view('welcome_message');
-
 		//Load Who We Are : 
 		$whoweare = $this->WhoWeAre();
+		$data['whoweare'] =  $whoweare;
 
+
+		$this->load->view('welcome_message', $data);
 	}
 	public function WhoWeAre()
 	{
@@ -43,7 +44,10 @@ class Welcome extends CI_Controller
 		if ($err) {
 			return null;
 		} else {
-			return  $response;
+			$responsedata =  json_decode($response);
+
+
+			return  $responsedata;
 		}
 	}
 }
