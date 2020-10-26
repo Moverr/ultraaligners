@@ -273,88 +273,77 @@
 				foreach ($extendedtabs as $record) {
 					$count = $count + 1;
 			?>
-				<div class="box-item">
-					<div class="icon-block-top pb-4">
-						<span class="mbr-iconfont mdi-image-filter-<?=$count; ?> display-2"></span>
+					<div class="box-item">
+						<div class="icon-block-top pb-4">
+							<span class="mbr-iconfont mdi-image-filter-<?= $count; ?> display-2"></span>
+						</div>
+						<h4 class="box-item-title pb-3 mbr-fonts-style display-5"> <?= $record->title; ?></h4>
+						<p class="box-item-text mbr-fonts-style display-7"><?= $record->brief; ?></p>
+						<h5 class="mbr-fonts-style display-5"></h5>
 					</div>
-					<h4 class="box-item-title pb-3 mbr-fonts-style display-5"> <?=$record->title; ?></h4>
-					<p class="box-item-text mbr-fonts-style display-7"><?=$record->brief; ?></p>
-					<h5 class="mbr-fonts-style display-5"></h5>
-				</div>
 
- 
+
 			<?php
+				}
 			}
-		}
 			?>
+
+
+		</div>
+	</section>
+
+
+	<?php
+
+	if (isset($howitworks->rowtabs)) {
+		var_dump($howitworks->rowtabs);
+		$rowtabs = $howitworks->rowtabs;
+		$count = 0;
+		foreach ($rowtabs as $record) {
+			$count = $count + 1;
+			$class = "header04 cid-rSb9WTfBCL";
+			if($count % 2 == 0 ){
+				$class ="header04 cid-s9KzqxnkB3";
+			}
+	?>
+			<section class="<?=$class;?>" id="header4-3">
+
+
+
+
+				<div class="container-fluid">
+					<div class="row align-items-center content-row">
+						<div class="col-lg-6 wrap-block">
+							<div class="contents">
+
+								<h1 class="mbr-section-title mbr-fonts-style mbr-bold display-2">Your smile is our priority</h1>
+								<h3 class="mbr-section-text mbr-fonts-style mbr-bold boldSubtitle display-7"></h3>
+								<h4 class="mbr-section-text mbr-fonts-style mbr-light display-4">At Ultra Aligners we work at the highest medical level. Thanks to our app, we can provide you with the best service and can help you to achieve the best possible results.</h4>
+							</div>
+
+						</div>
+						<div class="col-lg-6 photo-split">
+							<div class="element-inner">
+								<span class="widget-icon mbr-iconfont icon54-v1-medical-symbol"></span>
+							</div>
+							<div class="element-outer">
+							</div>
+							<div class="element-outer2">
+							</div>
+							<div class="image-wrap">
+								<img src="assets/images/woman-putting-in-invisalign-scaled-1380x920.jpg" alt="" title="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+	<?php
+		}
+	}
+	?>
+
+
  
- 
-		</div>
-	</section>
-
-	<section class="header04 cid-rSb9WTfBCL" id="header4-3">
-
-
-
-
-		<div class="container-fluid">
-			<div class="row align-items-center content-row">
-				<div class="col-lg-6 wrap-block">
-					<div class="contents">
-
-						<h1 class="mbr-section-title mbr-fonts-style mbr-bold display-2">Your smile is our priority</h1>
-						<h3 class="mbr-section-text mbr-fonts-style mbr-bold boldSubtitle display-7"></h3>
-						<h4 class="mbr-section-text mbr-fonts-style mbr-light display-4">At Ultra Aligners we work at the highest medical level. Thanks to our app, we can provide you with the best service and can help you to achieve the best possible results.</h4>
-					</div>
-
-				</div>
-				<div class="col-lg-6 photo-split">
-					<div class="element-inner">
-						<span class="widget-icon mbr-iconfont icon54-v1-medical-symbol"></span>
-					</div>
-					<div class="element-outer">
-					</div>
-					<div class="element-outer2">
-					</div>
-					<div class="image-wrap">
-						<img src="assets/images/woman-putting-in-invisalign-scaled-1380x920.jpg" alt="" title="">
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="header04 cid-s9KzqxnkB3" id="header4-6">
-
-
-
-
-		<div class="container-fluid">
-			<div class="row align-items-center content-row">
-				<div class="col-lg-6 wrap-block">
-					<div class="contents">
-
-						<h1 class="mbr-section-title mbr-fonts-style mbr-bold display-2">A result that lasts a lifetime</h1>
-						<h3 class="mbr-section-text mbr-fonts-style mbr-bold boldSubtitle display-7"></h3>
-						<h4 class="mbr-section-text mbr-fonts-style mbr-light display-4">Retainers help to keep your teeth from shifting back to their original position. They are made out of a firmer material and you will wear them for 12 hours a day for the first six months after completing your treatment, and then only at night afterwards.</h4>
-					</div>
-
-				</div>
-				<div class="col-lg-6 photo-split">
-					<div class="element-inner">
-						<span class="widget-icon mbr-iconfont icon54-v1-medical-symbol"></span>
-					</div>
-					<div class="element-outer">
-					</div>
-					<div class="element-outer2">
-					</div>
-					<div class="image-wrap">
-						<img src="assets/images/image-05-09-2020-at-22.18-2-766x580.jpg" alt="" title="">
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
 
 	<section class="carousel slide testimonials-slider features4 cid-s9KC384tHB" data-interval="false" id="features4-8">
 
