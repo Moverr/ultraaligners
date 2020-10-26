@@ -19,6 +19,12 @@ class Welcome extends CI_Controller
 		$whoweare = $this->WhoWeAre();
 		$data['whoweare'] =  $whoweare;
 
+		$practices = $this->Practices();
+		$data['practices'] =  $practices;
+
+
+		
+
 
 		$this->load->view('welcome_message', $data);
 	}
