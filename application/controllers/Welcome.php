@@ -28,7 +28,7 @@ class Welcome extends CI_Controller
 
 
 
-		
+
 
 
 		$this->load->view('welcome_message', $data);
@@ -47,7 +47,7 @@ class Welcome extends CI_Controller
 			CURLOPT_TIMEOUT => 30,
 			CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
 			CURLOPT_CUSTOMREQUEST => "GET",
-		 	CURLOPT_HTTPHEADER => array(
+			CURLOPT_HTTPHEADER => array(
 				"cache-control: no-cache",
 				"content-type: application/json",
 				"postman-token: 4e6aa8d8-bc27-c23e-258d-685bc8f4a276"
@@ -62,9 +62,9 @@ class Welcome extends CI_Controller
 		if ($err) {
 			return null;
 		} else {
-		 
+
 			$responsedata =  json_decode($response);
- 
+
 
 			return  $responsedata->data;
 		}
@@ -85,7 +85,7 @@ class Welcome extends CI_Controller
 			CURLOPT_TIMEOUT => 30,
 			CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
 			CURLOPT_CUSTOMREQUEST => "GET",
-		 	CURLOPT_HTTPHEADER => array(
+			CURLOPT_HTTPHEADER => array(
 				"cache-control: no-cache",
 				"content-type: application/json",
 				"postman-token: 4e6aa8d8-bc27-c23e-258d-685bc8f4a276"
@@ -100,16 +100,46 @@ class Welcome extends CI_Controller
 		if ($err) {
 			return null;
 		} else {
-		 
+
 			$responsedata =  json_decode($response);
- 
+
 
 			return  $responsedata->data;
 		}
 	}
 
-	public function Howitworks(){
+	public function Howitworks()
+	{
+		$curl = curl_init();
 
+		curl_setopt_array($curl, array(
+			CURLOPT_URL => "https://ultraaligners.com/public/ultraaligners/items/pratices?fields=*.*",
+			CURLOPT_RETURNTRANSFER => true,
+			CURLOPT_ENCODING => "",
+			CURLOPT_MAXREDIRS => 10,
+			CURLOPT_TIMEOUT => 30,
+			CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+			CURLOPT_CUSTOMREQUEST => "GET",
+			CURLOPT_HTTPHEADER => array(
+				"cache-control: no-cache",
+				"content-type: application/json",
+				"postman-token: 4e6aa8d8-bc27-c23e-258d-685bc8f4a276"
+			),
+		));
+
+		$response = curl_exec($curl);
+		$err = curl_error($curl);
+
+		curl_close($curl);
+
+		if ($err) {
+			return null;
+		} else {
+
+			$responsedata =  json_decode($response);
+
+
+			return  $responsedata->data;
+		}
 	}
-	
 }
