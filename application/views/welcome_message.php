@@ -253,10 +253,7 @@
 
 	<section class="extHeader cid-s9KqqIropw" id="extHeader9-5">
 
-	<?php 
-
-var_dump($howitworks);
-		?>
+	 
 
 		<div class="mbr-overlay" style="opacity: 0.8; background-color: rgb(255, 255, 255);">
 		</div>
@@ -267,7 +264,7 @@ var_dump($howitworks);
 			<div class="media-container-row">
 				<div class="mb-4 content-container" style="width: 85%;">
 					<h1 class="mbr-section-title pb-3 mbr-fonts-style display-2"><?=$howitworks->title; ?></h1>
-					<p class="mbr-text pb-3 mbr-fonts-style display-7">Clear aligners are the modern alternative to braces. They can be integrated discreetly into your everyday life. When eating, drinking or brushing your teeth, simply remove the aligners.<br></p>
+					<p class="mbr-text pb-3 mbr-fonts-style display-7"><?=$howitworks->brief; ?><br></p>
 					<div class="mbr-section-btn pb-5"><a class="btn btn-md btn-bgr btn-info display-4" href="Candidates.html#top">Can I be treated?</a></div>
 				</div>
 			</div>
