@@ -23,6 +23,11 @@ class Welcome extends CI_Controller
 		$data['practices'] =  $practices;
 
 
+		$howitworks = $this->Howitworks();
+		$data['howitworks'] =  $howitworks;
+
+
+
 		
 
 
@@ -103,5 +108,8 @@ class Welcome extends CI_Controller
 		}
 	}
 
+	public function Howitworks(){
+
+	}
 	
 }
