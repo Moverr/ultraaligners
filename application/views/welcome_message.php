@@ -1590,9 +1590,7 @@
 
 	<section class="timeline1 cid-rSbcrP70zJ" id="timeline1-b">
 
-
-
-
+		<!-- Who We are Section -->
 
 		<div class="container align-center">
 			<h3 class="mbr-subtitle mbr-fonts-style mbr-bold display-5">WHO WE ARE</h3>
@@ -1613,16 +1611,16 @@
 				if (isset($whoweare)) {
 
 					usort($whoweare, "cmp");
-					 
+
 					foreach ($whoweare as $record) {
-					 
+
 				?>
 						<!--1-->
 						<div class="row timeline-element first-separline separline">
 							<div class="timeline-date-panel col-xs-12 col-md-3 align-left">
 								<div class="time-line-date-content">
 									<div class="mbr-figure">
-										<img src="<?=$record->featured_image->data->full_url?>" alt="<?= $record->title; ?>" title="<?= $record->title; ?>">
+										<img src="<?= $record->featured_image->data->full_url ?>" alt="<?= $record->title; ?>" title="<?= $record->title; ?>">
 									</div>
 
 								</div>
