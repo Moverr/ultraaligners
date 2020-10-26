@@ -217,12 +217,12 @@
 							<div class="card-wrapper">
 								<div class="card-img">
 									<div class="card-icon">
-										<span class="<?=$record->icon; ?>"></span>
+										<span class="<?= $record->icon; ?>"></span>
 									</div>
 								</div>
 								<div class="card-box">
-									<h4 class="card-title pb-3 mbr-fonts-style mbr-bold display-7">Discreet</h4>
-									<p class="mbr-text mbr-fonts-style mbr-regular display-4">No information disclosure</p>
+									<h4 class="card-title pb-3 mbr-fonts-style mbr-bold display-7"><?= $record->title; ?></h4>
+									<p class="mbr-text mbr-fonts-style mbr-regular display-4"><?= $record->slang; ?></p>
 								</div>
 							</div>
 						</div>
@@ -234,33 +234,6 @@
 
 				?>
 
-				<div class="card p-3 col-12 col-md-6 col-lg-4">
-					<div class="card-wrapper">
-						<div class="card-img">
-							<div class="card-icon">
-								<span class="mbr-iconfont fa-smile-o fa"></span>
-							</div>
-						</div>
-						<div class="card-box ">
-							<h4 class="card-title pb-3 mbr-fonts-style mbr-bold display-7">Comfortable</h4>
-							<p class="mbr-text mbr-fonts-style mbr-regular display-4">Perfect results</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="card p-3 col-12 col-md-6 col-lg-4">
-					<div class="card-wrapper">
-						<div class="card-img">
-							<div class="card-icon">
-								<span class="mbr-iconfont icon54-v1-money-bag"></span>
-							</div>
-						</div>
-						<div class="card-box">
-							<h4 class="card-title pb-3 mbr-fonts-style mbr-bold display-7">Affordable</h4>
-							<p class="mbr-text mbr-fonts-style mbr-regular display-4">Affordable funding &amp; Installment plans.</p>
-						</div>
-					</div>
-				</div>
 
 
 			</div>
@@ -285,29 +258,45 @@
 				</div>
 			</div>
 		</div>
+
+
+
 		<div class="container-boxes mbr-white">
-			<div class="box-item">
-				<div class="icon-block-top pb-4">
-					<span class="mbr-iconfont mdi-image-filter-1 display-2"></span>
+
+
+			<?php
+
+			if (isset($howitworks->extendedtabs)) {
+				var_dump($howitworks->extendedtabs);
+				$extendedtabs = $howitworks->extendedtabs;
+				foreach ($extendedtabs as $record) {
+			?>
+				<div class="box-item">
+					<div class="icon-block-top pb-4">
+						<span class="mbr-iconfont mdi-image-filter-1 display-2"></span>
+					</div>
+					<h4 class="box-item-title pb-3 mbr-fonts-style display-5">Free advice and diagnosis</h4>
+					<p class="box-item-text mbr-fonts-style display-7">Our dentists will create intraoral 3D scans and photos of your teeth along with comprehensive advice. The appointment is free of charge and there are no strings attached.</p>
+					<h5 class="mbr-fonts-style display-5"></h5>
 				</div>
-				<h4 class="box-item-title pb-3 mbr-fonts-style display-5">Free advice and diagnosis</h4>
-				<p class="box-item-text mbr-fonts-style display-7">Our dentists will create intraoral 3D scans and photos of your teeth along with comprehensive advice. The appointment is free of charge and there are no strings attached.</p>
-				<h5 class="mbr-fonts-style display-5"></h5>
-			</div>
-			<div class="box-item">
-				<div class="icon-block-top pb-4">
-					<span class="mbr-iconfont mdi-image-filter-2 display-2"></span>
+
+
+				<div class="box-item">
+					<div class="icon-block-top pb-4">
+						<span class="mbr-iconfont mdi-image-filter-1 display-2"></span>
+					</div>
+					<h4 class="box-item-title pb-3 mbr-fonts-style display-5">Free advice and diagnosis</h4>
+					<p class="box-item-text mbr-fonts-style display-7">Our dentists will create intraoral 3D scans and photos of your teeth along with comprehensive advice. The appointment is free of charge and there are no strings attached.</p>
+					<h5 class="mbr-fonts-style display-5"></h5>
 				</div>
-				<h4 class="box-item-title pb-3 mbr-fonts-style display-5">Our dentists create your treatment plan</h4>
-				<p class="box-item-text mbr-fonts-style display-7">Your individual treatment plan is created showing overall tooth movement and results expected of the treatment using a 3D simulation.</p>
-			</div>
-			<div class="box-item">
-				<div class="icon-block-top pb-4">
-					<span class="mbr-iconfont mdi-image-filter-3 display-2"></span>
-				</div>
-				<h4 class="box-item-title pb-3 mbr-fonts-style display-5">Your treatment with dental alignerss</h4>
-				<ul class="box-list">Your aligners are produced in our dental laboratory in Berlin and are delivered straight to your home. Our dentists will regularly monitor the progress of your treatment.&nbsp;</ul>
-			</div>
+
+				
+			<?php
+			}
+		}
+			?>
+ 
+ 
 		</div>
 	</section>
 
