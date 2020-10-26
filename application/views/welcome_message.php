@@ -570,23 +570,23 @@
 			<div class="row">
 				<div class="col-md-4">
 					<ul class="nav nav-tabs" role="tablist">
-						<li class="nav-item first"><a class="nav-link mbr-fonts-style show active display-4" role="tab" data-toggle="tab" href="#tabs2-k_tab0" aria-selected="true">
-								Dental Implants<span class="mdi-hardware-keyboard-arrow-right mbr-iconfont mbr-iconfont-btn"></span></a></li>
-						<li class="nav-item"><a class="nav-link mbr-fonts-style show active display-4" role="tab" data-toggle="tab" href="#tabs2-k_tab1" aria-selected="true">Tooth Gap Treatment<span class="mdi-hardware-keyboard-arrow-right mbr-iconfont mbr-iconfont-btn"></span></a></li>
-						<li class="nav-item"><a class="nav-link mbr-fonts-style show active display-4" role="tab" data-toggle="tab" href="#tabs2-k_tab2" aria-selected="true">
-								Root Canal Treatment<span class="mdi-hardware-keyboard-arrow-right mbr-iconfont mbr-iconfont-btn"></span></a></li>
-						<li class="nav-item"><a class="nav-link mbr-fonts-style show active display-4" role="tab" data-toggle="tab" href="#tabs2-k_tab3" aria-selected="true">
-								Cosmetic Design<span class="mdi-hardware-keyboard-arrow-right mbr-iconfont mbr-iconfont-btn"></span></a></li>
-						<li class="nav-item"><a class="nav-link mbr-fonts-style show active display-4" role="tab" data-toggle="tab" href="#tabs2-k_tab4" aria-selected="true">
-								Cavity Filling<span class="mdi-hardware-keyboard-arrow-right mbr-iconfont mbr-iconfont-btn"></span></a></li>
-						<li class="nav-item"><a class="nav-link mbr-fonts-style show active display-4" role="tab" data-toggle="tab" href="#tabs2-k_tab5" aria-selected="true">
-								Crowning<span class="mdi-hardware-keyboard-arrow-right mbr-iconfont mbr-iconfont-btn"></span></a></li>
-						<li class="nav-item"><a class="nav-link mbr-fonts-style show active display-4" role="tab" data-toggle="tab" href="#tabs2-k_tab6" aria-selected="true">
-								Porcelain Veneers<span class="mdi-hardware-keyboard-arrow-right mbr-iconfont mbr-iconfont-btn"></span></a></li>
-						<li class="nav-item"><a class="nav-link mbr-fonts-style show active display-4" role="tab" data-toggle="tab" href="#tabs2-k_tab7" aria-selected="true">
-								Teeth Whitening<span class="mdi-hardware-keyboard-arrow-right mbr-iconfont mbr-iconfont-btn"></span></a></li>
-						<li class="nav-item"><a class="nav-link mbr-fonts-style show active display-4" role="tab" data-toggle="tab" href="#tabs2-k_tab8" aria-selected="true">
-								Smile Design &amp; Smile Makeover<span class="mdi-hardware-keyboard-arrow-right mbr-iconfont mbr-iconfont-btn"></span></a></li>
+
+						<?php
+
+						if (isset($practices)) {
+
+							foreach ($practices as $record) {
+						?>
+								<li class="nav-item first"><a class="nav-link mbr-fonts-style show active display-4" role="tab" data-toggle="tab" href="#tabs2-k_tab<?= $record->id ?>" aria-selected="true">
+										Dental Implants<span class="mdi-hardware-keyboard-arrow-right mbr-iconfont mbr-iconfont-btn"></span></a></li>
+
+						<?php
+							}
+						}
+						?>
+
+
+
 					</ul>
 					<div class="widget">
 						<div class="textwidget">
@@ -608,360 +608,64 @@
 				</div>
 				<div class="col-md-8">
 					<div class="tab-content">
-						<div id="tab1" class="tab-pane in active" role="tabpanel">
-							<div class="row">
-								<div class="col-md-12">
-									<img src="assets/images/dental-implants-1200x800.jpg" alt="" title="">
-									<h2 class="mbr-fonts-style mbr-section-title align-left mbr-bold display-5">Dental Implants</h2>
-									<p class="mbr-text pt-3 mbr-fonts-style display-7">The implants act as a stable base for the artificial placement of the permanent or removable tooth. They actually work like an artificial root that is made to match your natural teeth. We use Titanium or Titanium alloys so that the implants fuse well with the jawbone. The dental implants work as efficiently as your lost tooth.<br>
-										<br>Curabitur ut orci sit amet erat vestibulum dictum. Curabitur ultricies nunc
-										ac
-										odio ult ricies, in consequat libero ornare. Sed iaculis ornare libero ultricies
-										consectetur. Ma uris et vehicula sapien. Ut ac tincidunt libero. Cras vitae
-										molestie
-										magna. Suspendis se eget fringilla elit. Aliquam volutpat nisi id lectus
-										sagittis.
-									</p>
-									<div class="cards-wrap row mt-5">
-										<div class="col-md-6 row-item col-lg-4">
-											<div class="wrapper">
+						<?php if (isset($practices)) {
+
+							foreach ($practices as $record) {
+						?>
+								<div id="tab<?= $record->id ?>" class="tab-pane in active" role="tabpanel">
+									<div class="row">
+										<div class="col-md-12">
+											<img src="assets/images/dental-implants-1200x800.jpg" alt="" title="">
+											<h2 class="mbr-fonts-style mbr-section-title align-left mbr-bold display-5">Dental Implants</h2>
+											<p class="mbr-text pt-3 mbr-fonts-style display-7">The implants act as a stable base for the artificial placement of the permanent or removable tooth. They actually work like an artificial root that is made to match your natural teeth. We use Titanium or Titanium alloys so that the implants fuse well with the jawbone. The dental implants work as efficiently as your lost tooth.<br>
+												<br>Curabitur ut orci sit amet erat vestibulum dictum. Curabitur ultricies nunc
+												ac
+												odio ult ricies, in consequat libero ornare. Sed iaculis ornare libero ultricies
+												consectetur. Ma uris et vehicula sapien. Ut ac tincidunt libero. Cras vitae
+												molestie
+												magna. Suspendis se eget fringilla elit. Aliquam volutpat nisi id lectus
+												sagittis.
+											</p>
+											<div class="cards-wrap row mt-5">
+												<div class="col-md-6 row-item col-lg-4">
+													<div class="wrapper">
 
 
+
+
+													</div>
+												</div>
+
+												<div class="col-md-6 row-item col-lg-4">
+													<div class="wrapper">
+
+
+
+
+													</div>
+												</div>
+
+												<div class="col-md-6 row-item col-lg-4">
+													<div class="wrapper">
+
+
+
+													</div>
+												</div>
 
 
 											</div>
 										</div>
-
-										<div class="col-md-6 row-item col-lg-4">
-											<div class="wrapper">
-
-
-
-
-											</div>
-										</div>
-
-										<div class="col-md-6 row-item col-lg-4">
-											<div class="wrapper">
-
-
-
-											</div>
-										</div>
-
-
 									</div>
 								</div>
-							</div>
-						</div>
-						<div id="tab2" class="tab-pane" role="tabpanel">
-							<div class="row">
-								<div class="col-md-12">
-									<img src="assets/images/tooth-gap-before-after-634x634.jpg" alt="" title="">
-									<h2 class="mbr-fonts-style mbr-section-title align-left mbr-bold display-5">Tooth Gap Treatment</h2>
-									<p class="mbr-text pt-3 mbr-fonts-style display-7">Many folks have gaps between the teeth. This might be a priority within the front teeth significantly. At our clinic we provide Affordable Tooth Gap Treatment in South Delhi with a number of ways to shut ugly gaps which can be caused to the area of the teeth, its size, its location, and also the condition of adjacent teeth. Each value and your personal wants can play a major role in your alternative of treatment. Choices to correct gaps embrace:<br><br>Repositioning teeth with dental orthopaedics: When teeth are engaging and healthy, positioning is that the deal treatment, because it involves no loss of enamel. Some alternatives, like Norse deity crowns, need sacrificing healthy tooth structure for cosmetic correction.<br>Restoring teeth through bonding, veneers, or crowns: Patients often like immediate results. In such cases, bonding or laminating with ceramic ware could also be the solution. In different cases, a mix of therapies offers the simplest results.<br>Removal of teeth, followed by replacement with a bridge or implant: Removal is employed solely as a final resort.<br></p>
-									<div class="cards-wrap row mt-5">
-										<div class="col-md-6 row-item col-lg-4">
-											<div class="wrapper">
 
 
+						<?php
+							}
+						}
+						?>
 
 
-											</div>
-										</div>
-
-										<div class="col-md-6 row-item col-lg-4">
-											<div class="wrapper">
-
-
-
-
-											</div>
-										</div>
-
-										<div class="col-md-6 row-item col-lg-4">
-											<div class="wrapper">
-
-
-
-											</div>
-										</div>
-
-
-									</div>
-								</div>
-							</div>
-						</div>
-						<div id="tab3" class="tab-pane" role="tabpanel">
-							<div class="row">
-								<div class="col-md-12">
-									<img src="assets/images/root-canal-procedure-brooklyn-before-after-920x820.jpg" alt="" title="">
-									<h2 class="mbr-fonts-style mbr-section-title align-left mbr-bold display-5">Root Canal</h2>
-									<p class="mbr-text pt-3 mbr-fonts-style display-7">Root canal treatment is considered as one of the most effective way to repair and save a highly infected tooth. This may require few visits to dentist as it is a multistep process. Before starting this treatment, your dentist will examine X-Ray reports to spot the exact location of decay. First and foremost step of root canal treatment is to give local anesthesia near the infected tooth and to make an opening near rear part of the infected tooth. The contaminated pulp is extracted through this opening followed by cleaning the root canal and pulp chamber to avoid any further infections. Next step after cleaning is filling, which is nothing but filling the roots that have been opened in order to remove the pulp with tiny cone-shaped pieces of gutta-percha (a firm rubber-like material) and sealed it off. Then lastly, crown is positioned around the tooth to give it a proper look and structure. Matrix Dental and Skin Lounge has made the cost of Root Canal Treatment in New Delhi affordable like never before because we understand the value of a healthy tooth for a healthy body.<br><br>
-									</p>
-									<div class="cards-wrap row mt-5">
-										<div class="col-md-6 row-item col-lg-4">
-											<div class="wrapper">
-
-
-
-
-											</div>
-										</div>
-
-										<div class="col-md-6 row-item col-lg-4">
-											<div class="wrapper">
-
-
-
-
-											</div>
-										</div>
-
-										<div class="col-md-6 row-item col-lg-4">
-											<div class="wrapper">
-
-
-
-											</div>
-										</div>
-
-
-									</div>
-								</div>
-							</div>
-						</div>
-						<div id="tab4" class="tab-pane" role="tabpanel">
-							<div class="row">
-								<div class="col-md-12">
-									<img src="assets/images/cosmetic-dentistry-before-after-2-865x909.jpg" alt="" title="">
-									<h2 class="mbr-fonts-style mbr-section-title align-left mbr-bold display-5">Cosmetic Design</h2>
-									<p class="mbr-text pt-3 mbr-fonts-style display-7">Your smile can powerfully affect your self-confidence, achievement and satisfaction. Cosmetic dentistry can fulfil the craving for an enhanced overall appearance to give you the perfect smile. Cosmetic Dentistry is basically a dental treatment for your teeth that enhances the look and formation of them. Cosmetic dentistry can give various advantages keeping in mind, for the most part,it doesn't address oral medical problems, done in conjunction with essential oral care, it can significantly affect an individual's general life.From crowns &amp; bridges to dental implants &amp; teeth whitening, the demand is rising for Cosmetic Design in South Delhi at the Matrix Dental and Skin Lounge.<br></p>
-									<div class="cards-wrap row mt-5">
-										<div class="col-md-6 row-item col-lg-4">
-											<div class="wrapper">
-
-
-
-
-											</div>
-										</div>
-
-										<div class="col-md-6 row-item col-lg-4">
-											<div class="wrapper">
-
-
-
-
-											</div>
-										</div>
-
-										<div class="col-md-6 row-item col-lg-4">
-											<div class="wrapper">
-
-
-
-											</div>
-										</div>
-
-
-									</div>
-								</div>
-							</div>
-						</div>
-						<div id="tab5" class="tab-pane" role="tabpanel">
-							<div class="row">
-								<div class="col-md-12">
-									<img src="assets/images/dental-tooth-filling-lynnwood-wa-1000x730.jpg" alt="" title="">
-									<h2 class="mbr-fonts-style mbr-section-title align-left mbr-bold display-5">Cavity Filling</h2>
-									<p class="mbr-text pt-3 mbr-fonts-style display-7"><br>Cavity Filling<br>Tooth fillings is one of the most widely recognized method which helps in assisting the wear and tear of teeth and teeth decay over the years. A filling is an approach to treating damaged teeth and restore their function, shape, and strength. To get the Best Cavity Filling in South Delhi, consult our dentists who will provide a complete briefing on the intensity of your dental cavities and will give a proper cavity filling treatment.<br><br>It’s Procedure<br><br>ANESTHESIA: The filling procedure begins by giving the anesthesia to ensure the area around the tooth is numb.<br>ELIMINATION: Once the area is numb, the dentist starts removing the damaged and decayed part with the help of dental tools<br>FILLING: Then comes the filling of the space made by removing the damaged part of the teeth.<br>POLISH: once the filling is completed, the tooth is polished and your tooth becomes cavity free.<br>
-									</p>
-									<div class="cards-wrap row mt-5">
-										<div class="col-md-6 row-item col-lg-4">
-											<div class="wrapper">
-
-
-
-
-											</div>
-										</div>
-
-										<div class="col-md-6 row-item col-lg-4">
-											<div class="wrapper">
-
-
-
-
-											</div>
-										</div>
-
-										<div class="col-md-6 row-item col-lg-4">
-											<div class="wrapper">
-
-
-
-											</div>
-										</div>
-
-
-									</div>
-								</div>
-							</div>
-						</div>
-						<div id="tab6" class="tab-pane" role="tabpanel">
-							<div class="row">
-								<div class="col-md-12">
-									<img src="assets/images/dental-crown-before-after-1460x1460.jpeg" alt="" title="">
-									<h2 class="mbr-fonts-style mbr-section-title align-left mbr-bold display-5">
-										Crowning
-									</h2>
-									<p class="mbr-text pt-3 mbr-fonts-style display-7">Dentistry is an Art!<br><br>Crowning is an important part of dental treatment. Crown is a “cap”, which is “tooth-shaped” made up of metals like gold or any other alloy, stainless steel, resin, ceramic, or porcelain fused to metal. They are mainly used to cover up a damaged tooth as well as for restoring tooth’s natural shape and size. We can replace existing crowns and fillings with restorations that have an exact look and feel of natural teeth. Matrix Dental &amp; Skin Lounge offers an Affordable Crowning Treatment in Vasant Kunj with the help of best and experienced dentists.</p>
-									<div class="cards-wrap row mt-5">
-										<div class="col-md-6 row-item col-lg-4">
-											<div class="wrapper">
-
-
-
-
-											</div>
-										</div>
-
-										<div class="col-md-6 row-item col-lg-4">
-											<div class="wrapper">
-
-
-
-
-											</div>
-										</div>
-
-										<div class="col-md-6 row-item col-lg-4">
-											<div class="wrapper">
-
-
-
-											</div>
-										</div>
-
-
-									</div>
-								</div>
-							</div>
-						</div>
-						<div id="tab7" class="tab-pane" role="tabpanel">
-							<div class="row">
-								<div class="col-md-12">
-									<img src="assets/images/veneers-before-after-610x457.jpg" alt="" title="">
-									<h2 class="mbr-fonts-style mbr-section-title align-left mbr-bold display-5">Porcelain Veneers</h2>
-									<p class="mbr-text pt-3 mbr-fonts-style display-7">Porcelain veneers are thin shells of ceramic that bond directly to the front surfaces of the teeth. They are an ideal choice for improving your smile and have become increasingly popular due to their simplicity and versatility.<br><br>Placing custom veneers requires a high degree of technical skill as well as attention to cosmetic detail. We place veneers routinely, and design each case individually to match and enhance the characteristics of each patient’s smile. If you are looking for Top Porcelain Veneers in South Delhi , we provide quality veneers of highest standards.<br><br>Will they look like normal teeth?<br><br>When bonded to the teeth, the ultra-thin porcelain veneers are virtually undetectable and highly resistant to coffee, tea, or even cigarette stains. For strength and appearance, their resemblance to healthy, white tooth enamel is unsurpassed by other restorative options.<br><br>How durable are porcelain veneers?<br><br>With proper care, porcelain veneers will brighten your smile for well over a decade.<br><br>We will ensure that your veneers are crafted from the highest quality porcelains and are bonded with the most advanced and proven materials available. Our Top Porcelain Veneers in Vasant Kunj will give you perfectly aligned teeth which will eventually enhance your smile.<br><br>Refraining from using your veneers as tools to open and cut things will prolong their life, and if accidental breakage or damage occurs, it is usually possible to replace only the veneer involved.<br></p>
-									<div class="cards-wrap row mt-5">
-										<div class="col-md-6 row-item col-lg-4">
-											<div class="wrapper">
-
-
-
-
-											</div>
-										</div>
-
-										<div class="col-md-6 row-item col-lg-4">
-											<div class="wrapper">
-
-
-
-
-											</div>
-										</div>
-
-										<div class="col-md-6 row-item col-lg-4">
-											<div class="wrapper">
-
-
-
-											</div>
-										</div>
-
-
-									</div>
-								</div>
-							</div>
-						</div>
-						<div id="tab8" class="tab-pane" role="tabpanel">
-							<div class="row">
-								<div class="col-md-12">
-									<img src="assets/images/teeth-whitening-before-after-680x440.jpg" alt="" title="">
-									<h2 class="mbr-fonts-style mbr-section-title align-left mbr-bold display-5">Teeth Whitening</h2>
-									<p class="mbr-text pt-3 mbr-fonts-style display-7">Some people are really concerned about the appearance of their teeth and teeth lightening is something which is preferred by most of the people in the pursuit of getting the most beautiful smile.<br><br>Teeth lightening is a cheap yet effective process. Peroxide-based materials are used by dentists to discolour teeth. However, one needs to have healthy gums and all the tooth cavities filled before going for teeth lightening treatment. Matrix Dental &amp; Skin Lounge is known for its Best Teeth Whitening Services in Vasant Kunj where the highly effective treatment is used to provide the bright and shining teeth.<br><br>After a certain point of time, most of the people develop some sort of stains on their teeth, which considerably lowers down the value of your beautiful smile. However, there are a lot of dental procedures available today which can give back your white smile back to you. Enamel is a porcelain-like surface of our teeth which is responsible for the whiteness of our teeth. It also acts as a shield and saves our teeth from the trauma, acid attack caused by sugars, and gnashing.<br><br>With time, our enamel starts carrying stains and the pores become lot clear, allowing the yellow shade of the dentin (tooth's centre material) to be visible. Due to gradual wear &amp; tear and feeding habits, teeth develop a lacklustre look due to the accumulation of stains and detritus. Teeth lightening is a simple procedure to get rid of enamel stains related to ageing and diet. So if you are looking for instant Teeth Whitening Services in South Delhi , Schedule your appointment with us!<br></p>
-									<div class="cards-wrap row mt-5">
-										<div class="col-md-6 row-item col-lg-4">
-											<div class="wrapper">
-
-
-
-
-											</div>
-										</div>
-
-										<div class="col-md-6 row-item col-lg-4">
-											<div class="wrapper">
-
-
-
-
-											</div>
-										</div>
-
-										<div class="col-md-6 row-item col-lg-4">
-											<div class="wrapper">
-
-
-
-											</div>
-										</div>
-
-
-									</div>
-								</div>
-							</div>
-						</div>
-						<div id="tab9" class="tab-pane" role="tabpanel">
-							<div class="row">
-								<div class="col-md-12">
-									<img src="assets/images/smile-makeover-before-after-620x443.jpg" alt="" title="">
-									<h2 class="mbr-fonts-style mbr-section-title align-left mbr-bold display-5">Smile Design &amp; Smile Makeover</h2>
-									<p class="mbr-text pt-3 mbr-fonts-style display-7">We offer a full smile style service, together with laptop imaging of the projected smile, 3D prototyping by a talented technician, and also the use of the simplest materials to attain the new smile that you just are yearning for.<br><br>Just as there are no two smiles alike, there are no two smile makeovers alike. Each smile makeover plan contains a specific arrangement of treatments planned to address the exclusive needs and goals of the individual patient. At Matrix Dental &amp; Skin Lounge, the team of experienced &amp; skilled cosmetic dentists will be able to identify the most suitable, least invasive procedures that will yield the most appropriate results possible. In some cases, that may mean performing just a couple of treatments to produce subtle refinements to a smile. In others, a more comprehensive approach may be necessary which all depends on the condition of the patient.<br><br>So that you'll be able to create mentally what could seem like along with your new smile the medical man may plan to manufacture a framework. This digital simulation utilities a full face read of you smiling, the medical man will then simulate changes in form, size, position, and colour of the teeth. The pc imaging simulation is a wonderful manner of having the ability to examine choices for your new smile. If you are looking for the Best Dentist in Vasant Kunj , then the Matrix Dental &amp;Skin Lounge is the best place for all your dental needs where amicable and cutting-edge dental practices are followed to offer better oral wellbeing to the patients.</p>
-									<div class="cards-wrap row mt-5">
-										<div class="col-md-6 row-item col-lg-4">
-											<div class="wrapper">
-
-
-
-
-											</div>
-										</div>
-
-										<div class="col-md-6 row-item col-lg-4">
-											<div class="wrapper">
-
-
-
-
-											</div>
-										</div>
-
-										<div class="col-md-6 row-item col-lg-4">
-											<div class="wrapper">
-
-
-
-											</div>
-										</div>
-
-
-									</div>
-								</div>
-							</div>
-						</div>
 					</div>
 				</div>
 			</div>
