@@ -275,22 +275,12 @@
 					<div class="icon-block-top pb-4">
 						<span class="mbr-iconfont mdi-image-filter-1 display-2"></span>
 					</div>
-					<h4 class="box-item-title pb-3 mbr-fonts-style display-5">Free advice and diagnosis</h4>
-					<p class="box-item-text mbr-fonts-style display-7">Our dentists will create intraoral 3D scans and photos of your teeth along with comprehensive advice. The appointment is free of charge and there are no strings attached.</p>
+					<h4 class="box-item-title pb-3 mbr-fonts-style display-5"> <?=$record->title; ?></h4>
+					<p class="box-item-text mbr-fonts-style display-7"><?=$record->brief; ?></p>
 					<h5 class="mbr-fonts-style display-5"></h5>
 				</div>
 
-
-				<div class="box-item">
-					<div class="icon-block-top pb-4">
-						<span class="mbr-iconfont mdi-image-filter-1 display-2"></span>
-					</div>
-					<h4 class="box-item-title pb-3 mbr-fonts-style display-5">Free advice and diagnosis</h4>
-					<p class="box-item-text mbr-fonts-style display-7">Our dentists will create intraoral 3D scans and photos of your teeth along with comprehensive advice. The appointment is free of charge and there are no strings attached.</p>
-					<h5 class="mbr-fonts-style display-5"></h5>
-				</div>
-
-				
+ 
 			<?php
 			}
 		}
