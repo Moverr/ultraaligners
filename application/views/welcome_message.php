@@ -578,7 +578,7 @@
 							foreach ($practices as $record) {
 						?>
 								<li class="nav-item first"><a class="nav-link mbr-fonts-style show active display-4" role="tab" data-toggle="tab" href="#tabs2-k_tab<?= $record->id ?>" aria-selected="true">
-										Dental Implants<span class="mdi-hardware-keyboard-arrow-right mbr-iconfont mbr-iconfont-btn"></span></a></li>
+										<?=$record->title; ?><span class="mdi-hardware-keyboard-arrow-right mbr-iconfont mbr-iconfont-btn"></span></a></li>
 
 						<?php
 							}
@@ -616,45 +616,12 @@
 									<div class="row">
 										<div class="col-md-12">
 											<img src="assets/images/dental-implants-1200x800.jpg" alt="" title="">
-											<h2 class="mbr-fonts-style mbr-section-title align-left mbr-bold display-5">Dental Implants</h2>
-											<p class="mbr-text pt-3 mbr-fonts-style display-7">The implants act as a stable base for the artificial placement of the permanent or removable tooth. They actually work like an artificial root that is made to match your natural teeth. We use Titanium or Titanium alloys so that the implants fuse well with the jawbone. The dental implants work as efficiently as your lost tooth.<br>
-												<br>Curabitur ut orci sit amet erat vestibulum dictum. Curabitur ultricies nunc
-												ac
-												odio ult ricies, in consequat libero ornare. Sed iaculis ornare libero ultricies
-												consectetur. Ma uris et vehicula sapien. Ut ac tincidunt libero. Cras vitae
-												molestie
-												magna. Suspendis se eget fringilla elit. Aliquam volutpat nisi id lectus
-												sagittis.
-											</p>
-											<div class="cards-wrap row mt-5">
-												<div class="col-md-6 row-item col-lg-4">
-													<div class="wrapper">
+											<h2 class="mbr-fonts-style mbr-section-title align-left mbr-bold display-5"><?=$record->title; ?></h2>
+											 
+											<?=$record->details; ?>
 
-
-
-
-													</div>
-												</div>
-
-												<div class="col-md-6 row-item col-lg-4">
-													<div class="wrapper">
-
-
-
-
-													</div>
-												</div>
-
-												<div class="col-md-6 row-item col-lg-4">
-													<div class="wrapper">
-
-
-
-													</div>
-												</div>
-
-
-											</div>
+											 
+											 
 										</div>
 									</div>
 								</div>
