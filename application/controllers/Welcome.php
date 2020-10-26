@@ -27,9 +27,7 @@ class Welcome extends CI_Controller
 		$data['howitworks'] =  $howitworks;
 
 
-
-
-
+	 
 
 		$this->load->view('welcome_message', $data);
 	}
@@ -102,8 +100,6 @@ class Welcome extends CI_Controller
 		} else {
 
 			$responsedata =  json_decode($response);
-
-
 			return  $responsedata->data;
 		}
 	}
@@ -113,7 +109,7 @@ class Welcome extends CI_Controller
 		$curl = curl_init();
 
 		curl_setopt_array($curl, array(
-			CURLOPT_URL => "https://ultraaligners.com/public/ultraaligners/items/pratices?howitworks=*.*,extendedtabs.*,icontabs.*,rowtabs.*",
+			CURLOPT_URL => "https://ultraaligners.com/public/ultraaligners/items/howitworks?fields=*.*,extendedtabs.*,icontabs.*,rowtabs.*",
 			CURLOPT_RETURNTRANSFER => true,
 			CURLOPT_ENCODING => "",
 			CURLOPT_MAXREDIRS => 10,
@@ -137,9 +133,7 @@ class Welcome extends CI_Controller
 		} else {
 
 			$responsedata =  json_decode($response);
-
-
-			return  $responsedata->data;
+			return  $responsedata->data[0];
 		}
 	}
 }
