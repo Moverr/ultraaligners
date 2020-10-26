@@ -1613,45 +1613,45 @@
 				if (isset($whoweare)) {
 
 					usort($whoweare, "cmp");
-					var_dump($whoweare);
-
+					 
 					foreach ($whoweare as $record) {
-						?>
-							<!--1-->
-				<div class="row timeline-element first-separline separline">
-					<div class="timeline-date-panel col-xs-12 col-md-3 align-left">
-						<div class="time-line-date-content">
-							<div class="mbr-figure">
-								<img src="assets/images/01.jpg" alt="" title="">
+					 
+				?>
+						<!--1-->
+						<div class="row timeline-element first-separline separline">
+							<div class="timeline-date-panel col-xs-12 col-md-3 align-left">
+								<div class="time-line-date-content">
+									<div class="mbr-figure">
+										<img src="<?=$record->featured_image->data->full_url?>" alt="<?= $record->title; ?>" title="<?= $record->title; ?>">
+									</div>
+
+								</div>
 							</div>
-
-						</div>
-					</div>
-					<div class="date col-xs-12 col-md-2">
-						<p class="mbr-timeline-date mbr-fonts-style display-7">
-							<?=$record->year; ?>
-						</p>
-					</div>
-					<span class="iconBackground"></span>
-					<div class="col-xs-12 col-md-7">
-						<div class="timeline-text-content">
-							<h4 class="mbr-timeline-title mbr-fonts-style display-5">	<?=$record->title; ?></h4>
-
-							<p class="mbr-timeline-text mbr-fonts-style display-7">
-							<?=$record->details; ?>
+							<div class="date col-xs-12 col-md-2">
+								<p class="mbr-timeline-date mbr-fonts-style display-7">
+									<?= $record->year; ?>
 								</p>
+							</div>
+							<span class="iconBackground"></span>
+							<div class="col-xs-12 col-md-7">
+								<div class="timeline-text-content">
+									<h4 class="mbr-timeline-title mbr-fonts-style display-5"> <?= $record->title; ?></h4>
+
+									<p class="mbr-timeline-text mbr-fonts-style display-7">
+										<?= $record->details; ?>
+									</p>
+								</div>
+							</div>
 						</div>
-					</div>
-				</div>
 
 
-						<?php
+				<?php
 					}
 				}
 
 				?>
 
- 
+
 
 			</div>
 		</div>

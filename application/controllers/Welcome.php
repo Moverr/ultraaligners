@@ -29,7 +29,7 @@ class Welcome extends CI_Controller
 		$curl = curl_init();
 
 		curl_setopt_array($curl, array(
-			CURLOPT_URL => "https://ultraaligners.com/public/ultraaligners/items/whoweare?fields=*.*,featured_image.*",
+			CURLOPT_URL => "https://ultraaligners.com/public/ultraaligners/items/whoweare?fields=*.*,featured_image.data.full_url",
 			CURLOPT_RETURNTRANSFER => true,
 			CURLOPT_ENCODING => "",
 			CURLOPT_MAXREDIRS => 10,
@@ -51,6 +51,7 @@ class Welcome extends CI_Controller
 		if ($err) {
 			return null;
 		} else {
+		 
 			$responsedata =  json_decode($response);
  
 
