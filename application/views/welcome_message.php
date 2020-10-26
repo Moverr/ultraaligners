@@ -204,19 +204,35 @@
 
 		<div class="container">
 			<div class="media-container-row">
-				<div class="card p-3 col-12 col-md-6 col-lg-4">
-					<div class="card-wrapper">
-						<div class="card-img">
-							<div class="card-icon">
-								<span class="mbr-iconfont icon54-v1-safe-box2"></span>
+
+				<?php
+
+				if (isset($howitworks->icontabs)) {
+					var_dump($howitworks->icontabs);
+
+					$icontabs = $howitworks->icontabs;
+					foreach ($icontabs as $record) {
+				?>
+						<div class="card p-3 col-12 col-md-6 col-lg-4">
+							<div class="card-wrapper">
+								<div class="card-img">
+									<div class="card-icon">
+										<span class="<?=$record->icon; ?>"></span>
+									</div>
+								</div>
+								<div class="card-box">
+									<h4 class="card-title pb-3 mbr-fonts-style mbr-bold display-7">Discreet</h4>
+									<p class="mbr-text mbr-fonts-style mbr-regular display-4">No information disclosure</p>
+								</div>
 							</div>
 						</div>
-						<div class="card-box">
-							<h4 class="card-title pb-3 mbr-fonts-style mbr-bold display-7">Discreet</h4>
-							<p class="mbr-text mbr-fonts-style mbr-regular display-4">No information disclosure</p>
-						</div>
-					</div>
-				</div>
+
+
+				<?php
+					}
+				}
+
+				?>
 
 				<div class="card p-3 col-12 col-md-6 col-lg-4">
 					<div class="card-wrapper">
@@ -253,7 +269,7 @@
 
 	<section class="extHeader cid-s9KqqIropw" id="extHeader9-5">
 
-	 
+
 
 		<div class="mbr-overlay" style="opacity: 0.8; background-color: rgb(255, 255, 255);">
 		</div>
@@ -263,8 +279,8 @@
 		<div class="container">
 			<div class="media-container-row">
 				<div class="mb-4 content-container" style="width: 85%;">
-					<h1 class="mbr-section-title pb-3 mbr-fonts-style display-2"><?=$howitworks->title; ?></h1>
-					<p class="mbr-text pb-3 mbr-fonts-style display-7"><?=$howitworks->brief; ?><br></p>
+					<h1 class="mbr-section-title pb-3 mbr-fonts-style display-2"><?= $howitworks->title; ?></h1>
+					<p class="mbr-text pb-3 mbr-fonts-style display-7"><?= $howitworks->brief; ?><br></p>
 					<div class="mbr-section-btn pb-5"><a class="btn btn-md btn-bgr btn-info display-4" href="Candidates.html#top">Can I be treated?</a></div>
 				</div>
 			</div>
@@ -580,7 +596,7 @@
 							foreach ($practices as $record) {
 						?>
 								<li class="nav-item first"><a class="nav-link mbr-fonts-style show active display-4" role="tab" data-toggle="tab" href="#tabs2-k_tab<?= $record->id ?>" aria-selected="true">
-										<?=$record->title; ?><span class="mdi-hardware-keyboard-arrow-right mbr-iconfont mbr-iconfont-btn"></span></a></li>
+										<?= $record->title; ?><span class="mdi-hardware-keyboard-arrow-right mbr-iconfont mbr-iconfont-btn"></span></a></li>
 
 						<?php
 							}
@@ -618,12 +634,12 @@
 									<div class="row">
 										<div class="col-md-12">
 											<img src="assets/images/dental-implants-1200x800.jpg" alt="" title="">
-											<h2 class="mbr-fonts-style mbr-section-title align-left mbr-bold display-5"><?=$record->title; ?></h2>
-											 
-											<?=$record->details; ?>
+											<h2 class="mbr-fonts-style mbr-section-title align-left mbr-bold display-5"><?= $record->title; ?></h2>
 
-											 
-											 
+											<?= $record->details; ?>
+
+
+
 										</div>
 									</div>
 								</div>
