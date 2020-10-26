@@ -118,7 +118,7 @@
 												<a class="nav-link link display-4" href="index.html#timeline1-b">Who we are</a>
 											</li>
 											<li class="nav-item">
-												<a class="nav-link link display-4" href="index.html#extContacts3-9"><span class="mdi-action-question-answer mbr-iconfont mbr-iconfont-btn"></span>lnquiries</a>
+												<a class="nav-link link display-4" href="index.html#extContacts3-9"><span class="mdi-action-question-answer mbr-iconfont mbr-iconfont-btn"></span>Contact Us</a>
 											</li>
 										</ul>
 									</div>
