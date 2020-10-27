@@ -603,7 +603,7 @@
 								<div id="tab<?= $record->id ?>" class="tab-pane in active" role="tabpanel">
 									<div class="row">
 										<div class="col-md-12">
-											<img src="assets/images/dental-implants-1200x800.jpg" alt="" title="">
+											<img   src="<?=$record->image->data->full_url; ?>" alt="" title="">
 											<h2 class="mbr-fonts-style mbr-section-title align-left mbr-bold display-5"><?= $record->title; ?></h2>
 
 											<?= $record->details; ?>
