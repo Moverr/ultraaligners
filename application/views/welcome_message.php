@@ -302,11 +302,11 @@
 		foreach ($rowtabs as $record) {
 			$count = $count + 1;
 			$class = "header04 cid-rSb9WTfBCL";
-			if($count % 2 == 0 ){
-				$class ="header04 cid-s9KzqxnkB3";
+			if ($count % 2 == 0) {
+				$class = "header04 cid-s9KzqxnkB3";
 			}
 	?>
-			<section class="<?=$class;?>" id="header4-3">
+			<section class="<?= $class; ?>" id="header4-3">
 
 
 
@@ -316,9 +316,9 @@
 						<div class="col-lg-6 wrap-block">
 							<div class="contents">
 
-								<h1 class="mbr-section-title mbr-fonts-style mbr-bold display-2"><?=$record->title; ?></h1>
+								<h1 class="mbr-section-title mbr-fonts-style mbr-bold display-2"><?= $record->title; ?></h1>
 								<h3 class="mbr-section-text mbr-fonts-style mbr-bold boldSubtitle display-7"></h3>
-								<h4 class="mbr-section-text mbr-fonts-style mbr-light display-4"><?=$record->brief; ?></h4>
+								<h4 class="mbr-section-text mbr-fonts-style mbr-light display-4"><?= $record->brief; ?></h4>
 							</div>
 
 						</div>
@@ -331,7 +331,7 @@
 							<div class="element-outer2">
 							</div>
 							<div class="image-wrap">
-								<img src="<?=$record->image->data->full_url; ?>" alt="" title="">
+								<img src="<?= $record->image->data->full_url; ?>" alt="" title="">
 							</div>
 						</div>
 					</div>
@@ -343,7 +343,7 @@
 	?>
 
 
- 
+
 
 	<section class="carousel slide testimonials-slider features4 cid-s9KC384tHB" data-interval="false" id="features4-8">
 
@@ -603,7 +603,7 @@
 								<div id="tab<?= $record->id ?>" class="tab-pane in active" role="tabpanel">
 									<div class="row">
 										<div class="col-md-12">
-											<img   src="<?=$record->image->data->full_url; ?>" alt="" title="">
+											<img src="<?= $record->image->data->full_url; ?>" alt="" title="">
 											<h2 class="mbr-fonts-style mbr-section-title align-left mbr-bold display-5"><?= $record->title; ?></h2>
 
 											<?= $record->details; ?>

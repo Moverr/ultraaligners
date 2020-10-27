@@ -136,4 +136,8 @@ class Welcome extends CI_Controller
 			return  $responsedata->data[0];
 		}
 	}
+
+	public function OurTeam(){
+		
+	}
 }
