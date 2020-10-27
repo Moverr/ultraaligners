@@ -208,7 +208,7 @@
 				<?php
 
 				if (isset($howitworks->icontabs)) {
-					var_dump($howitworks->icontabs);
+					// var_dump($howitworks->icontabs);
 
 					$icontabs = $howitworks->icontabs;
 					foreach ($icontabs as $record) {
@@ -267,7 +267,7 @@
 			<?php
 
 			if (isset($howitworks->extendedtabs)) {
-				var_dump($howitworks->extendedtabs);
+				// var_dump($howitworks->extendedtabs);
 				$extendedtabs = $howitworks->extendedtabs;
 				$count = 0;
 				foreach ($extendedtabs as $record) {
@@ -296,7 +296,7 @@
 	<?php
 
 	if (isset($howitworks->rowtabs)) {
-		var_dump($howitworks->rowtabs);
+		// var_dump($howitworks->rowtabs);
 		$rowtabs = $howitworks->rowtabs;
 		$count = 0;
 		foreach ($rowtabs as $record) {
@@ -316,9 +316,9 @@
 						<div class="col-lg-6 wrap-block">
 							<div class="contents">
 
-								<h1 class="mbr-section-title mbr-fonts-style mbr-bold display-2">Your smile is our priority</h1>
+								<h1 class="mbr-section-title mbr-fonts-style mbr-bold display-2"><?=$record->title; ?></h1>
 								<h3 class="mbr-section-text mbr-fonts-style mbr-bold boldSubtitle display-7"></h3>
-								<h4 class="mbr-section-text mbr-fonts-style mbr-light display-4">At Ultra Aligners we work at the highest medical level. Thanks to our app, we can provide you with the best service and can help you to achieve the best possible results.</h4>
+								<h4 class="mbr-section-text mbr-fonts-style mbr-light display-4"><?=$record->brief; ?></h4>
 							</div>
 
 						</div>
@@ -331,7 +331,7 @@
 							<div class="element-outer2">
 							</div>
 							<div class="image-wrap">
-								<img src="assets/images/woman-putting-in-invisalign-scaled-1380x920.jpg" alt="" title="">
+								<img src="<?=$record->image->data->full_url; ?>" alt="" title="">
 							</div>
 						</div>
 					</div>
