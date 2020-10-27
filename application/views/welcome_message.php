@@ -1069,6 +1069,10 @@
 	<section class="team1 cid-rSbcpd8ZX6" id="team1-7">
 
 
+	<?php 
+
+var_dump($ourteam);
+	?>
 
 
 		<div class="container">
