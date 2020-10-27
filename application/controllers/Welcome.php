@@ -27,6 +27,11 @@ class Welcome extends CI_Controller
 		$data['howitworks'] =  $howitworks;
 
 
+		$ourteam = $this->OurTeam();
+		$data['ourteam'] =  $ourteam;
+
+
+
 
 
 		$this->load->view('welcome_message', $data);
@@ -137,6 +142,7 @@ class Welcome extends CI_Controller
 		}
 	}
 
+	//Our team Section
 	public function OurTeam()
 	{
 		$curl = curl_init();
