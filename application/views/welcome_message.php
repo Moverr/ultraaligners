@@ -1066,127 +1066,144 @@
 		</div>
 	</section>
 
-	<section class="team1 cid-rSbcpd8ZX6" id="team1-7">
 
 
-	<?php 
 
-var_dump($ourteam);
+	<?php
+
+	 
+
+	if (isset($ourteam)) {
+	?> <section class="team1 cid-rSbcpd8ZX6" id="team1-7">
+			<div class="container">
+				<h3 class="mbr-section-subtitle mbr-fonts-style align-center mbr-bold display-4">OUR TEAM</h3>
+
+				<h2 class="mbr-fonts-style mbr-section-title mbr-bold display-2"><?=$ourteam->title; ?></h2>
+				<p class="mbr-text mbr-fonts-style align-center display-7"> <?=$ourteam->brief; ?></p>
+				<div class="row justify-content-center">
+
+				<?php 
+					if(isset($ourteam->members)){
+						$members = $ourteam->members;
+
+						foreach ($members as $record) {
+							?>
+							<div class="card col-sm-6 col-md-4 mt-5 col-lg-4 col-lg-3">
+						<div class="card-wrap">
+							<div class="card-img">
+								<img class="img-icon" src="assets/images/face1.jpg" alt="">
+							</div>
+							<div class="card-box align-center">
+								<h4 class="card-title mbr-fonts-style mbr-bold display-7">Michael Miles</h4>
+								<h5 class="user-desc mbr-fonts-style display-4">
+									GENERAL DENTIST</h5>
+
+								<div class="social-list justify-content-center">
+									<div class="soc-item">
+										<a href="https://twitter.com/mobirise" target="_blank">
+											<span class="socicon-twitter socicon mbr-iconfont mbr-iconfont-social mobi-mbri"></span>
+										</a>
+									</div>
+									<div class="soc-item">
+										<a href="https://www.facebook.com/pages/Mobirise/1616226671953247" target="_blank">
+											<span class="socicon-facebook socicon mbr-iconfont mbr-iconfont-social mobi-mbri"></span>
+										</a>
+									</div>
+									<div class="soc-item">
+										<a href="https://instagram.com/mobirise" target="_blank">
+											<span class="socicon-instagram socicon mbr-iconfont mbr-iconfont-social mobi-mbri"></span>
+										</a>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+							<?php
+						}
+					}
+				?>
+
+				
+					
+
+					<div class="card col-sm-6 col-md-4 align-center mt-5 col-lg-4 col-lg-3">
+						<div class="card-wrap">
+							<div class="card-img ">
+								<img class="img-icon" src="assets/images/face2.jpg" alt="">
+							</div>
+							<div class="card-box">
+								<h4 class="card-title mbr-fonts-style mbr-bold display-7">
+									Helen Lewis</h4>
+								<h5 class="user-desc mbr-fonts-style display-4">
+									COSMETIC DENTIST</h5>
+
+								<div class="social-list justify-content-center">
+									<div class="soc-item">
+										<a href="https://twitter.com/mobirise" target="_blank">
+											<span class="socicon-twitter socicon mbr-iconfont mbr-iconfont-social mobi-mbri"></span>
+										</a>
+									</div>
+									<div class="soc-item">
+										<a href="https://www.facebook.com/pages/Mobirise/1616226671953247" target="_blank">
+											<span class="socicon-facebook socicon mbr-iconfont mbr-iconfont-social mobi-mbri"></span>
+										</a>
+									</div>
+									<div class="soc-item">
+										<a href="https://instagram.com/mobirise" target="_blank">
+											<span class="socicon-instagram socicon mbr-iconfont mbr-iconfont-social mobi-mbri"></span>
+										</a>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="card col-sm-6 col-md-4 align-center mt-5 col-lg-4 col-lg-3">
+						<div class="card-wrap">
+							<div class="card-img ">
+								<img class="img-icon" src="assets/images/face3.jpg" alt="">
+							</div>
+							<div class="card-box">
+								<h4 class="card-title mbr-fonts-style mbr-bold display-7">
+									Daniel Kennedy</h4>
+								<h5 class="user-desc mbr-fonts-style display-4">IMPLANTS SPECIALIST</h5>
+
+								<div class="social-list justify-content-center">
+									<div class="soc-item">
+										<a href="https://twitter.com/mobirise" target="_blank">
+											<span class="socicon-twitter socicon mbr-iconfont mbr-iconfont-social mobi-mbri"></span>
+										</a>
+									</div>
+									<div class="soc-item">
+										<a href="https://www.facebook.com/pages/Mobirise/1616226671953247" target="_blank">
+											<span class="socicon-facebook socicon mbr-iconfont mbr-iconfont-social mobi-mbri"></span>
+										</a>
+									</div>
+									<div class="soc-item">
+										<a href="https://instagram.com/mobirise" target="_blank">
+											<span class="socicon-instagram socicon mbr-iconfont mbr-iconfont-social mobi-mbri"></span>
+										</a>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+
+
+				</div>
+			</div>
+		</section>
+	<?php
+	}
 	?>
 
 
-		<div class="container">
-			<h3 class="mbr-section-subtitle mbr-fonts-style align-center mbr-bold display-4">OUR TEAM</h3>
 
-			<h2 class="mbr-fonts-style mbr-section-title mbr-bold display-2">Team to Brighten Your Smile</h2>
-			<p class="mbr-text mbr-fonts-style align-center display-7">
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore t
-				dolore magna aliqua.</p>
-			<div class="row justify-content-center">
-
-				<div class="card col-sm-6 col-md-4 mt-5 col-lg-4 col-lg-3">
-					<div class="card-wrap">
-						<div class="card-img">
-							<img class="img-icon" src="assets/images/face1.jpg" alt="">
-						</div>
-						<div class="card-box align-center">
-							<h4 class="card-title mbr-fonts-style mbr-bold display-7">Michael Miles</h4>
-							<h5 class="user-desc mbr-fonts-style display-4">
-								GENERAL DENTIST</h5>
-
-							<div class="social-list justify-content-center">
-								<div class="soc-item">
-									<a href="https://twitter.com/mobirise" target="_blank">
-										<span class="socicon-twitter socicon mbr-iconfont mbr-iconfont-social mobi-mbri"></span>
-									</a>
-								</div>
-								<div class="soc-item">
-									<a href="https://www.facebook.com/pages/Mobirise/1616226671953247" target="_blank">
-										<span class="socicon-facebook socicon mbr-iconfont mbr-iconfont-social mobi-mbri"></span>
-									</a>
-								</div>
-								<div class="soc-item">
-									<a href="https://instagram.com/mobirise" target="_blank">
-										<span class="socicon-instagram socicon mbr-iconfont mbr-iconfont-social mobi-mbri"></span>
-									</a>
-								</div>
-
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="card col-sm-6 col-md-4 align-center mt-5 col-lg-4 col-lg-3">
-					<div class="card-wrap">
-						<div class="card-img ">
-							<img class="img-icon" src="assets/images/face2.jpg" alt="">
-						</div>
-						<div class="card-box">
-							<h4 class="card-title mbr-fonts-style mbr-bold display-7">
-								Helen Lewis</h4>
-							<h5 class="user-desc mbr-fonts-style display-4">
-								COSMETIC DENTIST</h5>
-
-							<div class="social-list justify-content-center">
-								<div class="soc-item">
-									<a href="https://twitter.com/mobirise" target="_blank">
-										<span class="socicon-twitter socicon mbr-iconfont mbr-iconfont-social mobi-mbri"></span>
-									</a>
-								</div>
-								<div class="soc-item">
-									<a href="https://www.facebook.com/pages/Mobirise/1616226671953247" target="_blank">
-										<span class="socicon-facebook socicon mbr-iconfont mbr-iconfont-social mobi-mbri"></span>
-									</a>
-								</div>
-								<div class="soc-item">
-									<a href="https://instagram.com/mobirise" target="_blank">
-										<span class="socicon-instagram socicon mbr-iconfont mbr-iconfont-social mobi-mbri"></span>
-									</a>
-								</div>
-
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="card col-sm-6 col-md-4 align-center mt-5 col-lg-4 col-lg-3">
-					<div class="card-wrap">
-						<div class="card-img ">
-							<img class="img-icon" src="assets/images/face3.jpg" alt="">
-						</div>
-						<div class="card-box">
-							<h4 class="card-title mbr-fonts-style mbr-bold display-7">
-								Daniel Kennedy</h4>
-							<h5 class="user-desc mbr-fonts-style display-4">IMPLANTS SPECIALIST</h5>
-
-							<div class="social-list justify-content-center">
-								<div class="soc-item">
-									<a href="https://twitter.com/mobirise" target="_blank">
-										<span class="socicon-twitter socicon mbr-iconfont mbr-iconfont-social mobi-mbri"></span>
-									</a>
-								</div>
-								<div class="soc-item">
-									<a href="https://www.facebook.com/pages/Mobirise/1616226671953247" target="_blank">
-										<span class="socicon-facebook socicon mbr-iconfont mbr-iconfont-social mobi-mbri"></span>
-									</a>
-								</div>
-								<div class="soc-item">
-									<a href="https://instagram.com/mobirise" target="_blank">
-										<span class="socicon-instagram socicon mbr-iconfont mbr-iconfont-social mobi-mbri"></span>
-									</a>
-								</div>
-
-							</div>
-						</div>
-					</div>
-				</div>
-
-
-
-
-			</div>
-		</div>
-	</section>
 
 	<section class="info1 cid-rSbcpvqg12" id="info1-8">
 
