@@ -239,6 +239,9 @@ defined('BASEPATH') or exit('No direct script access allowed');
 		<div class="row" style="margin-left: 130px;">
 			 
 
+		<ul>
+			<li><a href="#">moseose</a></li>
+		</ul>
 			<div class="col-md-2">
 				<!-- Patients  -->
 				<div class="list-item"> <a href="<?= base_url() ?>dashboard/patients" class="list-group-item list-group-item-action   google-drive-opener">Paients <span class="badge badge-light badge-pill"> 14</span></a>
