@@ -133,6 +133,9 @@ defined('BASEPATH') or exit('No direct script access allowed');
 		 margin-left: 80px;
 			padding-top: 20px;
 		}
+	  .alert-danger{
+			background-color:#E13300 !important ;
+		}
 	</style>
 </head>
 
