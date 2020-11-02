@@ -98,11 +98,11 @@ class Auth extends CI_Controller
 			$email = $this->session->userdata('email');
 			$logged_in = $this->session->userdata('logged_in');
 			 if(isset($token) && isset($email) && isset($logged_in) && $logged_in == TRUE ){
-				//redirect(base_url() . "dashboard");
+				redirect(base_url() . "dashboard");
 			 }else{
-				
+				$this->load->view('auth/login');
 			 }
-			 $this->load->view('auth/login');
+			
 			
 		}
 	}
