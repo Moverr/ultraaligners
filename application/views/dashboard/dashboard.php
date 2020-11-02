@@ -234,16 +234,10 @@ defined('BASEPATH') or exit('No direct script access allowed');
 		</nav>
 	</section>
 
-	<div class="container-fluid" style="    margin-top: 200px;">
+	<div class="container-fluid" style="    margin-top: 210px;">
 
-		<div class="row">
-			<div class="col-md-12" style="margin-bottom:20px;">
-				<ul class="nav nav-pills">
-					<li role="presentation" class="active"><a href="#">Home</a></li>
-					<li role="presentation"><a href="#">Profile</a></li>
-					<li role="presentation"><a href="#">Messages</a></li>
-				</ul>
-			</div>
+		<div class="row" style="margin-left: 130px;">
+			 
 
 			<div class="col-md-2">
 				<!-- Patients  -->
