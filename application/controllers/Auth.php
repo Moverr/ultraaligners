@@ -24,9 +24,10 @@ class Auth extends CI_Controller
 	{
 		$this->load->library('session');
 
+		
 		if (isset($_POST['username'])) {
 			$data = filter_forwarded_data($this);
-
+		
 			$username = $this->input->post('username');
 			$password = $this->input->post('password');
 
@@ -86,7 +87,11 @@ class Auth extends CI_Controller
 					 
 					}
 				}
+			}else{
+				$data['error'] =  "Enter Mandatory Fields";
+				$this->load->view('auth/login',$data);
 			}
+			 
 		} else {
 						 
 			$token = $this->session->userdata('token');

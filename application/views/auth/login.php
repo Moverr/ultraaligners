@@ -5,7 +5,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 <html lang="en">
  
 <head>
-
+ 
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
@@ -40,17 +40,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 
  
-	<meta charset="utf-8">
-	<title>Welcome to CodeIgniter</title>
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-
-	<!-- jQuery library -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-	<!-- Latest compiled JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
+ 
 	<style type="text/css">
 		::selection {
 			background-color: #E13300;
@@ -88,9 +78,11 @@ defined('BASEPATH') or exit('No direct script access allowed');
 		.headline {
 			color: #444;
 			background-color: transparent;
-			font-size: 180px;
+			font-size: 100px;
+			padding-top: 100px;
+			padding-left: 20px;
 
-			font-weight: 400;
+			font-weight: lighter !important;
 			margin: 0 0 14px 0;
 
 		}
@@ -136,9 +128,9 @@ defined('BASEPATH') or exit('No direct script access allowed');
 		.loginformwrapper {
 			background-color: #f9f9f9;
 			height: 400px;
-			border: #444 1px solid;
+		 
 			border-radius: 10px;
-			margin-left: 2px;
+		 margin-left: 80px;
 			padding-top: 20px;
 		}
 	</style>
@@ -213,17 +205,17 @@ defined('BASEPATH') or exit('No direct script access allowed');
 										</a>
 									</li>
 									<li class="nav-item">
-										<a class="nav-link link display-4" href="index.html#features3-2">
+										<a class="nav-link link display-4" href="<?= base_url(); ?>#features3-2">
 											How it works</a>
 									</li>
 									<li class="nav-item">
-										<a class="nav-link link display-4" href="index.html#tabs2-k">Pratices</a>
+										<a class="nav-link link display-4" href="<?= base_url(); ?>#tabs2-k">Pratices</a>
 									</li>
 									<li class="nav-item">
-										<a class="nav-link link display-4" href="index.html#timeline1-b">Who we are</a>
+										<a class="nav-link link display-4" href="<?= base_url(); ?>#timeline1-b">Who we are</a>
 									</li>
 									<li class="nav-item">
-										<a class="nav-link link display-4" href="index.html#extContacts3-9"><span class="mdi-action-question-answer mbr-iconfont mbr-iconfont-btn"></span>Contact Us</a>
+										<a class="nav-link link display-4" href="<?= base_url(); ?>#extContacts3-9"><span class="mdi-action-question-answer mbr-iconfont mbr-iconfont-btn"></span>Contact Us</a>
 									</li>
 								</ul>
 							</div>
@@ -249,10 +241,12 @@ defined('BASEPATH') or exit('No direct script access allowed');
 </nav>
 </section>
 
-	<div class="container-fluid">
+	<div class="container-fluid" style="margin-top: 200px;">
 		<div class="row">
-			<div class="col-md-7">
-				<h1 class="headline">ULTRA LIGNERS </h1>
+		<div class="col-md-1">
+		</div>
+			<div class="col-md-5">
+				<div class="headline">ULTRA LIGNERS </div>
 			</div>
 			<div class="col-md-4  loginformwrapper ">
 				<?php
