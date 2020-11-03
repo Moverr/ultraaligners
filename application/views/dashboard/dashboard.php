@@ -6,7 +6,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 <head>
 
-	<meta charset="UTF-8">
+<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
@@ -15,29 +15,27 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 
 	<title>Ultra Ligners</title>
-	<link rel="stylesheet" href="assets/font-awesome/css/font-awesome.css">
-	<link rel="stylesheet" href="assets/simple-line-icons/simple-line-icons.css">
-	<link rel="stylesheet" href="assets/icons-mind/style.css">
-	<link rel="stylesheet" href="assets/web/assets/mobirise-icons2/mobirise2.css">
-	<link rel="stylesheet" href="assets/icon54-v4/style.css">
-	<link rel="stylesheet" href="assets/bootstrap-material-design-font/css/material.css">
-	<link rel="stylesheet" href="assets/icon54-v3/style.css">
-	<link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
-	<link rel="stylesheet" href="assets/icon54/style.css">
-	<link rel="stylesheet" href="assets/tether/tether.min.css">
-	<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
-	<link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
-	<link rel="stylesheet" href="assets/dropdown/css/style.css">
-	<link rel="stylesheet" href="assets/socicon/css/styles.css">
-	<link rel="stylesheet" href="assets/animatecss/animate.min.css">
-	<link rel="stylesheet" href="assets/as-pie-progress/css/progress.min.css">
-	<link rel="stylesheet" href="assets/theme/css/style.css">
-	<link rel="stylesheet" href="assets/recaptcha.css">
-	<link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css">
-	<link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
-
-
+	<link rel="stylesheet" href="<?=base_url();?>assets/font-awesome/css/font-awesome.css">
+	<link rel="stylesheet" href="<?=base_url();?>assets/simple-line-icons/simple-line-icons.css">
+	<link rel="stylesheet" href="<?=base_url();?>assets/icons-mind/style.css">
+	<link rel="stylesheet" href="<?=base_url();?>assets/web/assets/mobirise-icons2/mobirise2.css">
+	<link rel="stylesheet" href="<?=base_url();?>assets/icon54-v4/style.css">
+	<link rel="stylesheet" href="<?=base_url();?>assets/bootstrap-material-design-font/css/material.css">
+	<link rel="stylesheet" href="<?=base_url();?>assets/icon54-v3/style.css">
+	<link rel="stylesheet" href="<?=base_url();?>assets/web/assets/mobirise-icons/mobirise-icons.css">
+	<link rel="stylesheet" href="<?=base_url();?>assets/icon54/style.css">
+	<link rel="stylesheet" href="<?=base_url();?>assets/tether/tether.min.css">
+	<link rel="stylesheet" href="<?=base_url();?>assets/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="<?=base_url();?>assets/bootstrap/css/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="<?=base_url();?>assets/bootstrap/css/bootstrap-reboot.min.css">
+	<link rel="stylesheet" href="<?=base_url();?>assets/dropdown/css/style.css">
+	<link rel="stylesheet" href="<?=base_url();?>assets/socicon/css/styles.css">
+	<link rel="stylesheet" href="<?=base_url();?>assets/animatecss/animate.min.css">
+	<link rel="stylesheet" href="<?=base_url();?>assets/as-pie-progress/css/progress.min.css">
+	<link rel="stylesheet" href="<?=base_url();?>assets/theme/css/style.css">
+	<link rel="stylesheet" href="<?=base_url();?>assets/recaptcha.css">
+	<link rel="preload" as="style" href="<?=base_url();?>assets/mobirise/css/mbr-additional.css">
+	<link rel="stylesheet" href="<?=base_url();?>assets/mobirise/css/mbr-additional.css" type="text/css">
 
 	
 
@@ -135,6 +133,8 @@ defined('BASEPATH') or exit('No direct script access allowed');
 </head>
 
 <body>
+
+
 <section class="menu02 cid-s9Wty7XVpe" once="menu" id="menu2-u">
 
 
@@ -270,6 +270,8 @@ defined('BASEPATH') or exit('No direct script access allowed');
 			<div class="col-md-9">
 				<h5>Dashboard </h5>
 				<?php
+				var_dump($section);
+				
 				switch ($section) {
 					case "patients":
 						$this->load->view("patients/patients");

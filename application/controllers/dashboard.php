@@ -30,6 +30,8 @@ class Dashboard extends CI_Controller
 	{
 		//todo: get Patients in the system :: 
 
+	
+
 		$this->load->library('session');
 		$token = $this->session->userdata('token');
 		//echo $token;
@@ -69,6 +71,10 @@ class Dashboard extends CI_Controller
 			$data['section'] = "patients";
 			$data['meta'] = $responsedata->meta;
 			$data['data'] = $responsedata->data;
+
+			// var_dump($responsedata);
+			// exit("movers");
+
 			if(!isset($data['data'])){
 				redirect(base_url() . "auth");
 			}else{
