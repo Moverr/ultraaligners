@@ -161,6 +161,7 @@ class Patient extends CI_Controller
 		} else {
 			$data = array();
 			$data['section'] = "patient_form";
+			$data['error'] = "Fill Mandatories";
 			$this->load->view('dashboard/dashboard', $data);
 		}
 	}

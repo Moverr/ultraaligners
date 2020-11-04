@@ -260,7 +260,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 				?>
 
 				<h1>LOGIN</h1>
-				<form role="form" method="POST" action="auth">
+				<form role="form" method="POST" action="<?=base_url()?>auth">
 					<div class="form-group">
 
 						<label for="exampleInputEmail1">

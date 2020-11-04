@@ -60,24 +60,29 @@ class Dashboard extends CI_Controller
 
 		curl_close($curl);
 
+		
+
 		if ($err) {
 			echo "cURL Error #:" . $err;
 		} else {
 			$responsedata =  json_decode($response);
-			//var_dump($responsedata);
+		
+		
+		 
 
+			if(isset($responsedata->error)){
 
-			$data = array();
-			$data['section'] = "patients";
-			$data['meta'] = $responsedata->meta;
-			$data['data'] = $responsedata->data;
-
-			// var_dump($responsedata);
-			// exit("movers");
-
-			if(!isset($data['data'])){
-				redirect(base_url() . "auth");
+			 
+				
+				
+				redirect(base_url() . "auth/logout");
 			}else{
+			 
+				$data['section'] = "patients";
+				$data['meta'] = $responsedata->meta;
+				$data['data'] = $responsedata->data;
+
+				
 				$this->load->view('dashboard/dashboard', $data);
 			}
 
