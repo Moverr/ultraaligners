@@ -277,28 +277,28 @@ defined('BASEPATH') or exit('No direct script access allowed');
 				
 				switch ($section) {
 					case "patients":
-						$this->load->view("patients/patients");
+						if($role == 1) return $this->load->view("patients/patients");
+						 
 						break;
 
 					case "patient_form":
-						$this->load->view("patients/addpatient");
+						if($role == 1)  return	$this->load->view("patients/addpatient");
 						break;
 					case "appointment_form":
-						$this->load->view("appointments/addappointment");
+						if($role == 1) 	$this->load->view("appointments/addappointment");
 						break;
 
 					case "progress_form":
-						$this->load->view("progress/addprogress");
+						if($role == 1) 	$this->load->view("progress/addprogress");
 						break;
 
 						case "tracking_form":
-							$this->load->view("tracking/addtracking");
+							if($role == 1) $this->load->view("tracking/addtracking");
 							break;
 
 
 					case "enquiries":
 						$this->load->view("enquiries/enquiries");
-
 						break;
 					case "appointments":
 						$this->load->view("appointments/appointments");
@@ -310,12 +310,8 @@ defined('BASEPATH') or exit('No direct script access allowed');
 						break;
 
 						case "tracking":
-							$this->load->view("tracking/tracking");
-	
-							break;
- 
-
-
+							$this->load->view("tracking/tracking"); 
+							break; 
 					default:
 				?>
 						<p> Welcome to Dashboard </p>

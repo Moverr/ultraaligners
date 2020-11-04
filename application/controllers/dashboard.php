@@ -21,8 +21,12 @@ class Dashboard extends CI_Controller
 	 */
 	public function index()
 	{
+		$this->load->library('session');
 		$data = array();
 		$data['section'] = "default";
+		$role = $this->session->userdata('role');
+		$data['role'] = $role;
+		
 		$this->load->view('dashboard/dashboard', $data);
 	}
 
@@ -84,6 +88,7 @@ class Dashboard extends CI_Controller
 				$data['data'] = $responsedata->data;
 
 				$data['role'] = $role;
+				 
 				$this->load->view('dashboard/dashboard', $data);
 			}
 
