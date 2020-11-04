@@ -224,7 +224,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 								<div class="right-box">
 									<div class="ml-auto">
 										<div class="navbar-buttons mbr-section-btn"> 
-											<a class="btn btn-sm btn-info display-4" href="Candidates.html#form1-d">
+											<a class="btn btn-sm btn-info display-4" href="<?=base_url();?>auth/logout">
 												LOGOUT
 											</a></div>
 									</div>
