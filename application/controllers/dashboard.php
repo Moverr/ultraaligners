@@ -37,6 +37,7 @@ class Dashboard extends CI_Controller
 		//echo $token;
 		$email = $this->session->userdata('email');
 		$logged_in = $this->session->userdata('logged_in');
+		$role = $this->session->userdata('role');
 
 		$curl = curl_init();
 
@@ -82,7 +83,7 @@ class Dashboard extends CI_Controller
 				$data['meta'] = $responsedata->meta;
 				$data['data'] = $responsedata->data;
 
-				
+				$data['role'] = $role;
 				$this->load->view('dashboard/dashboard', $data);
 			}
 
