@@ -81,7 +81,7 @@ class Auth extends CI_Controller
 							'first_name'  => $data_res->data->user->first_name,
 							'last_name'  => $data_res->data->user->last_name,
 							'email'  => $data_res->data->user->email,
-							'role'  => 'bearer '.$data_res->data->user->role,
+							'role'  =>  $data_res->data->user->role,
 							'token'     => $data_res->data->token,
 							'logged_in' => TRUE
 						);
