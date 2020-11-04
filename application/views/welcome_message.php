@@ -52,11 +52,11 @@
 						<div class="menu-logo">
 							<div class="navbar-brand">
 								<span class="navbar-logo">
-									<a href="index.html#top">
+									<a href="<?= base_url(); ?>#top">
 										<img src="assets/images/logo-ultra-aligners-122x106.png" alt="" title="" style="height: 3.8rem;">
 									</a>
 								</span>
-								<span class="navbar-caption-wrap"><a href="index.html#top" class="brand-link mbr-black mbr-bold text-info display-5">Ultra Aligners</a></span>
+								<span class="navbar-caption-wrap"><a href="<?= base_url(); ?>#top" class="brand-link mbr-black mbr-bold text-info display-5">Ultra Aligners</a></span>
 							</div>
 							<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent, #topLine" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 								<div class="hamburger">
@@ -108,17 +108,17 @@
 												</a>
 											</li>
 											<li class="nav-item">
-												<a class="nav-link link display-4" href="index.html#features3-2">
+												<a class="nav-link link display-4" href="<?= base_url(); ?>#features3-2">
 													How it works</a>
 											</li>
 											<li class="nav-item">
-												<a class="nav-link link display-4" href="index.html#tabs2-k">Pratices</a>
+												<a class="nav-link link display-4" href="<?= base_url(); ?>#tabs2-k">Pratices</a>
 											</li>
 											<li class="nav-item">
-												<a class="nav-link link display-4" href="index.html#timeline1-b">Who we are</a>
+												<a class="nav-link link display-4" href="<?= base_url(); ?>#timeline1-b">Who we are</a>
 											</li>
 											<li class="nav-item">
-												<a class="nav-link link display-4" href="index.html#extContacts3-9"><span class="mdi-action-question-answer mbr-iconfont mbr-iconfont-btn"></span>Contact Us</a>
+												<a class="nav-link link display-4" href="<?= base_url(); ?>#extContacts3-9"><span class="mdi-action-question-answer mbr-iconfont mbr-iconfont-btn"></span>Contact Us</a>
 											</li>
 										</ul>
 									</div>
@@ -143,7 +143,7 @@
 			</div>
 		</nav>
 	</section>
-
+ 
 	<section class="header5 cid-s9Kiz8hYQE mbr-fullscreen" id="header5-4">
 
 
@@ -1229,7 +1229,7 @@
 					</div>
 				</div>
 				<div class="col-md-4 align-self-center">
-					<div class="mbr-section-btn"><a class="btn btn-md btn-white-outline display-4" href="index.html#extContacts3-9">CONTACT US</a></div>
+					<div class="mbr-section-btn"><a class="btn btn-md btn-white-outline display-4" href="<?= base_url(); ?>#extContacts3-9">CONTACT US</a></div>
 				</div>
 			</div>
 		</div>
