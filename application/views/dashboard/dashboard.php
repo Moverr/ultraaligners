@@ -273,7 +273,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 			<div class="col-md-9">
 				<h5>Dashboard </h5>
 				<?php
-				var_dump($section);
+				var_dump($role);
 				
 				switch ($section) {
 					case "patients":
