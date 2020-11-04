@@ -26,7 +26,7 @@ class Dashboard extends CI_Controller
 		$data['section'] = "default";
 		$role = $this->session->userdata('role');
 		$data['role'] = $role;
-		
+
 		$this->load->view('dashboard/dashboard', $data);
 	}
 
@@ -102,11 +102,13 @@ class Dashboard extends CI_Controller
 		//todo: get Patients in the system :: 
 
 		$this->load->library('session');
+		$role = $this->session->userdata('role');
+		
 		$token = $this->session->userdata('token');
 		//echo $token;
 		$email = $this->session->userdata('email');
 		$logged_in = $this->session->userdata('logged_in');
-
+	$this->load->library('session');
 		$curl = curl_init();
 
 		curl_setopt_array($curl, array(
@@ -140,6 +142,7 @@ class Dashboard extends CI_Controller
 			$data['section'] = "enquiries";
 			$data['meta'] = $responsedata->meta;
 			$data['data'] = $responsedata->data;
+			$data['role'] = $role;
 
 			if(!isset($data['data'])){
 				redirect(base_url() . "auth");
@@ -157,13 +160,18 @@ class Dashboard extends CI_Controller
 	{
 		//todo: get Patients in the system :: 
 
-		$this->load->library('session');
+		$this->load->library('session'); 
+		$role = $this->session->userdata('role');
+
 		$token = $this->session->userdata('token');
 	
 		$email = $this->session->userdata('email');
 		$logged_in = $this->session->userdata('logged_in');
 
 		$curl = curl_init();
+
+	 
+
 
 		curl_setopt_array($curl, array(
 			CURLOPT_URL => "https://ultraaligners.com/public/ultraaligners/items/appointments?meta=total_count,result_count,filter_count&limit=200&offset=0&fields=patient.*,title.*,status.*,details.*,duration.*,start_date.*,id",
@@ -196,7 +204,7 @@ class Dashboard extends CI_Controller
 			$data['section'] = "appointments";
 			$data['meta'] = $responsedata->meta;
 			$data['data'] = $responsedata->data;
-
+			$data['role'] = $role;
 			if(!isset($data['data'])){
 				redirect(base_url() . "auth");
 			}else{
@@ -212,7 +220,8 @@ class Dashboard extends CI_Controller
 	{
 		//todo: get Patients in the system :: 
 
-		$this->load->library('session');
+		$this->load->library('session'); 
+		$role = $this->session->userdata('role');
 		$token = $this->session->userdata('token');
 	
 		$email = $this->session->userdata('email');
@@ -251,6 +260,7 @@ class Dashboard extends CI_Controller
 			$data['section'] = "progress";
 			$data['meta'] = $responsedata->meta;
 			$data['data'] = $responsedata->data;
+			$data['role'] = $role;
 
 			if(!isset($data['data'])){
 				redirect(base_url() . "auth");
@@ -269,7 +279,9 @@ class Dashboard extends CI_Controller
 	{
 		//todo: get Patients in the system :: 
 
-		$this->load->library('session');
+		$this->load->library('session'); 
+		$role = $this->session->userdata('role');
+	
 		$token = $this->session->userdata('token');
 	
 		$email = $this->session->userdata('email');
@@ -308,7 +320,8 @@ class Dashboard extends CI_Controller
 			$data['section'] = "tracking";
 			$data['meta'] = $responsedata->meta;
 			$data['data'] = $responsedata->data;
-
+			$data['role'] = $role;
+			
 			if(!isset($data['data'])){
 				redirect(base_url() . "auth");
 			}else{
