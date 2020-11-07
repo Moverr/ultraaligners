@@ -173,17 +173,22 @@
 											</li>
 											<li class="nav-item">
 												<a class="nav-link link display-4" href="<?= base_url(); ?>#features3-2">
-													How it works</a>
+												<span class="fa fa-bell-o mbr-iconfont mbr-iconfont-btn" style="font-size: 21px;"></span>Get Started</a>
 											</li>
 											<li class="nav-item">
-												<a class="nav-link link display-4" href="<?= base_url(); ?>#tabs2-k">Pratices</a>
+												<a class="nav-link link display-4" href="<?= base_url(); ?>#tabs2-k"><span class="fa fa-medkit mbr-iconfont mbr-iconfont-btn" style="font-size: 21px;"></span>Treatable Cases</a>
 											</li>
 											<li class="nav-item">
-												<a class="nav-link link display-4" href="<?= base_url(); ?>#timeline1-b">Who we are</a>
+												<a class="nav-link link display-4" href="<?= base_url(); ?>#timeline1-b"><span class="socicon socicon-shopify mbr-iconfont mbr-iconfont-btn" style="font-size: 21px;"></span>Producdts</a>
 											</li>
 											<li class="nav-item">
-												<a class="nav-link link display-4" href="<?= base_url(); ?>#extContacts3-9"><span class="mdi-action-question-answer mbr-iconfont mbr-iconfont-btn"></span>Contact Us</a>
+												<a class="nav-link link display-4" href="<?= base_url(); ?>#extContacts3-9"><span class="mdi-action-question-answer mbr-iconfont mbr-iconfont-btn"></span>Enquiries</a>
 											</li>
+
+											<li class="nav-item">
+												<a class="nav-link link display-4" href="<?= base_url(); ?>#extContacts3-9"><span class="fa fa-user-circle-o mbr-iconfont mbr-iconfont-btn"></span>Login</a>
+											</li>
+
 										</ul>
 									</div>
 								</div>
