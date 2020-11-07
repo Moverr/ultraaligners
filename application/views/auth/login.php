@@ -8,13 +8,13 @@ $this->load->view("header");
 			background-color: #E13300 !important;
 		}
 	</style>
+
 	<section class="menu02 cid-seKUfbqItn" once="menu" id="menu2-1z">
 
 		<?php
 		$this->load->view("nav");
 		?>
 	</section>
-
 	<section class="title1 medicalm4_title1 cid-seKUf5cpSo" id="title1-1u">
 
 
@@ -62,7 +62,7 @@ $this->load->view("header");
 
 									<div class="col-lg-12 col-md-12 col-sm-12 form-group">
 									</div>
-								 
+
 									<div class="col-md-12  loginformwrapper ">
 										<?php
 										if (isset($error)) {
@@ -104,7 +104,7 @@ $this->load->view("header");
 
 
 						</div>
-						 
+
 					</form>
 					<!--Formbuilder Form-->
 				</div>

@@ -1,13 +1,14 @@
-<?php
-$this->load->view("header");
+<?php 
+$this->load->view("header"); 
 ?>
-
 <body>
-	<section class="menu02 cid-s9Wty7XVpe" once="menu" id="menu2-u">
-		<?php
-		$this->load->view("nav");
-		?>
-	</section>
+<section class="menu02 cid-seKUfbqItn" once="menu" id="menu2-1z">
+
+<?php
+	  $this->load->view("nav");
+	  ?>
+</section>
+ 
 	<!-- Carousel.  -->
 	<section class="carousel slide cid-seC9He4ZFw" data-interval="false" id="slider1-x">
 
