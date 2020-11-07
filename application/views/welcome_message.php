@@ -1671,27 +1671,32 @@ window.smartsupp||(function(d) {
 	</section>
 
 
-	<script src="assets/web/assets/jquery/jquery.min.js"></script>
-	<script src="assets/popper/popper.min.js"></script>
-	<script src="assets/tether/tether.min.js"></script>
-	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
-	<script src="assets/playervimeo/vimeo_player.js"></script>
-	<script src="assets/dropdown/js/nav-dropdown.js"></script>
-	<script src="assets/dropdown/js/navbar-dropdown.js"></script>
-	<script src="assets/touchswipe/jquery.touch-swipe.min.js"></script>
-	<script src="assets/smoothscroll/smooth-scroll.js"></script>
-	<script src="assets/viewportchecker/jquery.viewportchecker.js"></script>
-	<script src="assets/bootstrapcarouselswipe/bootstrap-carousel-swipe.js"></script>
-	<script src="assets/mbr-testimonials-slider/mbr-testimonials-slider.js"></script>
-	<script src="assets/mbr-tabs/mbr-tabs.js"></script>
-	<script src="assets/as-pie-progress/jquery-as-pie-progress.min.js"></script>
-	<script src="assets/parallax/jarallax.min.js"></script>
-	<script src="assets/theme/js/script.js"></script>
-	<script src="assets/formoid.min.js"></script>
-
-
-	<div id="scrollToTop" class="scrollToTop mbr-arrow-up"><a style="text-align: center;"><i class="mbr-arrow-up-icon mbr-arrow-up-icon-cm cm-icon cm-icon-smallarrow-up"></i></a></div>
-	<input name="animation" type="hidden">
+	<script src="<?=base_url()?>assets/web/assets/jquery/jquery.min.js"></script>
+  <script src="<?=base_url()?>assets/popper/popper.min.js"></script>
+  <script src="<?=base_url()?>assets/tether/tether.min.js"></script>
+  <script src="<?=base_url()?>assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="<?=base_url()?>assets/web/assets/cookies-alert-plugin/cookies-alert-core.js"></script>
+  <script src="<?=base_url()?>assets/web/assets/cookies-alert-plugin/cookies-alert-script.js"></script>
+  <script src="<?=base_url()?>assets/smoothscroll/smooth-scroll.js"></script>
+  <script src="<?=base_url()?>assets/dropdown/js/nav-dropdown.js"></script>
+  <script src="<?=base_url()?>assets/dropdown/js/navbar-dropdown.js"></script>
+  <script src="<?=base_url()?>assets/touchswipe/jquery.touch-swipe.min.js"></script>
+  <script src="<?=base_url()?>assets/ytplayer/jquery.mb.ytplayer.min.js"></script>
+  <script src="<?=base_url()?>assets/vimeoplayer/jquery.mb.vimeo_player.js"></script>
+  <script src="<?=base_url()?>assets/bootstrapcarouselswipe/bootstrap-carousel-swipe.js"></script>
+  <script src="<?=base_url()?>assets/parallax/jarallax.min.js"></script>
+  <script src="<?=base_url()?>assets/playervimeo/vimeo_player.js"></script>
+  <script src="<?=base_url()?>assets/formstyler/jquery.formstyler.js"></script>
+  <script src="<?=base_url()?>assets/formstyler/jquery.formstyler.min.js"></script>
+  <script src="<?=base_url()?>assets/datepicker/jquery.datetimepicker.full.js"></script>
+  <script src="<?=base_url()?>assets/theme/js/script.js"></script>
+  <script src="<?=base_url()?>assets/slidervideo/script.js"></script>
+  <script src="<?=base_url()?>assets/formoid.min.js"></script>
+  
+  
+  
+<input name="cookieData" type="hidden" data-cookie-customDialogSelector='null' data-cookie-colorText='#424a4d' data-cookie-colorBg='rgba(234, 239, 241, 0.99)' data-cookie-textButton='Agree' data-cookie-colorButton='' data-cookie-colorLink='#424a4d' data-cookie-underlineLink='true' data-cookie-text="We use cookies to give you the best experience. Read our <a href='privacy.html'>cookie policy</a>.">
+   <div id="scrollToTop" class="scrollToTop mbr-arrow-up"><a style="text-align: center;"><i class="mbr-arrow-up-icon mbr-arrow-up-icon-cm cm-icon cm-icon-smallarrow-up"></i></a></div>
 
 </body>
 
