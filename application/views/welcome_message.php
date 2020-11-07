@@ -194,12 +194,8 @@
 								</div>
 								<div class="right-box">
 									<div class="ml-auto">
-										<div class="navbar-buttons mbr-section-btn"><a class="content-link link display-4" href="https://wa.me/447795116069"><span class="socicon socicon-whatsapp mbr-iconfont mbr-iconfont-btn"></span>
-
-											</a>
-											<a class="content-link link display-4" href="#"><span class="fa fa-facebook-f mbr-iconfont mbr-iconfont-btn"></span>
-
-											</a>
+										<div class="navbar-buttons mbr-section-btn">
+											
 											<a class="btn btn-sm btn-info display-4" href="Candidates.html#form1-d">
 												APPOINTMENT
 											</a></div>
