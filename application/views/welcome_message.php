@@ -186,7 +186,7 @@
 											</li>
 
 											<li class="nav-item">
-												<a class="nav-link link display-4" href="<?= base_url(); ?>#extContacts3-9"><span class="fa fa-user-circle-o mbr-iconfont mbr-iconfont-btn"></span>Login</a>
+												<a class="nav-link link display-4" href="<?= base_url(); ?>auth"><span class="fa fa-user-circle-o mbr-iconfont mbr-iconfont-btn"></span>Login</a>
 											</li>
 
 										</ul>
