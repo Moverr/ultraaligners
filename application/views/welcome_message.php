@@ -46,54 +46,81 @@
 
 		<nav class="navbar navbar-dropdown beta-menu align-items-center navbar-fixed-top navbar-toggleable-sm">
 
-			<div class="menu-content-middle">
-				<div class="container">
-					<div class="d-flex align-items-center">
-						<div class="menu-logo">
-							<div class="navbar-brand">
-								<span class="navbar-logo">
-									<a href="<?= base_url(); ?>#top">
-										<img src="assets/images/logo-ultra-aligners-122x106.png" alt="" title="" style="height: 3.8rem;">
-									</a>
-								</span>
-								<span class="navbar-caption-wrap"><a href="<?= base_url(); ?>#top" class="brand-link mbr-black mbr-bold text-info display-5">Ultra Aligners</a></span>
-							</div>
-							<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent, #topLine" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-								<div class="hamburger">
-									<span></span>
-									<span></span>
-									<span></span>
-									<span></span>
-								</div>
-							</button>
-						</div>
-						<div class="menu-content-right">
-							<div class="info-widget">
-								<a href="mailto:info@ultraaligners.com"><span class="widget-icon mbr-iconfont mdi-communication-email"></span></a>
-								<div class="widget-content display-4">
-									<p class="widget-title mbr-fonts-style mbr-bold display-7">Email</p>
-									<p class="widget-text mbr-fonts-style display-4">info@ultraaligners.com</p>
-								</div>
-							</div>
-							<div class="info-widget">
-								<a href="tel:+447795116069"><span class="widget-icon mbr-iconfont mdi-action-perm-phone-msg"></span></a>
-								<div class="widget-content display-4">
-									<p class="widget-title mbr-fonts-style mbr-bold display-7">Call Us
-									</p>
-									<p class="widget-text mbr-fonts-style display-4">(+44) 7795116069</p>
-								</div>
-							</div>
-							<div class="info-widget">
-								<span class="widget-icon mbr-iconfont mdi-maps-navigation"></span>
-								<div class="widget-content">
-									<p class="widget-title mbr-fonts-style mbr-bold display-7">Service Location</p>
-									<p class="widget-text mbr-fonts-style display-4">Uganda | United Kingdom</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+		<div class="collapse menu-content-top">
+            <div class="container">
+                <div class="d-flex justify-content-between">
+                    <div class="pre-header-left">
+                        <div class="content-left-side" data-app-modern-menu="true"><marquee direction="left"><a class="content-link link mbr-black text-primary display-4" href="https://ultraaligner.com/news.html">Welcome to Ultra Aligners! We offer Free advice and diagnosis. Our dentists will create your treatment plan.</a></marquee></div>
+                    </div>
+                    <div class="pre-header-right">
+                        <div class="content-right-side" data-app-modern-menu="true"><div class="icons-block">
+                                <a class="content-link link mbr-black display-4" href="#"><span class="socicon socicon-facebook mbr-iconfont mbr-iconfont-btn" style="color: rgb(0, 127, 255);"></span>
+                                    
+                                </a>
+                                <a class="content-link link mbr-black display-4" href="#"><span class="socicon socicon-twitter mbr-iconfont mbr-iconfont-btn" style="color: rgb(0, 127, 255);"></span>
+                                    
+                                </a>
+                                <a class="content-link link mbr-black display-4" href="#"><span class="fa fa-instagram mbr-iconfont mbr-iconfont-btn" style="color: rgb(0, 127, 255);"></span>
+                                    
+                                </a> <a class="content-link link mbr-black text-primary display-4" href="https://wa.me/447795116069"><span class="socicon socicon-whatsapp mbr-iconfont mbr-iconfont-btn" style="color: rgb(0, 127, 255);"></span>
+                                    
+                                </a>
+                                
+                            </div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu-content-middle">
+            <div class="container">
+                <div class="d-flex align-items-center">
+                    <div class="menu-logo">
+                        <div class="navbar-brand">
+                            <span class="navbar-logo">
+                                <a href="index.html#top">
+                                    <img src="assets/images/ultra-bg-removed-462x123.png" alt="" title="" style="height: 3.8rem;">
+                                </a>
+                            </span>
+                            <span class="navbar-caption-wrap"><a href="index.html#top" class="brand-link mbr-black mbr-bold text-info display-7">ULTRA ALIGNERS</a></span>
+                        </div>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent, #topLine" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <div class="hamburger">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="menu-content-right">
+                        <div class="info-widget">
+                            <a href="mailto:info@ultraaligners.com"><span class="widget-icon mbr-iconfont mdi-communication-email"></span></a>
+                            <div class="widget-content display-4">
+                                <p class="widget-title mbr-fonts-style mbr-bold display-7">Email</p>
+                                <p class="widget-text mbr-fonts-style display-4"><a href="mailto:information@ultraaligners.com" class="text-black">information@ultraaligners.com</a></p>
+                            </div>
+                        </div>
+                        <div class="info-widget">
+                            <a href="tel:+447795116069"><span class="widget-icon mbr-iconfont mdi-action-perm-phone-msg"></span></a>
+                            <div class="widget-content display-4">
+                                <p class="widget-title mbr-fonts-style mbr-bold display-7">Call Us
+                                </p>
+                                <p class="widget-text mbr-fonts-style display-4"><a href="tel:+447795116069" class="text-black">(+44) 7795116069</a></p>
+                            </div>
+                        </div>
+                        <div class="info-widget">
+                            <span class="widget-icon mbr-iconfont fa-book fa"></span>
+                            <div class="widget-content">
+                                <p class="widget-title mbr-fonts-style mbr-bold display-7">Knowledge Base</p>
+                                <p class="widget-text mbr-fonts-style display-4"><a href="https://dentistry.uic.edu/patients/tooth-alignment-adults-guide" target="_blank" class="text-secondary text-primary">View Resources</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+			 
 			<div class="menu-content-bottom order-1 order-lg-0 collapse navbar-collapse" id="navbarSupportedContent">
 				<div class="container">
 					<div class="menu-area-wrapper">
