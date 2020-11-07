@@ -12,29 +12,27 @@
 
 
 	<title>Ultra Ligners</title>
-	<link rel="stylesheet" href="<?=base_url(); ?>assets/font-awesome/css/font-awesome.css">
-	<link rel="stylesheet" href="<?=base_url(); ?>assets/simple-line-icons/simple-line-icons.css">
-	<link rel="stylesheet" href="<?=base_url(); ?>assets/icons-mind/style.css">
-	<link rel="stylesheet" href="<?=base_url(); ?>assets/web/assets/mobirise-icons2/mobirise2.css">
-	<link rel="stylesheet" href="<?=base_url(); ?>assets/icon54-v4/style.css">
-	<link rel="stylesheet" href="<?=base_url(); ?>assets/bootstrap-material-design-font/css/material.css">
-	<link rel="stylesheet" href="<?=base_url(); ?>assets/icon54-v3/style.css">
-	<link rel="stylesheet" href="<?=base_url(); ?>assets/web/assets/mobirise-icons/mobirise-icons.css">
-	<link rel="stylesheet" href="<?=base_url(); ?>assets/icon54/style.css">
-	<link rel="stylesheet" href="<?=base_url(); ?>assets/tether/tether.min.css">
-	<link rel="stylesheet" href="<?=base_url(); ?>assets/bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" href="<?=base_url(); ?>assets/bootstrap/css/bootstrap-grid.min.css">
-	<link rel="stylesheet" href="<?=base_url(); ?>assets/bootstrap/css/bootstrap-reboot.min.css">
-	<link rel="stylesheet" href="<?=base_url(); ?>assets/dropdown/css/style.css">
-	<link rel="stylesheet" href="<?=base_url(); ?>assets/socicon/css/styles.css">
-	<link rel="stylesheet" href="<?=base_url(); ?>assets/animatecss/animate.min.css">
-	<link rel="stylesheet" href="<?=base_url(); ?>assets/as-pie-progress/css/progress.min.css">
-	<link rel="stylesheet" href="<?=base_url(); ?>assets/theme/css/style.css">
-	<link rel="stylesheet" href="<?=base_url(); ?>assets/recaptcha.css">
-	<link rel="preload" as="style" href="<?=base_url(); ?>assets/mobirise/css/mbr-additional.css">
-	<link rel="stylesheet" href="<?=base_url(); ?>assets/mobirise/css/mbr-additional.css" type="text/css">
-
-
+	<link rel="shortcut icon" href="assets/images/ultra-bg-removed-462x123.png" type="image/x-icon">
+	<link rel="stylesheet" href="<?=base_url()?>assets/bootstrap-material-design-font/css/material.css">
+  <link rel="stylesheet" href="<?=base_url()?>assets/font-awesome/css/font-awesome.css">
+  <link rel="stylesheet" href="<?=base_url()?>assets/web/assets/mobirise-icons/mobirise-icons.css">
+  <link rel="stylesheet" href="<?=base_url()?>assets/icon54/style.css">
+  <link rel="stylesheet" href="<?=base_url()?>assets/web/assets/mobirise-icons2/mobirise2.css">
+  <link rel="stylesheet" href="<?=base_url()?>assets/web/assets/mobirise-icons-bold/mobirise-icons-bold.css">
+  <link rel="stylesheet" href="<?=base_url()?>assets/tether/tether.min.css">
+  <link rel="stylesheet" href="<?=base_url()?>assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="<?=base_url()?>assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="<?=base_url()?>assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="<?=base_url()?>assets/web/assets/gdpr-plugin/gdpr-styles.css">
+  <link rel="stylesheet" href="<?=base_url()?>assets/dropdown/css/style.css">
+  <link rel="stylesheet" href="<?=base_url()?>assets/formstyler/jquery.formstyler.css">
+  <link rel="stylesheet" href="<?=base_url()?>assets/formstyler/jquery.formstyler.theme.css">
+  <link rel="stylesheet" href="<?=base_url()?>assets/datepicker/jquery.datetimepicker.min.css">
+  <link rel="stylesheet" href="<?=base_url()?>assets/socicon/css/styles.css">
+  <link rel="stylesheet" href="<?=base_url()?>assets/theme/css/style.css">
+  <link rel="stylesheet" href="<?=base_url()?>assets/recaptcha.css">
+  <link rel="preload" as="style" href="<?=base_url()?>assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  
 
   <!-- Smartsupp Live Chat script -->
   <script type="text/javascript">
@@ -158,7 +156,7 @@ window.smartsupp||(function(d) {
 										<ul class="navbar-nav nav-dropdown js-float-line align-items-center" data-app-modern-menu="true">
 											<li class="nav-item">
 												<a class="nav-link link display-4" href="<?= base_url(); ?>"><span class="socicon socicon-homeadvisor mbr-iconfont mbr-iconfont-btn"></span>
-													Home
+												Ultra Aligners
 												</a>
 											</li>
 											<li class="nav-item">
@@ -269,7 +267,7 @@ window.smartsupp||(function(d) {
 				<div class="mb-4 content-container" style="width: 85%;">
 					<h1 class="mbr-section-title pb-3 mbr-fonts-style display-2"><?= $howitworks->title; ?></h1>
 					<p class="mbr-text pb-3 mbr-fonts-style display-7"><?= $howitworks->brief; ?><br></p>
-					<div class="mbr-section-btn pb-5"><a class="btn btn-md btn-bgr btn-info display-4" href="Candidates.html#top">Can I be treated?</a></div>
+					
 				</div>
 			</div>
 		</div>
@@ -307,6 +305,16 @@ window.smartsupp||(function(d) {
 		</div>
 	</section>
 
+<section class="tabs1 cid-rSbaWNDWqC">
+
+<div class="container">
+	<div class="top-part">
+				<h3 class="mbr-section-subtitle mbr-fonts-style align-center mbr-bold display-2">Our Products</h3>
+
+				<h1 class="mbr-fonts-style mbr-section-title align-center mbr-bold display-4"> Learn more about our wide range of alingers and how they can best fit your needs.</h1>
+			</div>
+			</div>
+</section>
 
 	<?php
 
