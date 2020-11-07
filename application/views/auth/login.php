@@ -3,7 +3,11 @@ $this->load->view("header");
 ?>
 
 <body>
-
+	<style>
+		.alert-danger {
+			background-color: #E13300 !important;
+		}
+	</style>
 	<section class="menu02 cid-seKUfbqItn" once="menu" id="menu2-1z">
 
 		<?php
@@ -42,7 +46,7 @@ $this->load->view("header");
 			<div class="row">
 				<div class="col-lg-8 mx-auto mbr-form" data-form-type="formoid">
 					<!--Formbuilder Form-->
-					<form  role="form" method="POST" action="<?=base_url()?>auth"  class="mbr-form form-with-styler" >
+					<form role="form" method="POST" action="<?= base_url() ?>auth" class="mbr-form form-with-styler">
 						<div class="form-row">
 							<div hidden="hidden" data-form-alert="" class="alert alert-success col-12">Thanks for filling out the form!</div>
 							<div hidden="hidden" data-form-alert-danger="" class="alert alert-danger col-12">Oops...! some problem!</div>
@@ -58,9 +62,7 @@ $this->load->view("header");
 
 									<div class="col-lg-12 col-md-12 col-sm-12 form-group">
 									</div>
-									<div class="col-md-5">
-										<div class="headline">ULTRA LIGNERS </div>
-									</div>
+								 
 									<div class="col-md-12  loginformwrapper ">
 										<?php
 										if (isset($error)) {
@@ -102,11 +104,7 @@ $this->load->view("header");
 
 
 						</div>
-						<span class="gdpr-block">
-							<label>
-								<span class="textGDPR display-7" style="color: #000000"><input type="checkbox" name="gdpr" id="gdpr-formbuilder-1v" required="">By continuing you agree to our <a style="color: #000000; text-decoration: underline;" href="terms.html">Terms of Service</a> and <a style="color: #000000; text-decoration: underline;" href="policy.html">Privacy Policy</a>.</span>
-							</label>
-						</span>
+						 
 					</form>
 					<!--Formbuilder Form-->
 				</div>
