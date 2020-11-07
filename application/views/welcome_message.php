@@ -7,59 +7,67 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
- 
+
 	<meta name="description" content="">
 
 
 	<title>Ultra Ligners</title>
 	<link rel="shortcut icon" href="assets/images/ultra-bg-removed-462x123.png" type="image/x-icon">
-	<link rel="stylesheet" href="<?=base_url()?>assets/bootstrap-material-design-font/css/material.css">
-  <link rel="stylesheet" href="<?=base_url()?>assets/font-awesome/css/font-awesome.css">
-  <link rel="stylesheet" href="<?=base_url()?>assets/web/assets/mobirise-icons/mobirise-icons.css">
-  <link rel="stylesheet" href="<?=base_url()?>assets/icon54/style.css">
-  <link rel="stylesheet" href="<?=base_url()?>assets/web/assets/mobirise-icons2/mobirise2.css">
-  <link rel="stylesheet" href="<?=base_url()?>assets/web/assets/mobirise-icons-bold/mobirise-icons-bold.css">
-  <link rel="stylesheet" href="<?=base_url()?>assets/tether/tether.min.css">
-  <link rel="stylesheet" href="<?=base_url()?>assets/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="<?=base_url()?>assets/bootstrap/css/bootstrap-grid.min.css">
-  <link rel="stylesheet" href="<?=base_url()?>assets/bootstrap/css/bootstrap-reboot.min.css">
-  <link rel="stylesheet" href="<?=base_url()?>assets/web/assets/gdpr-plugin/gdpr-styles.css">
-  <link rel="stylesheet" href="<?=base_url()?>assets/dropdown/css/style.css">
-  <link rel="stylesheet" href="<?=base_url()?>assets/formstyler/jquery.formstyler.css">
-  <link rel="stylesheet" href="<?=base_url()?>assets/formstyler/jquery.formstyler.theme.css">
-  <link rel="stylesheet" href="<?=base_url()?>assets/datepicker/jquery.datetimepicker.min.css">
-  <link rel="stylesheet" href="<?=base_url()?>assets/socicon/css/styles.css">
-  <link rel="stylesheet" href="<?=base_url()?>assets/theme/css/style.css">
-  <link rel="stylesheet" href="<?=base_url()?>assets/recaptcha.css">
-  <link rel="preload" as="style" href="<?=base_url()?>assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
-  
+	<link rel="stylesheet" href="<?= base_url() ?>assets/bootstrap-material-design-font/css/material.css">
+	<link rel="stylesheet" href="<?= base_url() ?>assets/font-awesome/css/font-awesome.css">
+	<link rel="stylesheet" href="<?= base_url() ?>assets/web/assets/mobirise-icons/mobirise-icons.css">
+	<link rel="stylesheet" href="<?= base_url() ?>assets/icon54/style.css">
+	<link rel="stylesheet" href="<?= base_url() ?>assets/web/assets/mobirise-icons2/mobirise2.css">
+	<link rel="stylesheet" href="<?= base_url() ?>assets/web/assets/mobirise-icons-bold/mobirise-icons-bold.css">
+	<link rel="stylesheet" href="<?= base_url() ?>assets/tether/tether.min.css">
+	<link rel="stylesheet" href="<?= base_url() ?>assets/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="<?= base_url() ?>assets/bootstrap/css/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="<?= base_url() ?>assets/bootstrap/css/bootstrap-reboot.min.css">
+	<link rel="stylesheet" href="<?= base_url() ?>assets/web/assets/gdpr-plugin/gdpr-styles.css">
+	<link rel="stylesheet" href="<?= base_url() ?>assets/dropdown/css/style.css">
+	<link rel="stylesheet" href="<?= base_url() ?>assets/formstyler/jquery.formstyler.css">
+	<link rel="stylesheet" href="<?= base_url() ?>assets/formstyler/jquery.formstyler.theme.css">
+	<link rel="stylesheet" href="<?= base_url() ?>assets/datepicker/jquery.datetimepicker.min.css">
+	<link rel="stylesheet" href="<?= base_url() ?>assets/socicon/css/styles.css">
+	<link rel="stylesheet" href="<?= base_url() ?>assets/theme/css/style.css">
+	<link rel="stylesheet" href="<?= base_url() ?>assets/recaptcha.css">
+	<link rel="preload" as="style" href="<?= base_url() ?>assets/mobirise/css/mbr-additional.css">
+	<link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
 
-  <!-- Smartsupp Live Chat script -->
-  <script type="text/javascript">
-var _smartsupp = _smartsupp || {};
-_smartsupp.key = '2aa16c9052ddc25c1b611b38139c89c4c301aa15';
-window.smartsupp||(function(d) {
-  var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
-  s=d.getElementsByTagName('script')[0];c=d.createElement('script');
-  c.type='text/javascript';c.charset='utf-8';c.async=true;
-  c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
-})(document);
-</script>
-  
-<meta name="theme-color" content="#1034a6">
-<link rel="manifest" href="manifest.json">
-<script src="<?=base_url(); ?>sw-connect.js"></script>
-<meta name="apple-mobile-web-app-capable" content="yes">
-<link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="assets/images/apple-launch-640x1136.png">
-<link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="assets/images/apple-launch-750x1334.png">
-<link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="assets/images/apple-launch-1242x2208.png">
-<link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="assets/images/apple-launch-1125x2436.png">
-<link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="assets/images/apple-launch-1536x2048.png">
-<link rel="apple-touch-startup-image" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="assets/images/apple-launch-1668x2224.png">
-<link rel="apple-touch-startup-image" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="assets/images/apple-launch-2048x2732.png">
-<meta name="apple-mobile-web-app-status-bar-style" content="default">
-<meta name="apple-mobile-web-app-title" content="ULTRA ALIGNERS">
-<link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+	<!-- Smartsupp Live Chat script -->
+	<script type="text/javascript">
+		var _smartsupp = _smartsupp || {};
+		_smartsupp.key = '2aa16c9052ddc25c1b611b38139c89c4c301aa15';
+		window.smartsupp || (function(d) {
+			var s, c, o = smartsupp = function() {
+				o._.push(arguments)
+			};
+			o._ = [];
+			s = d.getElementsByTagName('script')[0];
+			c = d.createElement('script');
+			c.type = 'text/javascript';
+			c.charset = 'utf-8';
+			c.async = true;
+			c.src = 'https://www.smartsuppchat.com/loader.js?';
+			s.parentNode.insertBefore(c, s);
+		})(document);
+	</script>
+
+	<meta name="theme-color" content="#1034a6">
+	<link rel="manifest" href="manifest.json">
+	<script src="<?= base_url(); ?>sw-connect.js"></script>
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="assets/images/apple-launch-640x1136.png">
+	<link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="assets/images/apple-launch-750x1334.png">
+	<link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="assets/images/apple-launch-1242x2208.png">
+	<link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="assets/images/apple-launch-1125x2436.png">
+	<link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="assets/images/apple-launch-1536x2048.png">
+	<link rel="apple-touch-startup-image" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="assets/images/apple-launch-1668x2224.png">
+	<link rel="apple-touch-startup-image" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="assets/images/apple-launch-2048x2732.png">
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+	<meta name="apple-mobile-web-app-title" content="ULTRA ALIGNERS">
+	<link rel="apple-touch-icon" href="apple-touch-icon.png">
 
 
 </head>
@@ -71,81 +79,85 @@ window.smartsupp||(function(d) {
 
 		<nav class="navbar navbar-dropdown beta-menu align-items-center navbar-fixed-top navbar-toggleable-sm">
 
-		<div class="collapse menu-content-top">
-            <div class="container">
-                <div class="d-flex justify-content-between">
-                    <div class="pre-header-left">
-                        <div class="content-left-side" data-app-modern-menu="true"><marquee direction="left"><a class="content-link link mbr-black text-primary display-4" href="https://ultraaligner.com/news.html">Welcome to Ultra Aligners! We offer Free advice and diagnosis. Our dentists will create your treatment plan.</a></marquee></div>
-                    </div>
-                    <div class="pre-header-right">
-                        <div class="content-right-side" data-app-modern-menu="true"><div class="icons-block">
-                                <a class="content-link link mbr-black display-4" href="#"><span class="socicon socicon-facebook mbr-iconfont mbr-iconfont-btn" style="color: rgb(0, 127, 255);"></span>
-                                    
-                                </a>
-                                <a class="content-link link mbr-black display-4" href="#"><span class="socicon socicon-twitter mbr-iconfont mbr-iconfont-btn" style="color: rgb(0, 127, 255);"></span>
-                                    
-                                </a>
-                                <a class="content-link link mbr-black display-4" href="#"><span class="fa fa-instagram mbr-iconfont mbr-iconfont-btn" style="color: rgb(0, 127, 255);"></span>
-                                    
-                                </a> <a class="content-link link mbr-black text-primary display-4" href="https://wa.me/447795116069"><span class="socicon socicon-whatsapp mbr-iconfont mbr-iconfont-btn" style="color: rgb(0, 127, 255);"></span>
-                                    
-                                </a>
-                                
-                            </div></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="menu-content-middle">
-            <div class="container">
-                <div class="d-flex align-items-center">
-                    <div class="menu-logo">
-                        <div class="navbar-brand">
-                            <span class="navbar-logo">
-                                <a href="index.html#top">
-                                    <img src="assets/images/ultra-bg-removed-462x123.png" alt="" title="" style="height: 3.8rem;">
-                                </a>
-                            </span>
-                            <span class="navbar-caption-wrap"><a href="index.html#top" class="brand-link mbr-black mbr-bold text-info display-7">ULTRA ALIGNERS</a></span>
-                        </div>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent, #topLine" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <div class="hamburger">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </div>
-                        </button>
-                    </div>
-                    <div class="menu-content-right">
-                        <div class="info-widget">
-                            <a href="mailto:info@ultraaligners.com"><span class="widget-icon mbr-iconfont mdi-communication-email"></span></a>
-                            <div class="widget-content display-4">
-                                <p class="widget-title mbr-fonts-style mbr-bold display-7">Email</p>
-                                <p class="widget-text mbr-fonts-style display-4"><a href="mailto:information@ultraaligners.com" class="text-black">information@ultraaligners.com</a></p>
-                            </div>
-                        </div>
-                        <div class="info-widget">
-                            <a href="tel:+447795116069"><span class="widget-icon mbr-iconfont mdi-action-perm-phone-msg"></span></a>
-                            <div class="widget-content display-4">
-                                <p class="widget-title mbr-fonts-style mbr-bold display-7">Call Us
-                                </p>
-                                <p class="widget-text mbr-fonts-style display-4"><a href="tel:+447795116069" class="text-black">(+44) 7795116069</a></p>
-                            </div>
-                        </div>
-                        <div class="info-widget">
-                            <span class="widget-icon mbr-iconfont fa-book fa"></span>
-                            <div class="widget-content">
-                                <p class="widget-title mbr-fonts-style mbr-bold display-7">Knowledge Base</p>
-                                <p class="widget-text mbr-fonts-style display-4"><a href="https://dentistry.uic.edu/patients/tooth-alignment-adults-guide" target="_blank" class="text-secondary text-primary">View Resources</a></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+			<div class="collapse menu-content-top">
+				<div class="container">
+					<div class="d-flex justify-content-between">
+						<div class="pre-header-left">
+							<div class="content-left-side" data-app-modern-menu="true">
+								<marquee direction="left"><a class="content-link link mbr-black text-primary display-4" href="https://ultraaligner.com/news.html">Welcome to Ultra Aligners! We offer Free advice and diagnosis. Our dentists will create your treatment plan.</a></marquee>
+							</div>
+						</div>
+						<div class="pre-header-right">
+							<div class="content-right-side" data-app-modern-menu="true">
+								<div class="icons-block">
+									<a class="content-link link mbr-black display-4" href="#"><span class="socicon socicon-facebook mbr-iconfont mbr-iconfont-btn" style="color: rgb(0, 127, 255);"></span>
 
-			 
+									</a>
+									<a class="content-link link mbr-black display-4" href="#"><span class="socicon socicon-twitter mbr-iconfont mbr-iconfont-btn" style="color: rgb(0, 127, 255);"></span>
+
+									</a>
+									<a class="content-link link mbr-black display-4" href="#"><span class="fa fa-instagram mbr-iconfont mbr-iconfont-btn" style="color: rgb(0, 127, 255);"></span>
+
+									</a> <a class="content-link link mbr-black text-primary display-4" href="https://wa.me/447795116069"><span class="socicon socicon-whatsapp mbr-iconfont mbr-iconfont-btn" style="color: rgb(0, 127, 255);"></span>
+
+									</a>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="menu-content-middle">
+				<div class="container">
+					<div class="d-flex align-items-center">
+						<div class="menu-logo">
+							<div class="navbar-brand">
+								<span class="navbar-logo">
+									<a href="index.html#top">
+										<img src="assets/images/ultra-bg-removed-462x123.png" alt="" title="" style="height: 3.8rem;">
+									</a>
+								</span>
+								<span class="navbar-caption-wrap"><a href="index.html#top" class="brand-link mbr-black mbr-bold text-info display-7">ULTRA ALIGNERS</a></span>
+							</div>
+							<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent, #topLine" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+								<div class="hamburger">
+									<span></span>
+									<span></span>
+									<span></span>
+									<span></span>
+								</div>
+							</button>
+						</div>
+						<div class="menu-content-right">
+							<div class="info-widget">
+								<a href="mailto:info@ultraaligners.com"><span class="widget-icon mbr-iconfont mdi-communication-email"></span></a>
+								<div class="widget-content display-4">
+									<p class="widget-title mbr-fonts-style mbr-bold display-7">Email</p>
+									<p class="widget-text mbr-fonts-style display-4"><a href="mailto:information@ultraaligners.com" class="text-black">information@ultraaligners.com</a></p>
+								</div>
+							</div>
+							<div class="info-widget">
+								<a href="tel:+447795116069"><span class="widget-icon mbr-iconfont mdi-action-perm-phone-msg"></span></a>
+								<div class="widget-content display-4">
+									<p class="widget-title mbr-fonts-style mbr-bold display-7">Call Us
+									</p>
+									<p class="widget-text mbr-fonts-style display-4"><a href="tel:+447795116069" class="text-black">(+44) 7795116069</a></p>
+								</div>
+							</div>
+							<div class="info-widget">
+								<span class="widget-icon mbr-iconfont fa-book fa"></span>
+								<div class="widget-content">
+									<p class="widget-title mbr-fonts-style mbr-bold display-7">Knowledge Base</p>
+									<p class="widget-text mbr-fonts-style display-4"><a href="https://dentistry.uic.edu/patients/tooth-alignment-adults-guide" target="_blank" class="text-secondary text-primary">View Resources</a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
 			<div class="menu-content-bottom order-1 order-lg-0 collapse navbar-collapse" id="navbarSupportedContent">
 				<div class="container">
 					<div class="menu-area-wrapper">
@@ -156,7 +168,7 @@ window.smartsupp||(function(d) {
 										<ul class="navbar-nav nav-dropdown js-float-line align-items-center" data-app-modern-menu="true">
 											<li class="nav-item">
 												<a class="nav-link link display-4" href="<?= base_url(); ?>"><span class="socicon socicon-homeadvisor mbr-iconfont mbr-iconfont-btn"></span>
-												Ultra Aligners
+													Ultra Aligners
 												</a>
 											</li>
 											<li class="nav-item">
@@ -195,14 +207,81 @@ window.smartsupp||(function(d) {
 			</div>
 		</nav>
 	</section>
- <!-- Carousel.  -->
- <section class="carousel slide cid-seC9He4ZFw" data-interval="false" id="slider1-x">
+	<!-- Carousel.  -->
+	<section class="carousel slide cid-seC9He4ZFw" data-interval="false" id="slider1-x">
 
-    
 
-    <div class="full-screen"><div class="mbr-slider slide carousel" data-keyboard="false" data-ride="carousel" data-interval="8000" data-pause="true"><ol class="carousel-indicators"><li data-app-prevent-settings="" data-target="#slider1-x" class=" active" data-slide-to="0"></li><li data-app-prevent-settings="" data-target="#slider1-x" data-slide-to="1"></li><li data-app-prevent-settings="" data-target="#slider1-x" data-slide-to="2"></li><li data-app-prevent-settings="" data-target="#slider1-x" data-slide-to="3"></li></ol><div class="carousel-inner" role="listbox"><div class="carousel-item slider-fullscreen-image active" data-bg-video-slide="false" style="background-image: url(assets/images/image-05-09-2020-at-22.14-2-1340x804.jpg);"><div class="container container-slide"><div class="image_wrapper"><div class="mbr-overlay" style="opacity: 0; background-color: rgb(19, 9, 71);"></div><img src="assets/images/image-05-09-2020-at-22.14-2-1340x804.jpg" alt="" title=""><div class="carousel-caption justify-content-center"><div class="col-10 align-left"><h2 class="mbr-fonts-style display-1">Our Assurance</h2><p class="lead mbr-text mbr-fonts-style display-5"><strong>Journey To Perfect Smile</strong></p><div class="mbr-section-btn" buttons="0"><a class="btn display-4 btn-info" href="getstarted.html">AM I A CANDIDATE?</a> </div></div></div></div></div></div><div class="carousel-item slider-fullscreen-image" data-bg-video-slide="false" style="background-image: url(assets/images/int-ban-lg12-820x469.jpg);"><div class="container container-slide"><div class="image_wrapper"><div class="mbr-overlay" style="opacity: 0; background-color: rgb(19, 9, 71);"></div><img src="assets/images/int-ban-lg12-820x469.jpg" alt="" title=""><div class="carousel-caption justify-content-center"><div class="col-10 align-left"><h2 class="mbr-fonts-style display-1">New smile time: Avg. 4-6 months, Hours: - 22 hours per day</h2><p class="lead mbr-text mbr-fonts-style display-5"><strong>Standard Aligners</strong><br></p><div class="mbr-section-btn" buttons="0"><a class="btn display-4 btn-info" href="getstarted.html">Get Started</a> </div></div></div></div></div></div><div class="carousel-item slider-fullscreen-image" data-bg-video-slide="false" style="background-image: url(assets/images/hero-braces-woman-reviews-1800x1200.jpg);"><div class="container container-slide"><div class="image_wrapper"><div class="mbr-overlay" style="opacity: 0; background-color: rgb(19, 9, 71);"></div><img src="assets/images/hero-braces-woman-reviews-1800x1200.jpg" alt="" title=""><div class="carousel-caption justify-content-center"><div class="col-10 align-left"><h2 class="mbr-fonts-style display-1">New smile time: Avg. 10 – 12 months, Hours: - 10 - 12 hours per day</h2><p class="lead mbr-text mbr-fonts-style display-5"><strong>Night Aligners</strong></p><div class="mbr-section-btn" buttons="0"><a class="btn display-4 btn-info" href="getstarted.html">Get Started</a> </div></div></div></div></div></div><div class="carousel-item slider-fullscreen-image" data-bg-video-slide="false" style="background-image: url(assets/images/retainer-care-2000x1333.jpg);"><div class="container container-slide"><div class="image_wrapper"><div class="mbr-overlay" style="opacity: 0; background-color: rgb(19, 9, 71);"></div><img src="assets/images/retainer-care-2000x1333.jpg" alt="" title=""><div class="carousel-caption justify-content-center"><div class="col-10 align-left"><h2 class="mbr-fonts-style display-1">Maintain your nice smile by wearing retainers at night: Hours: - 8 hours per day&nbsp;</h2><p class="lead mbr-text mbr-fonts-style display-5"><strong>Night Time Retainers</strong><br></p><div class="mbr-section-btn" buttons="0"><a class="btn display-4 btn-info" href="getstarted.html">Get Started</a> </div></div></div></div></div></div></div><a data-app-prevent-settings="" class="carousel-control carousel-control-prev" role="button" data-slide="prev" href="#slider1-x"><span aria-hidden="true" class="mbri-left mbr-iconfont"></span><span class="sr-only">Previous</span></a><a data-app-prevent-settings="" class="carousel-control carousel-control-next" role="button" data-slide="next" href="#slider1-x"><span aria-hidden="true" class="mbri-right mbr-iconfont"></span><span class="sr-only">Next</span></a></div></div>
 
-</section>
+		<div class="full-screen">
+			<div class="mbr-slider slide carousel" data-keyboard="false" data-ride="carousel" data-interval="8000" data-pause="true">
+				<ol class="carousel-indicators">
+					<li data-app-prevent-settings="" data-target="#slider1-x" class=" active" data-slide-to="0"></li>
+					<li data-app-prevent-settings="" data-target="#slider1-x" data-slide-to="1"></li>
+					<li data-app-prevent-settings="" data-target="#slider1-x" data-slide-to="2"></li>
+					<li data-app-prevent-settings="" data-target="#slider1-x" data-slide-to="3"></li>
+				</ol>
+				<div class="carousel-inner" role="listbox">
+					<div class="carousel-item slider-fullscreen-image active" data-bg-video-slide="false" style="background-image: url(assets/images/image-05-09-2020-at-22.14-2-1340x804.jpg);">
+						<div class="container container-slide">
+							<div class="image_wrapper">
+								<div class="mbr-overlay" style="opacity: 0; background-color: rgb(19, 9, 71);"></div><img src="assets/images/image-05-09-2020-at-22.14-2-1340x804.jpg" alt="" title="">
+								<div class="carousel-caption justify-content-center">
+									<div class="col-10 align-left">
+										<h2 class="mbr-fonts-style display-1">Our Assurance</h2>
+										<p class="lead mbr-text mbr-fonts-style display-5"><strong>Journey To Perfect Smile</strong></p>
+										<div class="mbr-section-btn" buttons="0"><a class="btn display-4 btn-info" href="getstarted.html">AM I A CANDIDATE?</a> </div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item slider-fullscreen-image" data-bg-video-slide="false" style="background-image: url(assets/images/int-ban-lg12-820x469.jpg);">
+						<div class="container container-slide">
+							<div class="image_wrapper">
+								<div class="mbr-overlay" style="opacity: 0; background-color: rgb(19, 9, 71);"></div><img src="assets/images/int-ban-lg12-820x469.jpg" alt="" title="">
+								<div class="carousel-caption justify-content-center">
+									<div class="col-10 align-left">
+										<h2 class="mbr-fonts-style display-1">New smile time: Avg. 4-6 months, Hours: - 22 hours per day</h2>
+										<p class="lead mbr-text mbr-fonts-style display-5"><strong>Standard Aligners</strong><br></p>
+										<div class="mbr-section-btn" buttons="0"><a class="btn display-4 btn-info" href="getstarted.html">Get Started</a> </div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item slider-fullscreen-image" data-bg-video-slide="false" style="background-image: url(assets/images/hero-braces-woman-reviews-1800x1200.jpg);">
+						<div class="container container-slide">
+							<div class="image_wrapper">
+								<div class="mbr-overlay" style="opacity: 0; background-color: rgb(19, 9, 71);"></div><img src="assets/images/hero-braces-woman-reviews-1800x1200.jpg" alt="" title="">
+								<div class="carousel-caption justify-content-center">
+									<div class="col-10 align-left">
+										<h2 class="mbr-fonts-style display-1">New smile time: Avg. 10 – 12 months, Hours: - 10 - 12 hours per day</h2>
+										<p class="lead mbr-text mbr-fonts-style display-5"><strong>Night Aligners</strong></p>
+										<div class="mbr-section-btn" buttons="0"><a class="btn display-4 btn-info" href="getstarted.html">Get Started</a> </div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item slider-fullscreen-image" data-bg-video-slide="false" style="background-image: url(assets/images/retainer-care-2000x1333.jpg);">
+						<div class="container container-slide">
+							<div class="image_wrapper">
+								<div class="mbr-overlay" style="opacity: 0; background-color: rgb(19, 9, 71);"></div><img src="assets/images/retainer-care-2000x1333.jpg" alt="" title="">
+								<div class="carousel-caption justify-content-center">
+									<div class="col-10 align-left">
+										<h2 class="mbr-fonts-style display-1">Maintain your nice smile by wearing retainers at night: Hours: - 8 hours per day&nbsp;</h2>
+										<p class="lead mbr-text mbr-fonts-style display-5"><strong>Night Time Retainers</strong><br></p>
+										<div class="mbr-section-btn" buttons="0"><a class="btn display-4 btn-info" href="getstarted.html">Get Started</a> </div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div><a data-app-prevent-settings="" class="carousel-control carousel-control-prev" role="button" data-slide="prev" href="#slider1-x"><span aria-hidden="true" class="mbri-left mbr-iconfont"></span><span class="sr-only">Previous</span></a><a data-app-prevent-settings="" class="carousel-control carousel-control-next" role="button" data-slide="next" href="#slider1-x"><span aria-hidden="true" class="mbri-right mbr-iconfont"></span><span class="sr-only">Next</span></a>
+			</div>
+		</div>
+
+	</section>
 
 
 
@@ -267,7 +346,7 @@ window.smartsupp||(function(d) {
 				<div class="mb-4 content-container" style="width: 85%;">
 					<h1 class="mbr-section-title pb-3 mbr-fonts-style display-2"><?= $howitworks->title; ?></h1>
 					<p class="mbr-text pb-3 mbr-fonts-style display-7"><?= $howitworks->brief; ?><br></p>
-					
+
 				</div>
 			</div>
 		</div>
@@ -305,16 +384,16 @@ window.smartsupp||(function(d) {
 		</div>
 	</section>
 
-<section class="tabs1 cid-rSbaWNDWqC">
+	<section class="tabs1 cid-rSbaWNDWqC">
 
-<div class="container">
-	<div class="top-part">
+		<div class="container">
+			<div class="top-part">
 				<h3 class="mbr-section-subtitle mbr-fonts-style align-center mbr-bold display-2">Our Products</h3>
 
 				<h1 class="mbr-fonts-style mbr-section-title align-center mbr-bold display-4"> Learn more about our wide range of alingers and how they can best fit your needs.</h1>
 			</div>
-			</div>
-</section>
+		</div>
+	</section>
 
 	<?php
 
@@ -388,6 +467,7 @@ window.smartsupp||(function(d) {
 
 				<div class="carousel-item">
 					<div class="row justify-content-center">
+
 
 						<div class="col-md-4">
 							<div class="card">
@@ -1094,61 +1174,61 @@ window.smartsupp||(function(d) {
 
 	<?php
 
-	 
+
 
 	if (isset($ourteam)) {
 	?> <section class="team1 cid-rSbcpd8ZX6" id="team1-7">
 			<div class="container">
 				<h3 class="mbr-section-subtitle mbr-fonts-style align-center mbr-bold display-4">OUR TEAM</h3>
 
-				<h2 class="mbr-fonts-style mbr-section-title mbr-bold display-2"><?=$ourteam->title; ?></h2>
-				<p class="mbr-text mbr-fonts-style align-center display-7"> <?=$ourteam->brief; ?></p>
+				<h2 class="mbr-fonts-style mbr-section-title mbr-bold display-2"><?= $ourteam->title; ?></h2>
+				<p class="mbr-text mbr-fonts-style align-center display-7"> <?= $ourteam->brief; ?></p>
 				<div class="row justify-content-center">
 
-				<?php 
-					if(isset($ourteam->members)){
+					<?php
+					if (isset($ourteam->members)) {
 						$members = $ourteam->members;
 
 						foreach ($members as $record) {
-							?>
+					?>
 							<div class="card col-sm-6 col-md-4 mt-5 col-lg-4 col-lg-3">
-						<div class="card-wrap">
-							<div class="card-img">
-								<img class="img-icon" src="assets/images/face1.jpg" alt="">
-							</div>
-							<div class="card-box align-center">
-								<h4 class="card-title mbr-fonts-style mbr-bold display-7">Michael Miles</h4>
-								<h5 class="user-desc mbr-fonts-style display-4">
-									GENERAL DENTIST</h5>
+								<div class="card-wrap">
+									<div class="card-img">
+										<img class="img-icon" src="assets/images/face1.jpg" alt="">
+									</div>
+									<div class="card-box align-center">
+										<h4 class="card-title mbr-fonts-style mbr-bold display-7">Michael Miles</h4>
+										<h5 class="user-desc mbr-fonts-style display-4">
+											GENERAL DENTIST</h5>
 
-								<div class="social-list justify-content-center">
-									<div class="soc-item">
-										<a href="https://twitter.com/mobirise" target="_blank">
-											<span class="socicon-twitter socicon mbr-iconfont mbr-iconfont-social mobi-mbri"></span>
-										</a>
-									</div>
-									<div class="soc-item">
-										<a href="https://www.facebook.com/pages/Mobirise/1616226671953247" target="_blank">
-											<span class="socicon-facebook socicon mbr-iconfont mbr-iconfont-social mobi-mbri"></span>
-										</a>
-									</div>
-									<div class="soc-item">
-										<a href="https://instagram.com/mobirise" target="_blank">
-											<span class="socicon-instagram socicon mbr-iconfont mbr-iconfont-social mobi-mbri"></span>
-										</a>
-									</div>
+										<div class="social-list justify-content-center">
+											<div class="soc-item">
+												<a href="https://twitter.com/mobirise" target="_blank">
+													<span class="socicon-twitter socicon mbr-iconfont mbr-iconfont-social mobi-mbri"></span>
+												</a>
+											</div>
+											<div class="soc-item">
+												<a href="https://www.facebook.com/pages/Mobirise/1616226671953247" target="_blank">
+													<span class="socicon-facebook socicon mbr-iconfont mbr-iconfont-social mobi-mbri"></span>
+												</a>
+											</div>
+											<div class="soc-item">
+												<a href="https://instagram.com/mobirise" target="_blank">
+													<span class="socicon-instagram socicon mbr-iconfont mbr-iconfont-social mobi-mbri"></span>
+												</a>
+											</div>
 
+										</div>
+									</div>
 								</div>
 							</div>
-						</div>
-					</div>
-							<?php
+					<?php
 						}
 					}
-				?>
+					?>
 
-				
-					
+
+
 
 					<div class="card col-sm-6 col-md-4 align-center mt-5 col-lg-4 col-lg-3">
 						<div class="card-wrap">
@@ -1679,32 +1759,32 @@ window.smartsupp||(function(d) {
 	</section>
 
 
-	<script src="<?=base_url()?>assets/web/assets/jquery/jquery.min.js"></script>
-  <script src="<?=base_url()?>assets/popper/popper.min.js"></script>
-  <script src="<?=base_url()?>assets/tether/tether.min.js"></script>
-  <script src="<?=base_url()?>assets/bootstrap/js/bootstrap.min.js"></script>
-  <script src="<?=base_url()?>assets/web/assets/cookies-alert-plugin/cookies-alert-core.js"></script>
-  <script src="<?=base_url()?>assets/web/assets/cookies-alert-plugin/cookies-alert-script.js"></script>
-  <script src="<?=base_url()?>assets/smoothscroll/smooth-scroll.js"></script>
-  <script src="<?=base_url()?>assets/dropdown/js/nav-dropdown.js"></script>
-  <script src="<?=base_url()?>assets/dropdown/js/navbar-dropdown.js"></script>
-  <script src="<?=base_url()?>assets/touchswipe/jquery.touch-swipe.min.js"></script>
-  <script src="<?=base_url()?>assets/ytplayer/jquery.mb.ytplayer.min.js"></script>
-  <script src="<?=base_url()?>assets/vimeoplayer/jquery.mb.vimeo_player.js"></script>
-  <script src="<?=base_url()?>assets/bootstrapcarouselswipe/bootstrap-carousel-swipe.js"></script>
-  <script src="<?=base_url()?>assets/parallax/jarallax.min.js"></script>
-  <script src="<?=base_url()?>assets/playervimeo/vimeo_player.js"></script>
-  <script src="<?=base_url()?>assets/formstyler/jquery.formstyler.js"></script>
-  <script src="<?=base_url()?>assets/formstyler/jquery.formstyler.min.js"></script>
-  <script src="<?=base_url()?>assets/datepicker/jquery.datetimepicker.full.js"></script>
-  <script src="<?=base_url()?>assets/theme/js/script.js"></script>
-  <script src="<?=base_url()?>assets/slidervideo/script.js"></script>
-  <script src="<?=base_url()?>assets/formoid.min.js"></script>
-  
-  
-  
-<input name="cookieData" type="hidden" data-cookie-customDialogSelector='null' data-cookie-colorText='#424a4d' data-cookie-colorBg='rgba(234, 239, 241, 0.99)' data-cookie-textButton='Agree' data-cookie-colorButton='' data-cookie-colorLink='#424a4d' data-cookie-underlineLink='true' data-cookie-text="We use cookies to give you the best experience. Read our <a href='privacy.html'>cookie policy</a>.">
-   <div id="scrollToTop" class="scrollToTop mbr-arrow-up"><a style="text-align: center;"><i class="mbr-arrow-up-icon mbr-arrow-up-icon-cm cm-icon cm-icon-smallarrow-up"></i></a></div>
+	<script src="<?= base_url() ?>assets/web/assets/jquery/jquery.min.js"></script>
+	<script src="<?= base_url() ?>assets/popper/popper.min.js"></script>
+	<script src="<?= base_url() ?>assets/tether/tether.min.js"></script>
+	<script src="<?= base_url() ?>assets/bootstrap/js/bootstrap.min.js"></script>
+	<script src="<?= base_url() ?>assets/web/assets/cookies-alert-plugin/cookies-alert-core.js"></script>
+	<script src="<?= base_url() ?>assets/web/assets/cookies-alert-plugin/cookies-alert-script.js"></script>
+	<script src="<?= base_url() ?>assets/smoothscroll/smooth-scroll.js"></script>
+	<script src="<?= base_url() ?>assets/dropdown/js/nav-dropdown.js"></script>
+	<script src="<?= base_url() ?>assets/dropdown/js/navbar-dropdown.js"></script>
+	<script src="<?= base_url() ?>assets/touchswipe/jquery.touch-swipe.min.js"></script>
+	<script src="<?= base_url() ?>assets/ytplayer/jquery.mb.ytplayer.min.js"></script>
+	<script src="<?= base_url() ?>assets/vimeoplayer/jquery.mb.vimeo_player.js"></script>
+	<script src="<?= base_url() ?>assets/bootstrapcarouselswipe/bootstrap-carousel-swipe.js"></script>
+	<script src="<?= base_url() ?>assets/parallax/jarallax.min.js"></script>
+	<script src="<?= base_url() ?>assets/playervimeo/vimeo_player.js"></script>
+	<script src="<?= base_url() ?>assets/formstyler/jquery.formstyler.js"></script>
+	<script src="<?= base_url() ?>assets/formstyler/jquery.formstyler.min.js"></script>
+	<script src="<?= base_url() ?>assets/datepicker/jquery.datetimepicker.full.js"></script>
+	<script src="<?= base_url() ?>assets/theme/js/script.js"></script>
+	<script src="<?= base_url() ?>assets/slidervideo/script.js"></script>
+	<script src="<?= base_url() ?>assets/formoid.min.js"></script>
+
+
+
+	<input name="cookieData" type="hidden" data-cookie-customDialogSelector='null' data-cookie-colorText='#424a4d' data-cookie-colorBg='rgba(234, 239, 241, 0.99)' data-cookie-textButton='Agree' data-cookie-colorButton='' data-cookie-colorLink='#424a4d' data-cookie-underlineLink='true' data-cookie-text="We use cookies to give you the best experience. Read our <a href='privacy.html'>cookie policy</a>.">
+	<div id="scrollToTop" class="scrollToTop mbr-arrow-up"><a style="text-align: center;"><i class="mbr-arrow-up-icon mbr-arrow-up-icon-cm cm-icon cm-icon-smallarrow-up"></i></a></div>
 
 </body>
 
