@@ -7,7 +7,7 @@ class Getstarted extends CI_Controller
  
 	public function index()
 	{
-		$this->load->view('get_started');
+		$this->load->view('getstarted');
 			
 	 
 	}
