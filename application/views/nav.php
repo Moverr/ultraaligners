@@ -93,11 +93,8 @@
 										</a>
 									</li>
 									<li class="nav-item">
-
-										<a class="btn btn-sm btn-info display-4" href="<?= base_url(); ?>getstarted">
-											<span class="fa fa-bell-o mbr-iconfont mbr-iconfont-btn" style="font-size: 21px;"></span>Get Started
-										</a>
-
+										<a class="nav-link link display-4" href="<?= base_url(); ?>getstarted"><span class="fa fa-bell-o mbr-iconfont mbr-iconfont-btn" style="font-size: 21px;"></span>
+											Get Started</a>
 									</li>
 									<li class="nav-item">
 										<a class="nav-link link display-4" href="<?= base_url(); ?>#tabs2-k"><span class="fa fa-medkit mbr-iconfont mbr-iconfont-btn" style="font-size: 21px;"></span>Treatable Cases</a>
