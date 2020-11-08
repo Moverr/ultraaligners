@@ -101,11 +101,11 @@ $this->load->view("header");
 									<option value="Yes">Yes</option>
 								</select>
 							</div>
-							<div data-for="First name" class="col-lg-6 col-md-12 col-sm-12 form-group">
-								<input type="text" name="First name" placeholder="First Name" data-form-field="name" class="form-control display-7" value="" id="First name-formbuilder-1v">
+							<div data-for="firstname" class="col-lg-6 col-md-12 col-sm-12 form-group">
+								<input type="text" name="firstname" placeholder="First Name" data-form-field="name" class="form-control display-7" value="" id="First name-formbuilder-1v">
 							</div>
-							<div data-for="Last Name" class="col-lg-6 col-md-12 col-sm-12 form-group">
-								<input type="text" name="Last Name" placeholder="Last Name" data-form-field="text" class="form-control display-7" value="" id="Last Name-formbuilder-1v">
+							<div data-for="lastname" class="col-lg-6 col-md-12 col-sm-12 form-group">
+								<input type="text" name="lastname" placeholder="Last Name" data-form-field="text" class="form-control display-7" value="" id="Last Name-formbuilder-1v">
 							</div>
 							<div data-for="email" class="col-lg-6 col-md-12 col-sm-12 form-group">
 								<input type="email" name="email" placeholder="Email" data-form-field="email" class="form-control display-7" required="required" value="" id="email-formbuilder-1v">

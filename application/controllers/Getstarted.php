@@ -15,12 +15,17 @@ class Getstarted extends CI_Controller
  
 			$firstname = $this->input->post('firstname');
 			$lastname = $this->input->post('lastname');
+			$email = $this->input->post('email');
+			$phone = $this->input->post('phone');
+			$message = $this->input->post('message');
+			 
 			$reason = $this->input->post('reason');
 			$usedbefore = $this->input->post('usedbefore');
 			$alignertype = $this->input->post('alignertype');
 			$concern = $this->input->post('concern');
+			$specialist = $this->input->post('specialist');
 
-		 
+			
 			$curl = curl_init();
 
 			curl_setopt_array($curl, array(
