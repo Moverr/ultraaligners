@@ -54,8 +54,11 @@ class Getstarted extends CI_Controller
 
 			if ($err) {
 				echo "cURL Error #:" . $err;
+				exit();
 			} else {
 				echo $response;
+				var_dump($response);
+				exit();
 			}
 			//todo end send of enquiry 
 
