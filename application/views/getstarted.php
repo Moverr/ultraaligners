@@ -42,9 +42,9 @@ $this->load->view("header");
 			<div class="row">
 				<div class="col-lg-8 mx-auto mbr-form" data-form-type="formoid">
 					<!--Formbuilder Form-->
-					 
-						<form role="form" method="POST" action="<?= base_url() ?>getstarted" class="mbr-form form-with-styler">
-						
+
+					<form role="form" method="POST" action="<?= base_url() ?>getstarted" class="mbr-form form-with-styler">
+
 						<div class="form-row">
 							<div hidden="hidden" data-form-alert="" class="alert alert-success col-12">Thanks for filling out the form!</div>
 							<div hidden="hidden" data-form-alert-danger="" class="alert alert-danger col-12">Oops...! some problem!</div>
@@ -94,9 +94,9 @@ $this->load->view("header");
 									<option value="Not Sure? (Enter deatails in remarks)">Not Sure? (Enter deatails in remarks)</option>
 								</select>
 							</div>
-							<div class="col-auto form-group" data-for="specialist">
+							<div class="col-auto form-group" data-for="appointment">
 								<label for="Need a Specialist?-formbuilder-1v" class="form-control-label mbr-fonts-style display-7">Do you need to talk to specialist? </label>
-								<select name="specialist" data-form-field="select4" class="form-control display-7" id="Need a Specialist?-formbuilder-1v">
+								<select name="appointment" data-form-field="select4" class="form-control display-7" id="Need a Specialist?-formbuilder-1v">
 									<option value="No">No</option>
 									<option value="Yes">Yes</option>
 								</select>
