@@ -3,7 +3,11 @@ $this->load->view("header");
 ?>
 
 <body>
-
+<style>
+		.alert-success {
+			background-color: goldenrod !important;
+		}
+	</style>
 	<section class="menu02 cid-seKUfbqItn" once="menu" id="menu2-1z">
 
 		<?php
@@ -44,7 +48,13 @@ $this->load->view("header");
 					<!--Formbuilder Form-->
 
 					<form role="form" method="POST" action="<?= base_url() ?>getstarted" class="mbr-form form-with-styler">
-
+						<?php
+						if (isset($success)) {
+						?>
+							<div class="alert alert-success" role="alert"><?= $success; ?></div>
+						<?php
+						}
+						?>
 						<div class="form-row">
 							<div hidden="hidden" data-form-alert="" class="alert alert-success col-12">Thanks for filling out the form!</div>
 							<div hidden="hidden" data-form-alert-danger="" class="alert alert-danger col-12">Oops...! some problem!</div>

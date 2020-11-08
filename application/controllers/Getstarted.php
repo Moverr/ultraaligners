@@ -8,10 +8,10 @@ class Getstarted extends CI_Controller
 	public function index()
 	{
 
+		$data  = [];
 
 		if (isset($_POST['firstname'])) {
-			var_dump($_POST);
-
+		 
 
 			$firstname = $this->input->post('firstname');
 			$lastname = $this->input->post('lastname');
@@ -57,15 +57,23 @@ class Getstarted extends CI_Controller
 				echo "cURL Error #:" . $err;
 				exit();
 			} else {
-				echo $response;
-				var_dump($response);
-				exit();
+				$data['success'] = "Message Sent succesfully";
 			}
 			//todo end send of enquiry 
 
 		}
 
 
-		$this->load->view('getstarted');
+		$this->load->view('getstarted', $data);
+	}
+	private function sendEmail()
+	{
+
+		@$this->load->library('email');
+		@$this->email->from('moverr@gmail.com', 'Identification');
+		@$this->email->to('moverr@gmail.com');
+		@$this->email->subject('Send Email Codeigniter');
+		@$this->email->message('The email send using codeigniter library');
+		@$this->email->send();
 	}
 }
