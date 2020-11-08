@@ -94,9 +94,9 @@ $this->load->view("header");
 									<option value="Not Sure? (Enter deatails in remarks)">Not Sure? (Enter deatails in remarks)</option>
 								</select>
 							</div>
-							<div class="col-auto form-group" data-for="Need a Specialist?">
+							<div class="col-auto form-group" data-for="specialist">
 								<label for="Need a Specialist?-formbuilder-1v" class="form-control-label mbr-fonts-style display-7">Do you need to talk to specialist? </label>
-								<select name="Need a Specialist?" data-form-field="select4" class="form-control display-7" id="Need a Specialist?-formbuilder-1v">
+								<select name="specialist" data-form-field="select4" class="form-control display-7" id="Need a Specialist?-formbuilder-1v">
 									<option value="No">No</option>
 									<option value="Yes">Yes</option>
 								</select>

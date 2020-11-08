@@ -18,8 +18,9 @@ class Getstarted extends CI_Controller
 			$reason = $this->input->post('reason');
 			$usedbefore = $this->input->post('usedbefore');
 			$alignertype = $this->input->post('alignertype');
+			$concern = $this->input->post('concern');
 
-			
+		 
 			$curl = curl_init();
 
 			curl_setopt_array($curl, array(
