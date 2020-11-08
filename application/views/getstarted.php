@@ -59,7 +59,7 @@ $this->load->view("header");
 							</div>
 							<div data-for="Aligner Reason" class="col-lg-12 col-md-12 col-sm-12 form-group">
 								<label for="Aligner Reason-formbuilder-1v" class="form-control-label mbr-fonts-style display-7">Why are you thinking about straightening your teeth?</label>
-								<select name="Aligner Reason" data-form-field="select" class="form-control display-7" required="required" id="Aligner Reason-formbuilder-1v">
+								<select name="reason" data-form-field="select" class="form-control display-7" required="required" id="reason-formbuilder-1v">
 									<option value="I'm getting married">I'm getting married</option>
 									<option value="I'm looking for or starting a new job">I'm looking for or starting a new job</option>
 									<option value="Self confidence">Self confidence</option>
@@ -68,14 +68,14 @@ $this->load->view("header");
 							</div>
 							<div data-for="Worn Braces before" class="col-lg-12 col-md-12 col-sm-12 form-group">
 								<label for="Worn Braces before-formbuilder-1v" class="form-control-label mbr-fonts-style display-7">Have you worn braces or invisible aligners in the past?</label>
-								<select name="Worn Braces before" data-form-field="select1" class="form-control display-7" id="Worn Braces before-formbuilder-1v">
+								<select name="usedbefore" data-form-field="select1" class="form-control display-7" id="Worn Braces before-formbuilder-1v">
 									<option value="No">No</option>
 									<option value="Yes">Yes</option>
 								</select>
 							</div>
-							<div data-for="Biggest Concern" class="col-lg-12 col-md-12 col-sm-12 form-group">
+							<div data-for="concern" class="col-lg-12 col-md-12 col-sm-12 form-group">
 								<label for="Biggest Concern-formbuilder-1v" class="form-control-label mbr-fonts-style display-7">What best describes your biggest concern with your smile:</label>
-								<select name="Biggest Concern" data-form-field="select2" class="form-control display-7" id="Biggest Concern-formbuilder-1v">
+								<select name="concern" data-form-field="select2" class="form-control display-7" id="Biggest Concern-formbuilder-1v">
 									<option value="Gaps in teeth">Gaps in teeth</option>
 									<option value="Crowded teeth">Crowded teeth</option>
 									<option value="Teeth straightening">Teeth straightening</option>
@@ -85,9 +85,9 @@ $this->load->view("header");
 									<option value="Open bite">Open bite</option>
 								</select>
 							</div>
-							<div data-for="Type of Aligner" class="col-auto form-group">
+							<div data-for="alignertype" class="col-auto form-group">
 								<label for="Type of Aligner-formbuilder-1v" class="form-control-label mbr-fonts-style display-7">Select a product that best suits your need:</label>
-								<select name="Type of Aligner" data-form-field="select3" class="form-control display-7" id="Type of Aligner-formbuilder-1v">
+								<select name="alignertype" data-form-field="select3" class="form-control display-7" id="Type of Aligner-formbuilder-1v">
 									<option value="Standard Aligners">Standard Aligners</option>
 									<option value="Night Aligners">Night Aligners</option>
 									<option value="Night time retainers">Night time retainers</option>
