@@ -39,7 +39,7 @@ class Getstarted extends CI_Controller
 				CURLOPT_TIMEOUT => 30,
 				CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
 				CURLOPT_CUSTOMREQUEST => "POST",
-				CURLOPT_POSTFIELDS => "{\"status\":\"published\",\"firstname\":\"Muyinda\",\"lastname\":\"Rogers\",\"email\":\"moverr@gmail.com\",\"phonenumber\":\"+256779820962\",\"message\":\"Thehaea\",\"usedbefore\":true,\"alignertype\":\"eaeae\",\"concern\":\"aeeaea\",\"appointment\":true}",
+				CURLOPT_POSTFIELDS => "{\"status\":\"published\",\"firstname\":\"" . $firstname . "\",\"lastname\":\"" . $lastname . "\",\"email\":\"" . $email . "\",\"phonenumber\":\"" . $phone . "\",\"message\":\"" . $message . "\",\"usedbefore\":" . $usedbefore . ",\"alignertype\":\"" . $alignertype . "\",\"concern\":\".$concern.\",\"appointment\":" . $appointment . "}",
 				CURLOPT_HTTPHEADER => array(
 					"cache-control: no-cache",
 					"content-type: application/json",
