@@ -12,20 +12,23 @@ class Getstarted extends CI_Controller
 		if (isset($_POST['firstname'])) {
 			var_dump($_POST);
 			exit();
- 
+
 			$firstname = $this->input->post('firstname');
 			$lastname = $this->input->post('lastname');
 			$email = $this->input->post('email');
 			$phone = $this->input->post('phone');
 			$message = $this->input->post('message');
-			 
+
 			$reason = $this->input->post('reason');
 			$usedbefore = $this->input->post('usedbefore');
 			$alignertype = $this->input->post('alignertype');
 			$concern = $this->input->post('concern');
 			$appointment = $this->input->post('appointment');
 
-			
+
+			//todo: Send Enquiry and then send email 
+
+
 			$curl = curl_init();
 
 			curl_setopt_array($curl, array(
@@ -36,11 +39,11 @@ class Getstarted extends CI_Controller
 				CURLOPT_TIMEOUT => 30,
 				CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
 				CURLOPT_CUSTOMREQUEST => "POST",
-				CURLOPT_POSTFIELDS => "{\"status\":\"published\",\"straightening_your_teeth\":\"dd\",\"ever_used_braces\":\"dd\",\"concern\":\"dd\",\"product\":\"dd\",\"appointment\":true,\"email\":\"moverr@gmail.com\",\"firstname\":\"Muyinda\",\"lastname\":\"Rogers\",\"phonenumber\":\"+256779820962\",\"details\":\"addd\"}",
+				CURLOPT_POSTFIELDS => "{\"status\":\"published\",\"firstname\":\"Muyinda\",\"lastname\":\"Rogers\",\"email\":\"moverr@gmail.com\",\"phonenumber\":\"+256779820962\",\"message\":\"Thehaea\",\"usedbefore\":true,\"alignertype\":\"eaeae\",\"concern\":\"aeeaea\",\"appointment\":true}",
 				CURLOPT_HTTPHEADER => array(
 					"cache-control: no-cache",
 					"content-type: application/json",
-					"postman-token: 102a608d-79cc-8ee6-456a-dc1f94429917"
+					"postman-token: e11196bf-376e-ace5-2591-ef10340ef18d"
 				),
 			));
 
@@ -54,9 +57,9 @@ class Getstarted extends CI_Controller
 			} else {
 				echo $response;
 			}
+			//todo end send of enquiry 
+
 		}
-		https: //ultraaligners.com/public/ultraaligners/items/guidedenquiries	
-		//odo: send notification. check to see that mandatories are there. 
 
 
 		$this->load->view('getstarted');
