@@ -11,7 +11,7 @@ class Getstarted extends CI_Controller
 
 		if (isset($_POST['firstname'])) {
 			var_dump($_POST);
-			exit();
+
 
 			$firstname = $this->input->post('firstname');
 			$lastname = $this->input->post('lastname');
@@ -24,6 +24,7 @@ class Getstarted extends CI_Controller
 			$alignertype = $this->input->post('alignertype');
 			$concern = $this->input->post('concern');
 			$appointment = $this->input->post('appointment');
+
 
 
 			//todo: Send Enquiry and then send email 
@@ -39,7 +40,7 @@ class Getstarted extends CI_Controller
 				CURLOPT_TIMEOUT => 30,
 				CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
 				CURLOPT_CUSTOMREQUEST => "POST",
-				CURLOPT_POSTFIELDS => "{\"status\":\"published\",\"firstname\":\"" . $firstname . "\",\"lastname\":\"" . $lastname . "\",\"email\":\"" . $email . "\",\"phonenumber\":\"" . $phone . "\",\"message\":\"" . $message . "\",\"usedbefore\":" . $usedbefore . ",\"alignertype\":\"" . $alignertype . "\",\"concern\":\".$concern.\",\"appointment\":" . $appointment . "}",
+				CURLOPT_POSTFIELDS => "{\"status\":\"published\",\"firstname\":\"" . $firstname . "\",\"lastname\":\"" . $lastname . "\",\"email\":\"" . $email . "\",\"phonenumber\":\"" . $phone . "\",\"message\":\"" . $message . "\",\"usedbefore\":" . (strtoupper($usedbefore) == "NO" ? true : false) . ",\"alignertype\":\"" . $alignertype . "\",\"concern\":\".$concern.\",\"appointment\":" . (strtoupper($appointment) == "NO" ? false : true) . "}",
 				CURLOPT_HTTPHEADER => array(
 					"cache-control: no-cache",
 					"content-type: application/json",
