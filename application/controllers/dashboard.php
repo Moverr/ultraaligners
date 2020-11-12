@@ -77,9 +77,7 @@ class Dashboard extends CI_Controller
 
 			if(isset($responsedata->error)){
 
-			 
-				
-				
+			  
 				redirect(base_url() . "auth/logout");
 			}else{
 			 
@@ -88,6 +86,7 @@ class Dashboard extends CI_Controller
 				$data['data'] = $responsedata->data;
 
 				$data['role'] = $role;
+				
 				 
 				$this->load->view('dashboard/dashboard', $data);
 			}
