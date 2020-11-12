@@ -17,9 +17,9 @@ $this->load->view("header");
 		?>
 	</section>
 
-	<div class="container-fluid" style="    margin-top: 210px;">
+	<div class="container-fluid" style="    margin-top: 280px;">
 
-		<div class="row" style="margin-left: 130px;">
+		<div class="row" style="margin-left: 190px;">
 
 
 
