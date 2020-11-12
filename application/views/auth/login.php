@@ -44,13 +44,9 @@ $this->load->view("header");
 
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-8 mx-auto mbr-form" data-form-type="formoid">
+				<div class="col-lg-8 mx-auto mbr-form" >
 					<!--Formbuilder Form-->
-					<form role="form" method="POST" action="<?= base_url() ?>auth" class="mbr-form form-with-styler">
-						<div class="form-row">
-							<div hidden="hidden" data-form-alert="" class="alert alert-success col-12">Thanks for filling out the form!</div>
-							<div hidden="hidden" data-form-alert-danger="" class="alert alert-danger col-12">Oops...! some problem!</div>
-						</div>
+				 	 
 						<div class="dragArea form-row">
 							<div class="col-lg-12 col-md-12 col-sm-12">
 								<h4 class="mbr-fonts-style display-5">
@@ -67,7 +63,7 @@ $this->load->view("header");
 										<?php
 										if (isset($error)) {
 										?>
-											<div class="alert alert-danger" role="alert"><?= $error; ?></div>
+											<div class="alert alert-danger" role="alert"><?= $error; ?>   </div>
 										<?php
 										}
 										?>
@@ -105,7 +101,7 @@ $this->load->view("header");
 
 						</div>
 
-					</form>
+					 
 					<!--Formbuilder Form-->
 				</div>
 			</div>

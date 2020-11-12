@@ -107,7 +107,22 @@
 									</li>
 
 									<li class="nav-item">
-										<a class="nav-link link display-4" href="<?= base_url(); ?>auth"><span class="fa fa-user-circle-o mbr-iconfont mbr-iconfont-btn"></span>Login</a>
+										<!-- if logged in logout -->
+										<?php
+										if (isset($_SESSION['token'])) {
+										?>
+											<a class="nav-link link display-4" href="<?= base_url(); ?>auth/logout"><span class="fa fa-user-circle-o mbr-iconfont mbr-iconfont-btn"></span>Logout</a>
+
+										<?php
+
+										} else {
+										?>
+											<a class="nav-link link display-4" href="<?= base_url(); ?>auth"><span class="fa fa-user-circle-o mbr-iconfont mbr-iconfont-btn"></span>Login</a>
+
+										<?php
+										}
+										?>
+
 									</li>
 
 								</ul>
