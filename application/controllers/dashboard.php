@@ -68,7 +68,7 @@ class Dashboard extends CI_Controller
 		
 
 		if ($err) {
-			echo "cURL Error #:" . $err;
+			redirect(base_url() . "auth/logout");
 		} else {
 			$responsedata =  json_decode($response);
 		
@@ -132,7 +132,7 @@ class Dashboard extends CI_Controller
 		curl_close($curl);
 
 		if ($err) {
-			echo "cURL Error #:" . $err;
+			redirect(base_url() . "auth/logout");
 		} else {
 			$responsedata =  json_decode($response);
 		//	var_dump($responsedata);
@@ -194,7 +194,7 @@ class Dashboard extends CI_Controller
 		curl_close($curl);
 
 		if ($err) {
-			echo "cURL Error #:" . $err;
+			redirect(base_url() . "auth/logout");
 		} else {
 			$responsedata =  json_decode($response);
 		//	var_dump($responsedata);
@@ -250,7 +250,7 @@ class Dashboard extends CI_Controller
 		curl_close($curl);
 
 		if ($err) {
-			echo "cURL Error #:" . $err;
+			redirect(base_url() . "auth/logout");
 		} else {
 			$responsedata =  json_decode($response);
 			//var_dump($responsedata);
@@ -310,7 +310,7 @@ class Dashboard extends CI_Controller
 		curl_close($curl);
 
 		if ($err) {
-			echo "cURL Error #:" . $err;
+			redirect(base_url() . "auth/logout");
 		} else {
 			$responsedata =  json_decode($response);
 			//var_dump($responsedata);
