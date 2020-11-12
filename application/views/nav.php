@@ -111,7 +111,7 @@
 										<?php
 										if (isset($_SESSION['token'])) {
 										?>
-											<a class="nav-link link display-4" href="<?= base_url(); ?>auth/logout"><span class="fa fa-user-circle-o mbr-iconfont mbr-iconfont-btn"></span>Logout</a>
+										 <a class="nav-link link display-4" href="<?= base_url(); ?>auth/logout"><span class="fa fa-user-circle-o mbr-iconfont mbr-iconfont-btn"></span>Logout</a>
 
 										<?php
 
