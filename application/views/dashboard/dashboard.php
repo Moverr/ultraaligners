@@ -3,7 +3,7 @@ $this->load->view("header");
 ?>
 
 <body>
-<style>
+	<style>
 		.alert-success {
 			background-color: goldenrod !important;
 		}
