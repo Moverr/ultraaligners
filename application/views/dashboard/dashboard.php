@@ -22,7 +22,7 @@ $this->load->view("header");
 		<div class="mbr-overlay" style="opacity: 0.3; background-color: rgb(0, 0, 0);">
 		</div>
 
-	 
+
 	</section>
 
 	<section class="form cid-seKUf5JnNO" id="formbuilder-1v">
@@ -31,7 +31,12 @@ $this->load->view("header");
 		<div class="container">
 
 			<div class="col-12 col-md-12 col-lg-3 md-pb">
+				<div class="col-md-9">
+					<ul>
+						<li><a href="#">MOSES</a></li>
 
+					</ul>
+				</div>
 				<div class="col-md-9">
 					<h5>Dashboard </h5>
 					<?php
@@ -89,13 +94,13 @@ $this->load->view("header");
 		</div>
 	</section>
 
-	
 
-	
 
-	 
- 
-	<section class="footer2 cid-seKUfa8CDm" id="footer2-1y"   style="vertical-align: bottom; bottom:-300px;">
+
+
+
+
+	<section class="footer2 cid-seKUfa8CDm" id="footer2-1y" style="vertical-align: bottom; bottom:-300px;">
 
 
 
