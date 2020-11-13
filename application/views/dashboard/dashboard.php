@@ -68,6 +68,7 @@ $this->load->view("header");
 					var_dump($section);
 
 					if ($section == "patients") {
+						if ($role == 1)   $this->load->view("patients/patients");
 					} elseif ($section == "patient_form") {
 						if ($role == 1)   	$this->load->view("patients/addpatient");
 					} elseif ($section == "appointment_form") {
