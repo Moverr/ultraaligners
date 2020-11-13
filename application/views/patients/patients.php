@@ -80,6 +80,7 @@
 		.pagination   li {
 			text-decoration: none;
 			float: left !important; padding: 10px;
+			list-style: none;
 		}
 	</style>
 	<nav>
