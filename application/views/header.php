@@ -13,26 +13,26 @@
 
 	<title>Ultra Ligners</title>
 	<link rel="shortcut icon" href="assets/images/ultra-bg-removed-462x123.png" type="image/x-icon">
-	<link rel="stylesheet" href="<?= base_url() ?>assets/bootstrap-material-design-font/css/material.css">
-	<link rel="stylesheet" href="<?= base_url() ?>assets/font-awesome/css/font-awesome.css">
-	<link rel="stylesheet" href="<?= base_url() ?>assets/web/assets/mobirise-icons/mobirise-icons.css">
-	<link rel="stylesheet" href="<?= base_url() ?>assets/icon54/style.css">
-	<link rel="stylesheet" href="<?= base_url() ?>assets/web/assets/mobirise-icons2/mobirise2.css">
-	<link rel="stylesheet" href="<?= base_url() ?>assets/web/assets/mobirise-icons-bold/mobirise-icons-bold.css">
-	<link rel="stylesheet" href="<?= base_url() ?>assets/tether/tether.min.css">
-	<link rel="stylesheet" href="<?= base_url() ?>assets/bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" href="<?= base_url() ?>assets/bootstrap/css/bootstrap-grid.min.css">
-	<link rel="stylesheet" href="<?= base_url() ?>assets/bootstrap/css/bootstrap-reboot.min.css">
-	<link rel="stylesheet" href="<?= base_url() ?>assets/web/assets/gdpr-plugin/gdpr-styles.css">
-	<link rel="stylesheet" href="<?= base_url() ?>assets/dropdown/css/style.css">
-	<link rel="stylesheet" href="<?= base_url() ?>assets/formstyler/jquery.formstyler.css">
-	<link rel="stylesheet" href="<?= base_url() ?>assets/formstyler/jquery.formstyler.theme.css">
-	<link rel="stylesheet" href="<?= base_url() ?>assets/datepicker/jquery.datetimepicker.min.css">
-	<link rel="stylesheet" href="<?= base_url() ?>assets/socicon/css/styles.css">
-	<link rel="stylesheet" href="<?= base_url() ?>assets/theme/css/style.css">
-	<link rel="stylesheet" href="<?= base_url() ?>assets/recaptcha.css">
-	<link rel="preload" as="style" href="<?= base_url() ?>assets/mobirise/css/mbr-additional.css">
-	<link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+	<link rel="stylesheet" href="https://ultraaligners.com/sandbox/assets/bootstrap-material-design-font/css/material.css">
+	<link rel="stylesheet" href="https://ultraaligners.com/sandbox/assets/font-awesome/css/font-awesome.css">
+	<link rel="stylesheet" href="https://ultraaligners.com/sandbox/assets/web/assets/mobirise-icons/mobirise-icons.css">
+	<link rel="stylesheet" href="https://ultraaligners.com/sandbox/assets/icon54/style.css">
+	<link rel="stylesheet" href="https://ultraaligners.com/sandbox/assets/web/assets/mobirise-icons2/mobirise2.css">
+	<link rel="stylesheet" href="https://ultraaligners.com/sandbox/assets/web/assets/mobirise-icons-bold/mobirise-icons-bold.css">
+	<link rel="stylesheet" href="https://ultraaligners.com/sandbox/assets/tether/tether.min.css">
+	<link rel="stylesheet" href="https://ultraaligners.com/sandbox/assets/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://ultraaligners.com/sandbox/assets/bootstrap/css/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="https://ultraaligners.com/sandbox/assets/bootstrap/css/bootstrap-reboot.min.css">
+	<link rel="stylesheet" href="https://ultraaligners.com/sandbox/assets/web/assets/gdpr-plugin/gdpr-styles.css">
+	<link rel="stylesheet" href="https://ultraaligners.com/sandbox/assets/dropdown/css/style.css">
+	<link rel="stylesheet" href="https://ultraaligners.com/sandbox/assets/formstyler/jquery.formstyler.css">
+	<link rel="stylesheet" href="https://ultraaligners.com/sandbox/assets/formstyler/jquery.formstyler.theme.css">
+	<link rel="stylesheet" href="https://ultraaligners.com/sandbox/assets/datepicker/jquery.datetimepicker.min.css">
+	<link rel="stylesheet" href="https://ultraaligners.com/sandbox/assets/socicon/css/styles.css">
+	<link rel="stylesheet" href="https://ultraaligners.com/sandbox/assets/theme/css/style.css">
+	<link rel="stylesheet" href="https://ultraaligners.com/sandbox/assets/recaptcha.css">
+	<link rel="preload" as="style" href="https://ultraaligners.com/sandbox/assets/mobirise/css/mbr-additional.css">
+	<link rel="stylesheet" href="https://ultraaligners.com/sandbox/assets/mobirise/css/mbr-additional.css" type="text/css">
 
 
 	<!-- Smartsupp Live Chat script -->
