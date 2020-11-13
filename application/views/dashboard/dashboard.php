@@ -7,6 +7,9 @@ $this->load->view("header");
 		.alert-success {
 			background-color: goldenrod !important;
 		}
+		.table tr ,.table td{
+			border-bottom: 1px solid; padding: 15px;
+		}
 	</style>
 	<section class="menu02 cid-seKUfbqItn" once="menu" id="menu2-1z">
 

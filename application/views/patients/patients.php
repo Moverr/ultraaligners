@@ -53,8 +53,8 @@
  							<?= @$record->email; ?>
  						</td>
  						<td>
- 							<a href="<?= base_url(); ?>patient/edit/<?= @$record->id ?>" class="btn btn-default">EDIT</a> &nbsp;
- 							<a href="<?= base_url(); ?>patient/del/<?= @$record->id ?>" class="btn btn-default">ARCHIVE</a>
+ 							<a href="<?= base_url(); ?>patient/edit/<?= @$record->id ?>" class=" ">EDIT</a> &nbsp;
+ 							<a href="<?= base_url(); ?>patient/del/<?= @$record->id ?>" class=" ">ARCHIVE</a>
  						</td>
  					</tr>
  			<?php
