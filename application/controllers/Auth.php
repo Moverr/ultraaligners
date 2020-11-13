@@ -23,7 +23,7 @@ class Auth extends CI_Controller
 	public function logout(){
 		$this->load->library('session');
 		$this->session->unset_userdata("token");
-		$this->index();
+		redirect(base_url() . "auth");
 	}
 
 	public function index()

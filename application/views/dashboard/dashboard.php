@@ -33,59 +33,64 @@ $this->load->view("header");
 			<div class="row">
 				<div class="col-lg-3">
 					<ul>
-						<li><a href="#">Patients</a></li>
+						<li>
+							<a href="<?= base_url() ?>dashboard/patients" class="list-group-item list-group-item-action   google-drive-opener">Paients <span class="badge badge-light badge-pill"> 14</span></a>
+						</li>
+
+						<li>
+							<a href="<?= base_url() ?>dashboard/enquiries" class="list-group-item list-group-item-action   google-drive-opener">Enquiries <span class="badge badge-light badge-pill">14</span></a>
+						</li>
+
+
+						<li>
+							<a href="<?= base_url() ?>dashboard/appointments" class="list-group-item list-group-item-action   google-drive-opener">Appointments <span class="badge badge-light badge-pill">14</span></a>
+						</li>
+
+
+						<li>
+							<a href="<?= base_url() ?>dashboard/progress" class="list-group-item list-group-item-action   google-drive-opener">Patient Progress <span class="badge badge-light badge-pill">14</span></a>
+						</li>
+
+
+						<li>
+							<a href="<?= base_url() ?>dashboard/tracking" class="list-group-item list-group-item-action   google-drive-opener">Product Tracking <span class="badge badge-light badge-pill">14</span></a> </li>
+
+
+
+
+
 
 					</ul>
 				</div>
 				<div class="col-lg-9">
 					<h5>Dashboard </h5>
 					<?php
-					var_dump($role);
+					var_dump($section);
 
-					switch ($section) {
-						case "patients":
-							if ($role == 1) return $this->load->view("patients/patients");
-
-							break;
-
-						case "patient_form":
-							if ($role == 1)  return	$this->load->view("patients/addpatient");
-							break;
-						case "appointment_form":
-							if ($role == 1) 	$this->load->view("appointments/addappointment");
-							break;
-
-						case "progress_form":
-							if ($role == 1) 	$this->load->view("progress/addprogress");
-							break;
-
-						case "tracking_form":
-							if ($role == 1) $this->load->view("tracking/addtracking");
-							break;
-
-
-						case "enquiries":
-							$this->load->view("enquiries/enquiries");
-							break;
-						case "appointments":
-							$this->load->view("appointments/appointments");
-
-							break;
-						case "progress":
-							$this->load->view("progress/progress");
-
-							break;
-
-						case "tracking":
-							$this->load->view("tracking/tracking");
-							break;
-						default:
+					if ($section == "patients") {
+					} elseif ($section == "patient_form") {
+						if ($role == 1)   	$this->load->view("patients/addpatient");
+					} elseif ($section == "appointment_form") {
+						if ($role == 1) 	$this->load->view("appointments/addappointment");
+					} elseif ($section == "progress_form") {
+						if ($role == 1) 	$this->load->view("progress/addprogress");
+					} elseif ($section == "tracking_form") {
+						if ($role == 1) $this->load->view("tracking/addtracking");
+					} elseif ($section == "enquiries") {
+						$this->load->view("enquiries/enquiries");
+					} elseif ($section == "appointments") {
+						$this->load->view("appointments/appointments");
+					} elseif ($section == "progress") {
+						$this->load->view("progress/progress");
+					} elseif ($section == "tracking") {
+						$this->load->view("tracking/tracking");
+					} else {
 					?>
-							<p> Welcome to Dashboard </p>
+						<p> Welcome to Dashboard </p>
 					<?php
-							break;
-					}
 
+
+					}
 					?>
 				</div>
 
