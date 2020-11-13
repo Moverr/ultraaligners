@@ -28,16 +28,16 @@ $this->load->view("header");
 	<section class="form cid-seKUf5JnNO" id="formbuilder-1v">
 
 
-		<div class="container">
+		<div class="row">
 
-			<div class="col-12 col-md-12 col-lg-3 md-pb">
+			<div class="col-lg-6">
 				<div class="col-md-9">
 					<ul>
 						<li><a href="#">MOSES</a></li>
 
 					</ul>
 				</div>
-				<div class="col-md-9">
+				<div class="col-lg-6">
 					<h5>Dashboard </h5>
 					<?php
 					var_dump($role);
