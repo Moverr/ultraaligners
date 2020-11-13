@@ -1,7 +1,7 @@
 <h1> Manage Patients </h1>
-<div class="container-fluid">
-	<div class="row">
-		<div class="col-md-12">
+ 
+	<div class="container">
+	 
 
 			<form class="form-inline" method="GET" action="<?=base_url()?>patient/search">
 				<a href="<?= base_url(); ?>patient" class="btn btn-default">Add</a>
@@ -92,7 +92,6 @@
 				</ul>
 			</nav>
 
-
-		</div>
+ 
 	</div>
-</div>
+ 

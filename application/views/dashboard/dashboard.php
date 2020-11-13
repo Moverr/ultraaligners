@@ -57,15 +57,12 @@ $this->load->view("header");
 
 
 
-
-
-
 					</ul>
 				</div>
 				<div class="col-lg-9">
 					<h5>Dashboard </h5>
 					<?php
-					var_dump($section);
+				 
 
 					if ($section == "patients") {
 						if ($role == 1)   $this->load->view("patients/patients");
