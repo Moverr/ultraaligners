@@ -15,7 +15,15 @@ $this->load->view("header");
 		?>
 	</section>
 
- 
+	<section class="title1 medicalm4_title1 cid-seKUf5cpSo" id="title1-1u">
+
+
+
+		<div class="mbr-overlay" style="opacity: 0.3; background-color: rgb(0, 0, 0);">
+		</div>
+
+	 
+	</section>
 
 	<section class="form cid-seKUf5JnNO" id="formbuilder-1v">
 
@@ -87,7 +95,7 @@ $this->load->view("header");
 
 	 
  
-	<section class="footer2 cid-seKUfa8CDm" id="footer2-1y">
+	<section class="footer2 cid-seKUfa8CDm" id="footer2-1y"   style="vertical-align: bottom; bottom:-300px;">
 
 
 
