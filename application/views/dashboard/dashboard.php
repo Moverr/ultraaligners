@@ -31,7 +31,7 @@ $this->load->view("header");
 	<section class="form cid-seKUf5JnNO" id="formbuilder-1v">
 
 
-		<div class="container">
+		<div class=" ">
 
 			<div class="row">
 				<div class="col-lg-3">

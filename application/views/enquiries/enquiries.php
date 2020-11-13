@@ -4,14 +4,14 @@
 		<div class="col-md-12">
 
 		<form class="form-inline" method="GET" action="<?=base_url()?>enquiry/search">
-				<!-- <a href="<?= base_url(); ?>enquiry" class="btn btn-default">Add</a> -->
+				<!-- <a href="<?= base_url(); ?>enquiry" class="">Add</a> -->
 				&nbsp;&nbsp;
 
 				<div class="form-group">
 					<label for="exampleInputEmail2">Search : </label>
-					<input type="search" class="form-control" id="search" name="search" placeholder="Search">
+					<input type="search"   id="search" name="search" placeholder="Search">
 				</div>
-				<button type="submit" class="btn btn-default">Search</button>
+				<button type="submit" class="">Search</button>
 			</form>
 
 
@@ -71,8 +71,8 @@
 							 ?>
 							</td>
 							<td>
-									<a href="<?=base_url();?>patient/edit/<?=@$record->id?>" class="btn btn-default">CLOSE</a> &nbsp;
-									<a href="<?=base_url();?>patient/del/<?=@$record->id?>" class="btn btn-default">RESPONSES</a>
+									<a href="<?=base_url();?>patient/edit/<?=@$record->id?>" class="">CLOSE</a> &nbsp;
+									<a href="<?=base_url();?>patient/del/<?=@$record->id?>" class="">RESPONSES</a>
 								</td>
 
 						</tr>
