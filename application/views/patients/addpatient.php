@@ -29,11 +29,9 @@ if (isset($data)) {
 			<form role="form" method="POST" <?php
 
 											if (isset($data)) {
-												?>
-													action="<?= base_url(); ?>patient/edit/<?= @$data->id ?>"
-												<?php 
-											}
-											?>>
+											?> action="<?= base_url(); ?>patient/edit/<?= @$data->id ?>" <?php
+																											}
+																												?>>
 
 
 				<div class="form-group">
@@ -64,16 +62,23 @@ if (isset($data)) {
 
 
 
+				<?php
+				if (!isset($data)) {
+				?>
+					<div class="form-group">
 
-				<div class="form-group">
+						<label for="password">
+							Password
+						</label>
+						<br />
+						<note>Make sure u copy this password to the patient</note>
+						<input type="text" valueclass="form-control" id="password" name="password" />
+					</div>
+				<?php
+				}
+				?>
 
-					<label for="password">
-						Password
-					</label>
-					<br />
-					<note>Make sure u copy this password to the patient</note>
-					<input type="text" class="form-control" id="password" name="password" />
-				</div>
+
 
 				<button type="submit" class="btn btn-primary">
 					Submit

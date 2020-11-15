@@ -54,15 +54,15 @@ class Patient extends CI_Controller
 				$curl = curl_init();
 
 				curl_setopt_array($curl, array(
-					CURLOPT_URL => "https://ultraaligners.com/public/ultraaligners/users",
+					CURLOPT_URL => "https://ultraaligners.com/public/ultraaligners/users/".$id,
 					CURLOPT_RETURNTRANSFER => true,
 					CURLOPT_ENCODING => "",
 					CURLOPT_MAXREDIRS => 10,
 					CURLOPT_TIMEOUT => 30,
 					CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-					CURLOPT_CUSTOMREQUEST => "POST",
+					CURLOPT_CUSTOMREQUEST => "PATCH",
 					//	CURLOPT_POSTFIELDS => "{\"status\":\"active\",\"first_name\":\"".$first_name."\",\"last_name\":\"".$last_name."\",\"email\":\"".$username."\",\"role\":\"".$role."\",\"password\":\"".$password."\",\"token\":\"".$random_string."\"}",
-					CURLOPT_POSTFIELDS => "{\"status\":\"active\",\"first_name\":\"" . $_POST['firstname'] . "\",\"last_name\":\"" . $_POST['lastname'] . "\",\"email\":\"" . $username . "\",\"role\":\"" . $role . "\",\"password\":\"" . $password . "\",\n\"token\":\"" . $random_string . "\"\n\t\n\t\n}",
+					CURLOPT_POSTFIELDS => "{\"status\":\"active\",\"first_name\":\"" . $_POST['firstname'] . "\",\"last_name\":\"" . $_POST['lastname'] . "\",\"email\":\"" . $username . "\",\"role\":\"" . $role . "\",\n\"token\":\"" . $random_string . "\"\n\t\n\t\n}",
 
 
 					CURLOPT_HTTPHEADER => array(
