@@ -60,7 +60,7 @@ class Patient extends CI_Controller
 
 			$data['section'] = "patients";
 			$data['meta'] = $responsedata->meta;
-			$data['data'] = $responsedata->data;
+			$data['data'] = $responsedata->data[0];
 			if (!isset($data['data'])) {
 				redirect(base_url() . "auth");
 			} else {
