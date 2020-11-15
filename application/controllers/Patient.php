@@ -24,14 +24,13 @@ class Patient extends CI_Controller
 		$this->load->library('session');
 		$data = array();
 		$role = $this->session->userdata('role');
-		$token = $this->session->userdata('token');
-		{
+		$token = $this->session->userdata('token'); {
 			$curl = curl_init();
 
 			$url = "https://ultraaligners.com/public/ultraaligners/users?meta=total_count%2Cresult_count%2Cfilter_count&limit=10&offset=0&fields=role.*%2Cfirst_name.*%2Clast_name.*%2Cemail.*%2Cid&filter[id][contains]=1";
 
 			curl_setopt_array($curl, array(
-				CURLOPT_URL => $url ,
+				CURLOPT_URL => $url,
 				CURLOPT_RETURNTRANSFER => true,
 				CURLOPT_ENCODING => "",
 				CURLOPT_MAXREDIRS => 10,
@@ -44,8 +43,6 @@ class Patient extends CI_Controller
 					"content-type: application/json"
 				),
 			));
-	
-		
 		}
 
 		$data['section'] = "patient_form";
@@ -140,7 +137,7 @@ class Patient extends CI_Controller
 
 			if ($_POST['firstname'] == "" ||  $_POST['lastname'] == "") {
 				//todo: make it succesful
-			
+
 				$data['section'] = "patient_form";
 				$data['error'] = "Fill in the mandatory fields ";
 				$this->load->view('dashboard/dashboard', $data);
@@ -186,7 +183,7 @@ class Patient extends CI_Controller
 				}
 			}
 		} else {
-			 
+
 			$data['section'] = "patient_form";
 			$data['error'] = "Fill Mandatories";
 			$this->load->view('dashboard/dashboard', $data);
