@@ -1,6 +1,6 @@
 <?php
 
-var_dump($data[0]->first_name);
+var_dump($data->first_name);
 if (isset($data)) {
 ?>
 	<h1> Edit Patient </h1>
@@ -33,7 +33,7 @@ if (isset($data)) {
 					<label for="firstname">
 						Firstname
 					</label>
-					<input type="text" class="form-control" id="firstname" name="firstname" />
+					<input type="text" value="<?=isset($data->first_name) ?$data->first_name :"" ; ?>   "  class="form-control" id="firstname" name="firstname" />
 				</div>
 
 
