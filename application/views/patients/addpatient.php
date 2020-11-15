@@ -1,6 +1,6 @@
 <?php
 
-var_dump($data->first_name);
+var_dump($data);
 if (isset($data)) {
 ?>
 	<h1> Edit Patient </h1>
