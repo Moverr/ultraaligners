@@ -58,24 +58,17 @@ class Patient extends CI_Controller
 			$responsedata =  json_decode($response);
 			//var_dump($responsedata);
 
-
-			$data = array();
 			$data['section'] = "patients";
 			$data['meta'] = $responsedata->meta;
 			$data['data'] = $responsedata->data;
 			if (!isset($data['data'])) {
 				redirect(base_url() . "auth");
 			} else {
+				$data['section'] = "patient_form";
+				$data['role'] = $role;
 				$this->load->view('dashboard/dashboard', $data);
 			}
 		}
-
-
-
-
-		$data['section'] = "patient_form";
-		$data['role'] = $role;
-		$this->load->view('dashboard/dashboard', $data);
 	}
 
 	public function del($id)
