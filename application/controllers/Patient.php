@@ -20,8 +20,12 @@ class Patient extends CI_Controller
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
 	public function edit($id){
+		$this->load->library('session'); 
 		$data = array();
+		$role = $this->session->userdata('role');
+
 			$data['section'] = "patient_form";
+			$data['role'] = $role;
 			$this->load->view('dashboard/dashboard', $data);
 	}
 
