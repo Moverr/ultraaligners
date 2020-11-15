@@ -44,9 +44,14 @@ class Patient extends CI_Controller
 			),
 		));
 
+		$response = curl_exec($curl);
+		$err = curl_error($curl);
+
+		curl_close($curl);
 
 
-		
+
+
 		if ($err) {
 			echo "cURL Error #:" . $err;
 		} else {
@@ -66,7 +71,7 @@ class Patient extends CI_Controller
 		}
 
 
-		
+
 
 		$data['section'] = "patient_form";
 		$data['role'] = $role;
