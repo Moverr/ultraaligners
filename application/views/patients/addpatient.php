@@ -33,7 +33,7 @@ if (isset($data)) {
 					<label for="firstname">
 						Firstname
 					</label>
-					<input type="text" value="<?=isset($data->first_name) ?$data->first_name :"" ; ?> "  class="form-control" id="firstname" name="firstname" />
+					<input type="text" value="<?= isset($data->first_name) ? $data->first_name : ""; ?> " class="form-control" id="firstname" name="firstname" />
 				</div>
 
 
@@ -41,10 +41,10 @@ if (isset($data)) {
 					<label for="lastname">
 						Lastname
 					</label>
-					<input type="text"  value="<?=isset($data->last_name) ?$data->last_name :"" ; ?> "  class="form-control" id="lastname" name="lastname" />
+					<input type="text" value="<?= isset($data->last_name) ? $data->last_name : ""; ?> " class="form-control" id="lastname" name="lastname" />
 				</div>
 
-				
+
 
 
 				<div class="form-group">
@@ -52,7 +52,7 @@ if (isset($data)) {
 					<label for="email">
 						Email address
 					</label>
-					<input type="email" class="form-control" id="email" name="email" />
+					<input type="email" value="<?= isset($data->email) ? $data->email : ""; ?> " class="form-control" id="email" name="email" />
 				</div>
 
 
