@@ -26,7 +26,14 @@ if (isset($data)) {
 			?>
 
 
-			<form role="form" method="POST">
+			<form role="form" method="POST" <?php
+
+											if (isset($data)) {
+												?>
+													action="<?= base_url(); ?>patient/edit/<?= @$data->id ?>"
+												<?php 
+											}
+											?>>
 
 
 				<div class="form-group">

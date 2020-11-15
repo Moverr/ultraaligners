@@ -27,46 +27,54 @@ class Patient extends CI_Controller
 		$token = $this->session->userdata('token');
 		$curl = curl_init();
 
-		$url = "https://ultraaligners.com/public/ultraaligners/users?meta=total_count%2Cresult_count%2Cfilter_count&limit=10&offset=0&fields=role.*%2Cfirst_name.*%2Clast_name.*%2Cemail.*%2Cid&filter[id][contains]=".$id;
 
-		curl_setopt_array($curl, array(
-			CURLOPT_URL => $url,
-			CURLOPT_RETURNTRANSFER => true,
-			CURLOPT_ENCODING => "",
-			CURLOPT_MAXREDIRS => 10,
-			CURLOPT_TIMEOUT => 30,
-			CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-			CURLOPT_CUSTOMREQUEST => "GET",
-			CURLOPT_HTTPHEADER => array(
-				"authorization:bearer " . $token,
-				"cache-control: no-cache",
-				"content-type: application/json"
-			),
-		));
-
-		$response = curl_exec($curl);
-		$err = curl_error($curl);
-
-		curl_close($curl);
-
-
-
-
-		if ($err) {
-			echo "cURL Error #:" . $err;
+		if (isset($_POST['firstname'])) {
+			echo " Complete Editing ";
 		} else {
-			$responsedata =  json_decode($response);
-			//var_dump($responsedata);
 
-			$data['section'] = "patients";
-			$data['meta'] = $responsedata->meta;
-			$data['data'] = $responsedata->data[0];
-			if (!isset($data['data'])) {
-				redirect(base_url() . "auth");
+
+
+			$url = "https://ultraaligners.com/public/ultraaligners/users?meta=total_count%2Cresult_count%2Cfilter_count&limit=10&offset=0&fields=role.*%2Cfirst_name.*%2Clast_name.*%2Cemail.*%2Cid&filter[id][contains]=" . $id;
+
+			curl_setopt_array($curl, array(
+				CURLOPT_URL => $url,
+				CURLOPT_RETURNTRANSFER => true,
+				CURLOPT_ENCODING => "",
+				CURLOPT_MAXREDIRS => 10,
+				CURLOPT_TIMEOUT => 30,
+				CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+				CURLOPT_CUSTOMREQUEST => "GET",
+				CURLOPT_HTTPHEADER => array(
+					"authorization:bearer " . $token,
+					"cache-control: no-cache",
+					"content-type: application/json"
+				),
+			));
+
+			$response = curl_exec($curl);
+			$err = curl_error($curl);
+
+			curl_close($curl);
+
+
+
+
+			if ($err) {
+				echo "cURL Error #:" . $err;
 			} else {
-				$data['section'] = "patient_form";
-				$data['role'] = $role;
-				$this->load->view('dashboard/dashboard', $data);
+				$responsedata =  json_decode($response);
+				//var_dump($responsedata);
+
+				$data['section'] = "patients";
+				$data['meta'] = $responsedata->meta;
+				$data['data'] = $responsedata->data[0];
+				if (!isset($data['data'])) {
+					redirect(base_url() . "auth");
+				} else {
+					$data['section'] = "patient_form";
+					$data['role'] = $role;
+					$this->load->view('dashboard/dashboard', $data);
+				}
 			}
 		}
 	}
