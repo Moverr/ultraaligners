@@ -1,6 +1,6 @@
 <?php
 
-var_dump($data);
+
 if (isset($data)) {
 ?>
 	<h1> Edit Patient </h1>
@@ -30,8 +30,8 @@ if (isset($data)) {
 
 											if (isset($data)) {
 											?> action="<?= base_url(); ?>patient/edit/<?= @$data->id ?>" <?php
-																											}
-																												?>>
+																										}
+																											?>>
 
 
 				<div class="form-group">

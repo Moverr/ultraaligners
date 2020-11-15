@@ -54,7 +54,7 @@ class Patient extends CI_Controller
 				$curl = curl_init();
 
 				curl_setopt_array($curl, array(
-					CURLOPT_URL => "https://ultraaligners.com/public/ultraaligners/users/".$id,
+					CURLOPT_URL => "https://ultraaligners.com/public/ultraaligners/users/" . $id,
 					CURLOPT_RETURNTRANSFER => true,
 					CURLOPT_ENCODING => "",
 					CURLOPT_MAXREDIRS => 10,
