@@ -27,7 +27,7 @@ class Patient extends CI_Controller
 		$token = $this->session->userdata('token');
 		$curl = curl_init();
 
-		$url = "https://ultraaligners.com/public/ultraaligners/users?meta=total_count%2Cresult_count%2Cfilter_count&limit=10&offset=0&fields=role.*%2Cfirst_name.*%2Clast_name.*%2Cemail.*%2Cid&filter[id][contains]=1";
+		$url = "https://ultraaligners.com/public/ultraaligners/users?meta=total_count%2Cresult_count%2Cfilter_count&limit=10&offset=0&fields=role.*%2Cfirst_name.*%2Clast_name.*%2Cemail.*%2Cid&filter[id][contains]=".$id;
 
 		curl_setopt_array($curl, array(
 			CURLOPT_URL => $url,

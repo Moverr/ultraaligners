@@ -1,14 +1,29 @@
-<h1> Add Patient </h1>
+<?php
+
+var_dump($data);
+if (isset($data)) {
+?>
+	<h1> Edit Patient </h1>
+<?php
+
+} else {
+?>
+	<h1> Add Patient </h1>
+<?php
+}
+
+?>
+
 <div class="container-fluid">
 	<div class="" style="width: 800px !important;">
 		<div class="col-md-12">
-		<?php
-				if (isset($error)) {
-				?>
-					<div class="alert alert-danger" role="alert"><?= $error; ?></div>
-				<?php
-				}
-				?>
+			<?php
+			if (isset($error)) {
+			?>
+				<div class="alert alert-danger" role="alert"><?= $error; ?></div>
+			<?php
+			}
+			?>
 
 
 			<form role="form" method="POST">
@@ -48,7 +63,7 @@
 					<label for="password">
 						Password
 					</label>
-					<br/>
+					<br />
 					<note>Make sure u copy this password to the patient</note>
 					<input type="text" class="form-control" id="password" name="password" />
 				</div>
