@@ -1,6 +1,6 @@
 <h1> Add Patient </h1>
 <div class="container-fluid">
-	<div class="row">
+	<div class="" style="width: 800px !important;">
 		<div class="col-md-12">
 		<?php
 				if (isset($error)) {

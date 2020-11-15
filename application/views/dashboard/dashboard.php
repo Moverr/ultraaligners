@@ -7,6 +7,11 @@ $this->load->view("header");
 		.alert-success {
 			background-color: goldenrod !important;
 		}
+
+		.alert-danger {
+			background-color: #E13300 !important;
+		}
+
 		.table tr ,.table td{
 			border-bottom: 1px solid; padding: 15px;
 		}
