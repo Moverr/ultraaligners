@@ -12,8 +12,10 @@ $this->load->view("header");
 			background-color: #E13300 !important;
 		}
 
-		.table tr ,.table td{
-			border-bottom: 1px solid; padding: 15px;
+		.table tr,
+		.table td {
+			border-bottom: 1px solid;
+			padding: 15px;
 		}
 	</style>
 	<section class="menu02 cid-seKUfbqItn" once="menu" id="menu2-1z">
@@ -41,9 +43,16 @@ $this->load->view("header");
 			<div class="row">
 				<div class="col-lg-3">
 					<ul>
-						<li>
-							<a href="<?= base_url() ?>dashboard/patients" class="list-group-item list-group-item-action   google-drive-opener">Paients <span class="badge badge-light badge-pill"> 14</span></a>
-						</li>
+						<?php
+						if ($role == 1) {
+						?>
+							<li>
+								<a href="<?= base_url() ?>dashboard/patients" class="list-group-item list-group-item-action   google-drive-opener">Paients <span class="badge badge-light badge-pill"> 14</span></a>
+							</li>
+						<?php
+						}
+						?>
+
 
 						<li>
 							<a href="<?= base_url() ?>dashboard/enquiries" class="list-group-item list-group-item-action   google-drive-opener">Enquiries <span class="badge badge-light badge-pill">14</span></a>
@@ -68,9 +77,9 @@ $this->load->view("header");
 					</ul>
 				</div>
 				<div class="col-lg-9">
-					 
+
 					<?php
-				 
+
 
 					if ($section == "patients") {
 						if ($role == 1)   $this->load->view("patients/patients");

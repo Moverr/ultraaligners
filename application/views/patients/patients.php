@@ -13,7 +13,7 @@
  	</form>
 
 
- 	<table class="table">
+ 	<table class="table" style="width: 900px !important;">
  		<thead>
  			<tr>
  				<th>
