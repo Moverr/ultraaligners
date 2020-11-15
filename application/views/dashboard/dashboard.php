@@ -68,7 +68,7 @@ $this->load->view("header");
 					</ul>
 				</div>
 				<div class="col-lg-9">
-					<h5>Dashboard </h5>
+					 
 					<?php
 				 
 
