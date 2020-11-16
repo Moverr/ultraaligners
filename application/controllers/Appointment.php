@@ -22,13 +22,19 @@ class Appointment extends CI_Controller
 	public function edit($id)
 	{
 		$data = array();
+		$role = $this->session->userdata('role');
+		$token = $this->session->userdata('token');
 		$data['section'] = "appointment_form";
+		$data['role'] = $role;
 		$this->load->view('dashboard/dashboard', $data);
 	}
 
 	public function del($id)
 	{
-		redirect(base_url() . "dashboard/appointments");
+		$role = $this->session->userdata('role');
+		$token = $this->session->userdata('token');
+		$data['role'] = $role;
+		redirect(base_url() . "dashboard/appointments",$data);
 	}
 
 	public function search()
@@ -40,6 +46,10 @@ class Appointment extends CI_Controller
 		//echo $token;
 		$email = $this->session->userdata('email');
 		$logged_in = $this->session->userdata('logged_in');
+
+
+		$role = $this->session->userdata('role');
+		$data['role'] = $role;
 
 		$curl = curl_init();
 
@@ -68,9 +78,8 @@ class Appointment extends CI_Controller
 		} else {
 			$responsedata =  json_decode($response);
 			//var_dump($responsedata);
-
-
-			$data = array();
+ 
+		 
 			$data['section'] = "appointments";
 			$data['meta'] = $responsedata->meta;
 			$data['data'] = $responsedata->data;
