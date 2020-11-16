@@ -166,11 +166,7 @@ class Appointment extends CI_Controller
 					}
 				}
 			}
-		} else {
-
-
-			var_dump($data);
-
+		} else { 
 			$curl = curl_init();
 
 			curl_setopt_array($curl, array(
